@@ -33,12 +33,6 @@
 #import "InvoiceComposer.h"
 
 
-//part printer
-#import "AppDelegate.h"
-#import "Communication.h"
-#import "PrinterFunctions.h"
-#import "ILocalizeReceipts.h"
-
 
 @interface CustomerKitchenViewController ()
 {
@@ -1181,110 +1175,6 @@ static NSString * const reuseHeaderViewIdentifier = @"CustomCollectionReusableVi
     _lastSegConPrintStatus = segConPrintStatus.selectedSegmentIndex;
 }
 
--(void)checkPrinterStatus
-{
-    [self loadingOverlayView];
-    BOOL result = NO;
-    SMPort *port = nil;
-    
-    
-    NSArray *_printerCodeList = @[@"Kitchen",@"Kitchen2",@"Drinks",@"Cashier"];
-    for(int i=0; i<[_printerCodeList count]; i++)
-    {
-        Printer *printer = [Printer getPrinterWithCode:_printerCodeList[i]];
-        NSString *strPortName = printer.portName;
-        if([Utility isStringEmpty:strPortName])
-        {
-            //            [_printerStatusList addObject:@""];
-            printer.printerStatus = 0;
-            continue;
-        }
-        
-        //check status
-        @try
-        {
-            while (YES)
-            {
-                //                port = [SMPort getPort:[AppDelegate getPortName] :[AppDelegate getPortSettings] :10000];     // 10000mS!!!
-                port = [SMPort getPort:strPortName :[AppDelegate getPortSettings] :10000];     // 10000mS!!!
-                if (port == nil)
-                {
-                    //printer offline
-                    //                    i = 4;
-                    //                    [_printerStatusList removeAllObjects];
-                    //                    [_printerStatusList addObject:@""];
-                    printer.printerStatus = 0;
-                    break;
-                }
-                
-                StarPrinterStatus_2 printerStatus;
-                
-                [port getParsedStatus:&printerStatus :2];
-                
-                if (printerStatus.offline == SM_TRUE) {
-                    [_statusCellArray addObject:@[@"Online", @"Offline", [UIColor redColor]]];
-                    //                    [_printerStatusList addObject:@""];
-                    printer.printerStatus = 0;
-                }
-                else {
-                    [_statusCellArray addObject:@[@"Online", @"Online",  [UIColor blueColor]]];
-                    //                    [_printerStatusList addObject:@"Online"];
-                    printer.printerStatus = 1;
-                }
-                
-                if (printerStatus.offline == SM_TRUE) {
-                    [_firmwareInfoCellArray addObject:@[@"Unable to get F/W info. from an error.", @"", [UIColor redColor]]];
-                    
-                    result = YES;
-                    break;
-                }
-                else {
-                    NSDictionary *firmwareInformation = [port getFirmwareInformation];
-                    
-                    if (firmwareInformation == nil) {
-                        break;
-                    }
-                    
-                    [_firmwareInfoCellArray addObject:@[@"Model Name",       [firmwareInformation objectForKey:@"ModelName"],       [UIColor blueColor]]];
-                    
-                    [_firmwareInfoCellArray addObject:@[@"Firmware Version", [firmwareInformation objectForKey:@"FirmwareVersion"], [UIColor blueColor]]];
-                    
-                    result = YES;
-                    break;
-                }
-            }
-        }
-        @catch (PortException *exc) {
-        }
-        @finally {
-            if (port != nil) {
-                [SMPort releasePort:port];
-                
-                port = nil;
-            }
-        }
-    }
-    
-    
-    if (result == NO)
-    {
-        imgPrinterStaus.image = [UIImage imageNamed:@"offline"];
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Fail to Open Port" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        
-        [alertView show];
-    }
-    else
-    {
-        imgPrinterStaus.image = [UIImage imageNamed:@"connected"];
-    }
-    [self removeOverlayViews];
-}
-
-- (IBAction)connectPrinter:(id)sender
-{
-    [self checkPrinterStatus];
-}
-
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([[segue identifier] isEqualToString:@"segOrderDetail"])
@@ -1305,35 +1195,35 @@ static NSString * const reuseHeaderViewIdentifier = @"CustomCollectionReusableVi
 {
     _indexPathNew = [NSIndexPath indexPathForRow:0 inSection:0];
     segConPrintStatus.selectedSegmentIndex = 0;
-    [self printStatusChanged:nil];    
+    [self reloadTableView];
 }
 
 -(void)reloadTableViewIssueTab
 {
     _indexPathAction = [NSIndexPath indexPathForRow:0 inSection:0];
     segConPrintStatus.selectedSegmentIndex = 3;
-    [self printStatusChanged:nil];
+    [self reloadTableView];
 }
 
 -(void)reloadTableViewProcessingTab
 {
     _indexPathPrinted = [NSIndexPath indexPathForRow:0 inSection:0];
     segConPrintStatus.selectedSegmentIndex = 1;
-    [self printStatusChanged:nil];
+    [self reloadTableView];
 }
 
 -(void)reloadTableViewDeliveredTab
 {
     _indexPathDelivered = [NSIndexPath indexPathForRow:0 inSection:0];
     segConPrintStatus.selectedSegmentIndex = 2;
-    [self printStatusChanged:nil];
+    [self reloadTableView];
 }
 
 -(void)reloadTableViewClearTab
 {
     _indexPathOthers = [NSIndexPath indexPathForRow:0 inSection:0];
     segConPrintStatus.selectedSegmentIndex = 4;
-    [self printStatusChanged:nil];
+    [self reloadTableView];
 }
 
 - (IBAction)refresh:(id)sender

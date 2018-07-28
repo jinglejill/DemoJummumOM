@@ -11,7 +11,6 @@
 #import "CustomTableViewCellImageText.h"
 #import "CustomTableViewCellProfile.h"
 #import "CustomTableViewCellLabelSwitch.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "Branch.h"
 #import "Setting.h"
 

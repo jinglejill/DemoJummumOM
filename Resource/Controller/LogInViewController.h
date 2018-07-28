@@ -7,11 +7,11 @@
 //
 
 #import "CustomViewController.h"
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
+//#import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "CredentialsDb.h"
 
 
-@interface LogInViewController : CustomViewController<FBSDKLoginButtonDelegate>
+@interface LogInViewController : CustomViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *imgVwLogoText;
 @property (strong, nonatomic) IBOutlet UITextField *txtEmail;

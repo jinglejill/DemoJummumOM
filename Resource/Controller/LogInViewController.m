@@ -11,8 +11,6 @@
 #import "CustomerKitchenViewController.h"
 #import "MainTabBarController.h"
 #import "MeViewController.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 
 #import "LogIn.h"
@@ -24,7 +22,6 @@
 
 @interface LogInViewController ()
 {
-    FBSDKLoginButton *_loginButton;
     BOOL _faceBookLogIn;
     BOOL _appLogIn;
     BOOL _rememberMe;
@@ -54,12 +51,7 @@
     
     
     UIWindow *window = UIApplication.sharedApplication.keyWindow;
-    float bottomPadding = window.safeAreaInsets.bottom;
-    float topPadding = window.safeAreaInsets.top;
-    _loginButton.center = self.view.center;
-    CGRect frame = _loginButton.frame;
-    frame.origin.y = self.view.frame.size.height - bottomPadding - bottom + 11;//frame.origin.y + 33;
-    _loginButton.frame = frame;
+    float bottomPadding = window.safeAreaInsets.bottom;    
     
     
     
@@ -117,11 +109,7 @@
 
 -(IBAction)unwindToLogIn:(UIStoryboardSegue *)segue
 {
-    if([segue.sourceViewController isMemberOfClass:[TermsOfServiceViewController class]])
-    {        
-        [FBSDKAccessToken setCurrentAccessToken:nil];
-    }
-    else if([segue.sourceViewController isMemberOfClass:[MeViewController class]])
+    if([segue.sourceViewController isMemberOfClass:[MeViewController class]])
     {
         NSString *message = [Setting getValue:@"055m" example:@"◻︎ จำฉันไว้ในระบบ"];
         [btnRememberMe setTitle:message forState:UIControlStateNormal];
@@ -133,10 +121,6 @@
     }
     
     
-    if (![FBSDKAccessToken currentAccessToken])
-    {
-        _faceBookLogIn = NO;
-    }
     if(![[NSUserDefaults standardUserDefaults] integerForKey:@"logInSession"])
     {
         _appLogIn = NO;
@@ -186,22 +170,6 @@
     [tapGesture setCancelsTouchesInView:NO];
 }
 
-- (void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error
-{
-    if(!error)
-    {
-        if ([FBSDKAccessToken currentAccessToken])
-        {
-            _faceBookLogIn = YES;
-        }
-    }
-}
-
--(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
-{
-    
-}
-
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -219,34 +187,6 @@
 -(void)insertUserLoginAndUserAccount
 {
     NSLog(@"insert user log in");
-//    if(_faceBookLogIn)
-    {
-        [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:@{@"fields": @"location,email,name,first_name,gender,age_range,birthday,friends,likes"}]
-         startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
-             if (!error)
-             {
-                 
-                 NSLog(@"fetched user:%@", result);
-                 NSLog(@"birthday:%@",result[@"birthday"]);
-                 NSDate *birthday = [Utility stringToDate:result[@"birthday"] fromFormat:@"dd/MM/yyyy"];
-                 
-                 //1.insert userlogin
-                 //2.insert useraccount if not exist
-                 NSString *modifiedUser = [NSString stringWithFormat:@"%@",result[@"id"]];
-                 [Utility setModifiedUser:modifiedUser];
-                 LogIn *logIn = [[LogIn alloc]initWithUsername:result[@"id"] status:1 deviceToken:[Utility deviceToken]];
-                 UserAccount *userAccount = [[UserAccount alloc]initWithUsername:result[@"id"] password:txtPassword.text deviceToken:[Utility deviceToken] fullName:result[@"name"] nickName:@"" birthDate:birthday email:result[@"email"] phoneNo:@"" lineID:@"" roleID:0];
-                 [self.homeModel insertItems:dbLogInUserAccount withData:@[logIn,userAccount] actionScreen:@"insert login and useraccount if not exist in logIn screen"];
-                 [self loadingOverlayView];
-             }
-             else
-             {
-                 NSString *message = [Setting getValue:@"057m" example:@"There is problem with facebook login, please try again"];
-                 [self showAlert:@"" message:message];
-                 NSLog(@"test error: %@",error.description);
-             }
-         }];
-    }
 }
 
 //app logIn
@@ -310,14 +250,7 @@
     {
         TermsOfServiceViewController *vc = segue.destinationViewController;
         vc.credentialsDb = credentialsDb;
-        if(_faceBookLogIn)
-        {
-            vc.username = [[FBSDKAccessToken currentAccessToken] userID];
-        }
-        else
-        {
-            vc.username = txtEmail.text;
-        }
+        vc.username = txtEmail.text;
     }
     else if([segue.identifier isEqualToString:@"segCustomerKitchen"])
     {

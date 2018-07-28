@@ -20,7 +20,6 @@
 #import "Receipt.h"
 #import "SharedCurrentUserAccount.h"
 #import <objc/runtime.h>
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <UserNotifications/UserNotifications.h>
 
 
@@ -199,9 +198,6 @@ void myExceptionHandler(NSException *exception)
     #endif
 
 
-    //facebook
-    [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
-    
     
     return YES;
 }
@@ -209,8 +205,7 @@ void myExceptionHandler(NSException *exception)
 #ifdef __IPHONE_9_0
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options {
 
-    [[FBSDKApplicationDelegate sharedInstance] application:application openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
-
+   
     return YES;
 }
 #else
@@ -222,7 +217,8 @@ void myExceptionHandler(NSException *exception)
 #endif
 
 
--(void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler
+{
     
     //Called when a notification is delivered to a foreground app.
     NSDictionary *userInfo = notification.request.content.userInfo;
@@ -251,7 +247,8 @@ void myExceptionHandler(NSException *exception)
 }
 
 
--(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler{
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler
+{
     
     //Called to let your app know which action was selected by the user for a given notification.
     

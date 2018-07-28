@@ -171,7 +171,7 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMPushSyncUpdateTimeSynced.php";
             break;
         case urlMasterGet:
-            url = @"/JMM/JUMMUMSHOP4/JMSMasterGet.php";
+            url = @"/JMM/DemoJummumOM/JMSMasterGet.php";
             break;
         case urlLogInInsert:
             url = @"/JMM/JUMMUM3/JMMLogInInsert.php";
@@ -180,7 +180,7 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMLogInUserAccountInsert.php";
             break;
         case urlWriteLog:
-            url = @"/JMM/JUMMUMSHOP4/JMSWriteLog.php";
+            url = @"/JMM/DemoJummumOM/JMSWriteLog.php";
             break;
         case urlMenuInsert:
             url = @"/JMM/JUMMUM3/JMMMenuInsert.php";
@@ -249,7 +249,7 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMCustomerTableGetList.php";
             break;
         case urlReceiptSummaryGetList:
-            url = @"/JMM/JUMMUMSHOP4/JMSReceiptSummaryGetList.php";
+            url = @"/JMM/DemoJummumOM/JMSReceiptSummaryGetList.php";
             break;
         case urlPromotionGetList:
             url = @"/JMM/JUMMUM3/JMMPromotionGetList.php";
@@ -258,7 +258,7 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/FacebookCommentInsertList.php";
             break;
         case urlUserAccountValidate:
-            url = @"/JMM/JUMMUMSHOP4/JMSUserAccountValidate.php";
+            url = @"/JMM/DemoJummumOM/JMSUserAccountValidate.php";
             break;
         case urlUserAccountGet:
             url = @"/JMM/JUMMUM3/JMMUserAccountGet.php";
@@ -267,10 +267,10 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMUserAccountInsert.php";
             break;
         case urlTermsOfService:
-            url = @"/JMM/JUMMUMSHOP4/HtmlTermsOfService.html";
+            url = @"/JMM/DemoJummumOM/HtmlTermsOfService.html";
             break;
         case urlUserAccountForgotPasswordInsert:
-            url = @"/JMM/JUMMUMSHOP4/JMSUserAccountForgotPasswordInsert.php";
+            url = @"/JMM/DemoJummumOM/JMSUserAccountForgotPasswordInsert.php";
             break;
         case urlRewardPointInsert:
             url = @"/JMM/JUMMUM3/JMMRewardPointInsert.php";
@@ -387,13 +387,13 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMUserRewardRedemptionUsedDeleteList.php";
             break;
         case urlReceiptMaxModifiedDateGetList:
-            url = @"/JMM/JUMMUMSHOP4/JMSReceiptMaxModifiedDateGetList.php";
+            url = @"/JMM/DemoJummumOM/JMSReceiptMaxModifiedDateGetList.php";
             break;
         case urlReceiptWithModifiedDateGet:
             url = @"/JMM/JUMMUM3/JMMReceiptWithModifiedDateGet.php";
             break;
         case urlReceiptGet:
-            url = @"/JMM/JUMMUMSHOP4/JMSReceiptGet.php";
+            url = @"/JMM/DemoJummumOM/JMSReceiptGet.php";
             break;
         case urlDisputeReasonInsert:
             url = @"/JMM/JUMMUM3/JMMDisputeReasonInsert.php";
@@ -414,13 +414,13 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMDisputeReasonDeleteList.php";
             break;
         case urlDisputeReasonGetList:
-            url = @"/JMM/JUMMUMSHOP4/JMSDisputeReasonGetList.php";
+            url = @"/JMM/DemoJummumOM/JMSDisputeReasonGetList.php";
             break;
         case urlDisputeInsert:
-            url = @"/JMM/JUMMUMSHOP4/JMSDisputeInsert.php";
+            url = @"/JMM/DemoJummumOM/JMSDisputeInsert.php";
             break;
         case urlDisputeCancelInsert:
-            url = @"/JMM/JUMMUMSHOP4/JMSDisputeCancelInsert.php";
+            url = @"/JMM/DemoJummumOM/JMSDisputeCancelInsert.php";
             break;
         case urlDisputeUpdate:
             url = @"/JMM/JUMMUM3/JMMDisputeUpdate.php";
@@ -444,34 +444,34 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMReceiptUpdate.php";
             break;
         case urlCredentialsDbGet:
-            url = @"/JMM/JUMMUMSHOP4/JMSCredentialsDbGet.php";
+            url = @"/JMM/DemoJummumOM/JMSCredentialsDbGet.php";
             break;
         case urlCredentialsValidate:
-            url = @"/JMM/JUMMUMSHOP4/JMSCredentialsValidate.php";
+            url = @"/JMM/DemoJummumOM/JMSCredentialsValidate.php";
             break;
         case urlDeviceInsert:
-            url = @"/JMM/JUMMUMSHOP4/JMSDeviceInsert.php";
+            url = @"/JMM/DemoJummumOM/JMSDeviceInsert.php";
             break;
         case urlJummumReceiptGetList:
-            url = @"/JMM/JUMMUMSHOP4/JMSJummumReceiptGetList.php";
+            url = @"/JMM/DemoJummumOM/JMSJummumReceiptGetList.php";
             break;
         case urlJummumReceiptUpdate:
-            url = @"/JMM/JUMMUMSHOP4/JMSJummumReceiptUpdate.php";
+            url = @"/JMM/DemoJummumOM/JMSJummumReceiptUpdate.php";
             break;
         case urlJummumReceiptSendToKitchen:
-            url = @"/JMM/JUMMUMSHOP4/JMSJummumReceiptSendToKitchen.php";
+            url = @"/JMM/DemoJummumOM/JMSJummumReceiptSendToKitchen.php";
             break;
         case urlBranchGet:
-            url = @"/JMM/JUMMUMSHOP4/JMSBranchGet.php";
+            url = @"/JMM/DemoJummumOM/JMSBranchGet.php";
             break;
         case urlOpeningTimeTextGet:
-            url = @"/JMM/JUMMUMSHOP4/JMSOpeningTimeTextGet.php";
+            url = @"/JMM/DemoJummumOM/JMSOpeningTimeTextGet.php";
             break;
         case urlSettingUpdate:
-            url = @"/JMM/JUMMUMSHOP4/JMSSettingUpdate.php";
+            url = @"/JMM/DemoJummumOM/JMSSettingUpdate.php";
             break;
         case urlSettingGet:
-            url = @"/JMM/JUMMUMSHOP4/JMSSettingGet.php";
+            url = @"/JMM/DemoJummumOM/JMSSettingGet.php";
             break;
         default:
             break;
