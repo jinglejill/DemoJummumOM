@@ -14,7 +14,6 @@
 		EF9C4DC3210BE15200C7563A /* DemoJummumOMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4DC2210BE15200C7563A /* DemoJummumOMTests.m */; };
 		EF9C4DCE210BE15200C7563A /* DemoJummumOMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4DCD210BE15200C7563A /* DemoJummumOMUITests.m */; };
 		EF9C50B9210BE17E00C7563A /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4E4D210BE17D00C7563A /* Utility.m */; };
-		EF9C50BA210BE17E00C7563A /* Maintest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4E4E210BE17D00C7563A /* Maintest.storyboard */; };
 		EF9C50BB210BE17E00C7563A /* iOSDeviceModelMapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4E4F210BE17D00C7563A /* iOSDeviceModelMapping.plist */; };
 		EF9C50BC210BE17E00C7563A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4E50210BE17D00C7563A /* Main.storyboard */; };
 		EF9C50BD210BE17E00C7563A /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4E51210BE17D00C7563A /* HomeModel.m */; };
@@ -123,7 +122,6 @@
 		EF9C513F210BE17E00C7563A /* HotDealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EE3210BE17D00C7563A /* HotDealViewController.m */; };
 		EF9C5140210BE17E00C7563A /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EE5210BE17D00C7563A /* LaunchScreenViewController.m */; };
 		EF9C5141210BE17E00C7563A /* MyRewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EE7210BE17D00C7563A /* MyRewardViewController.m */; };
-		EF9C5142210BE17E00C7563A /* ConfirmDispute2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EE9210BE17D00C7563A /* ConfirmDispute2ViewController.m */; };
 		EF9C5143210BE17E00C7563A /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EEC210BE17D00C7563A /* OrderDetailViewController.m */; };
 		EF9C5144210BE17E00C7563A /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EF1210BE17D00C7563A /* LogInViewController.m */; };
 		EF9C5146210BE17E00C7563A /* RewardRedemptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EF5210BE17D00C7563A /* RewardRedemptionViewController.m */; };
@@ -138,7 +136,6 @@
 		EF9C514F210BE17E00C7563A /* TosAndPrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F07210BE17D00C7563A /* TosAndPrivacyPolicyViewController.m */; };
 		EF9C5150210BE17E00C7563A /* RegisterNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F09210BE17D00C7563A /* RegisterNowViewController.m */; };
 		EF9C5151210BE17E00C7563A /* CustomerKitchenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F0A210BE17D00C7563A /* CustomerKitchenViewController.m */; };
-		EF9C5153210BE17E00C7563A /* BranchSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F0D210BE17D00C7563A /* BranchSelectViewController.m */; };
 		EF9C5154210BE17E00C7563A /* RewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F0E210BE17D00C7563A /* RewardViewController.m */; };
 		EF9C5156210BE17E00C7563A /* ConfirmDisputeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F13210BE17D00C7563A /* ConfirmDisputeViewController.m */; };
 		EF9C5157210BE17E00C7563A /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4F15210BE17D00C7563A /* beep.mp3 */; };
@@ -380,7 +377,6 @@
 		EF9C4E4B210BE17D00C7563A /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		EF9C4E4C210BE17D00C7563A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF9C4E4D210BE17D00C7563A /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
-		EF9C4E4E210BE17D00C7563A /* Maintest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Maintest.storyboard; sourceTree = "<group>"; };
 		EF9C4E4F210BE17D00C7563A /* iOSDeviceModelMapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iOSDeviceModelMapping.plist; sourceTree = "<group>"; };
 		EF9C4E50210BE17D00C7563A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EF9C4E51210BE17D00C7563A /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
@@ -497,11 +493,9 @@
 		EF9C4EE6210BE17D00C7563A /* RewardDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardDetailViewController.h; sourceTree = "<group>"; };
 		EF9C4EE7210BE17D00C7563A /* MyRewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRewardViewController.m; sourceTree = "<group>"; };
 		EF9C4EE8210BE17D00C7563A /* SaveToCameraRollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveToCameraRollViewController.h; sourceTree = "<group>"; };
-		EF9C4EE9210BE17D00C7563A /* ConfirmDispute2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmDispute2ViewController.m; sourceTree = "<group>"; };
 		EF9C4EEA210BE17D00C7563A /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		EF9C4EEB210BE17D00C7563A /* RewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardViewController.h; sourceTree = "<group>"; };
 		EF9C4EEC210BE17D00C7563A /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
-		EF9C4EED210BE17D00C7563A /* BranchSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchSelectViewController.h; sourceTree = "<group>"; };
 		EF9C4EEF210BE17D00C7563A /* CustomerKitchenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerKitchenViewController.h; sourceTree = "<group>"; };
 		EF9C4EF0210BE17D00C7563A /* RegisterNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterNowViewController.h; sourceTree = "<group>"; };
 		EF9C4EF1210BE17D00C7563A /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
@@ -519,7 +513,6 @@
 		EF9C4EFF210BE17D00C7563A /* HotDealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotDealViewController.h; sourceTree = "<group>"; };
 		EF9C4F00210BE17D00C7563A /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		EF9C4F01210BE17D00C7563A /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
-		EF9C4F02210BE17D00C7563A /* ConfirmDispute2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmDispute2ViewController.h; sourceTree = "<group>"; };
 		EF9C4F03210BE17D00C7563A /* SaveToCameraRollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveToCameraRollViewController.m; sourceTree = "<group>"; };
 		EF9C4F04210BE17D00C7563A /* RewardRedemptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardRedemptionViewController.h; sourceTree = "<group>"; };
 		EF9C4F05210BE17D00C7563A /* OpeningTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpeningTimeViewController.m; sourceTree = "<group>"; };
@@ -528,7 +521,6 @@
 		EF9C4F09210BE17D00C7563A /* RegisterNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterNowViewController.m; sourceTree = "<group>"; };
 		EF9C4F0A210BE17D00C7563A /* CustomerKitchenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerKitchenViewController.m; sourceTree = "<group>"; };
 		EF9C4F0C210BE17D00C7563A /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
-		EF9C4F0D210BE17D00C7563A /* BranchSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchSelectViewController.m; sourceTree = "<group>"; };
 		EF9C4F0E210BE17D00C7563A /* RewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardViewController.m; sourceTree = "<group>"; };
 		EF9C4F0F210BE17D00C7563A /* DisputeFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisputeFormViewController.h; sourceTree = "<group>"; };
 		EF9C4F10210BE17D00C7563A /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
@@ -955,7 +947,6 @@
 				EF9C4E51210BE17D00C7563A /* HomeModel.m */,
 				EF9C4E4F210BE17D00C7563A /* iOSDeviceModelMapping.plist */,
 				EF9C4E50210BE17D00C7563A /* Main.storyboard */,
-				EF9C4E4E210BE17D00C7563A /* Maintest.storyboard */,
 				EF9C4E53210BE17D00C7563A /* Property List.plist */,
 				EF9C4E54210BE17D00C7563A /* Utility.h */,
 				EF9C4E4D210BE17D00C7563A /* Utility.m */,
@@ -1099,10 +1090,6 @@
 		EF9C4EE1210BE17D00C7563A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EF9C4EED210BE17D00C7563A /* BranchSelectViewController.h */,
-				EF9C4F0D210BE17D00C7563A /* BranchSelectViewController.m */,
-				EF9C4F02210BE17D00C7563A /* ConfirmDispute2ViewController.h */,
-				EF9C4EE9210BE17D00C7563A /* ConfirmDispute2ViewController.m */,
 				EF9C4EF6210BE17D00C7563A /* ConfirmDisputeViewController.h */,
 				EF9C4F13210BE17D00C7563A /* ConfirmDisputeViewController.m */,
 				EF9C4EEF210BE17D00C7563A /* CustomerKitchenViewController.h */,
@@ -1319,113 +1306,113 @@
 		EF9C4FB1210BE17D00C7563A /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				EF9C4FB2210BE17D00C7563A /* CustomTableViewHeaderFooterButton.m */,
-				EF9C4FB3210BE17D00C7563A /* CustomTableViewCellCreditCard.m */,
-				EF9C4FB4210BE17D00C7563A /* CustomTableViewCellReceiptSummary.h */,
-				EF9C4FB5210BE17D00C7563A /* CustomTableViewCellRedemption.h */,
-				EF9C4FB6210BE17D00C7563A /* CustomTableViewCellMenu.xib */,
-				EF9C4FB7210BE17D00C7563A /* CustomTableViewCellLabelRemark.h */,
-				EF9C4FB8210BE17D00C7563A /* CustomTableViewHeaderFooterButton.xib */,
-				EF9C4FB9210BE17D00C7563A /* CustomViewVoucher.h */,
-				EF9C4FBA210BE17D00C7563A /* CustomTableViewCellOrderSummary.h */,
-				EF9C4FBB210BE17D00C7563A /* CustomTableViewCellNote.h */,
-				EF9C4FBC210BE17D00C7563A /* CustomTableViewCellLabel.h */,
-				EF9C4FBD210BE17D00C7563A /* CustomCollectionViewCellNote.xib */,
-				EF9C4FBE210BE17D00C7563A /* CustomTableViewCellReward.xib */,
-				EF9C4FBF210BE17D00C7563A /* CustomTableViewCellRewardDetail.h */,
-				EF9C4FC0210BE17D00C7563A /* CustomTableViewHeaderButton.m */,
-				EF9C4FC1210BE17E00C7563A /* CustomViewController.m */,
-				EF9C4FC2210BE17E00C7563A /* CustomTableViewCellProfile.m */,
-				EF9C4FC3210BE17E00C7563A /* CustomTableViewCellDisputeDetail.xib */,
-				EF9C4FC4210BE17E00C7563A /* CustomTableViewCellPromoBanner.xib */,
-				EF9C4FC5210BE17E00C7563A /* CustomTableViewCellCreditCard.xib */,
-				EF9C4FC6210BE17E00C7563A /* CustomTableViewCellTotal.m */,
-				EF9C4FC7210BE17E00C7563A /* CustomTableViewCellOrder.m */,
-				EF9C4FC8210BE17E00C7563A /* CustomTableViewCellLabelLabel.h */,
-				EF9C4FC9210BE17E00C7563A /* CustomTableViewCellLabelText.h */,
-				EF9C4FCA210BE17E00C7563A /* CustomTableViewCellLabelText.xib */,
-				EF9C4FCB210BE17E00C7563A /* CustomTableViewCellButton.xib */,
-				EF9C4FCC210BE17E00C7563A /* CustomTableViewCellButton.h */,
-				EF9C4FCD210BE17E00C7563A /* CustomTableViewCellImageLabelRemove.xib */,
-				EF9C4FCE210BE17E00C7563A /* CustomTableViewCellMenu.h */,
-				EF9C4FCF210BE17E00C7563A /* CustomTableViewCellQuantity.m */,
-				EF9C4FD0210BE17E00C7563A /* CustomCollectionViewCellNote.m */,
-				EF9C4FD1210BE17E00C7563A /* CustomTableViewCellRewardDetail.xib */,
-				EF9C4FD2210BE17E00C7563A /* CustomTableViewCellPromoBanner.h */,
-				EF9C4FD3210BE17E00C7563A /* CustomTableViewHeaderFooterOkCancel.m */,
 				EF9C4FD4210BE17E00C7563A /* CustomCollectionReusableView.h */,
-				EF9C4FD5210BE17E00C7563A /* CustomTableViewCellVoucherCode.m */,
-				EF9C4FD6210BE17E00C7563A /* CustomTableViewCellLabelRemark.xib */,
-				EF9C4FD7210BE17E00C7563A /* CustomTableViewCellPromoThumbNail.m */,
-				EF9C4FD8210BE17E00C7563A /* CustomTableViewCellText.m */,
-				EF9C4FD9210BE17E00C7563A /* CustomTableViewHeaderLabel.m */,
-				EF9C4FDA210BE17E00C7563A /* CustomTableViewCellImageText.h */,
-				EF9C4FDB210BE17E00C7563A /* CustomTableViewCellSearchBar.xib */,
-				EF9C4FDC210BE17E00C7563A /* CustomTableViewCellLabelSwitch.h */,
-				EF9C4FDD210BE17E00C7563A /* CustomTableViewCellImageTextButtonHalf.m */,
-				EF9C4FDE210BE17E00C7563A /* CustomTableViewCellReward.h */,
-				EF9C4FDF210BE17E00C7563A /* CustomTableViewCellDisputeDetail.m */,
+				EF9C5008210BE17E00C7563A /* CustomCollectionReusableView.m */,
 				EF9C4FE0210BE17E00C7563A /* CustomCollectionReusableView.xib */,
-				EF9C4FE1210BE17E00C7563A /* CustomTableViewCellText.xib */,
-				EF9C4FE2210BE17E00C7563A /* CustomTableViewCellPromoThumbNail.xib */,
-				EF9C4FE3210BE17E00C7563A /* CustomTableViewCellLabelTextView.xib */,
-				EF9C4FE4210BE17E00C7563A /* CustomTableViewCellTotal.xib */,
+				EF9C500F210BE17E00C7563A /* CustomCollectionViewCellNote.h */,
+				EF9C4FD0210BE17E00C7563A /* CustomCollectionViewCellNote.m */,
+				EF9C4FBD210BE17D00C7563A /* CustomCollectionViewCellNote.xib */,
+				EF9C4FCC210BE17E00C7563A /* CustomTableViewCellButton.h */,
+				EF9C5012210BE17E00C7563A /* CustomTableViewCellButton.m */,
+				EF9C4FCB210BE17E00C7563A /* CustomTableViewCellButton.xib */,
+				EF9C4FF4210BE17E00C7563A /* CustomTableViewCellCreditCard.h */,
+				EF9C4FB3210BE17D00C7563A /* CustomTableViewCellCreditCard.m */,
+				EF9C4FC5210BE17E00C7563A /* CustomTableViewCellCreditCard.xib */,
+				EF9C5018210BE17E00C7563A /* CustomTableViewCellDisputeDetail.h */,
+				EF9C4FDF210BE17E00C7563A /* CustomTableViewCellDisputeDetail.m */,
+				EF9C4FC3210BE17E00C7563A /* CustomTableViewCellDisputeDetail.xib */,
 				EF9C4FE5210BE17E00C7563A /* CustomTableViewCellImageLabelRemove.h */,
+				EF9C5016210BE17E00C7563A /* CustomTableViewCellImageLabelRemove.m */,
+				EF9C4FCD210BE17E00C7563A /* CustomTableViewCellImageLabelRemove.xib */,
+				EF9C4FDA210BE17E00C7563A /* CustomTableViewCellImageText.h */,
+				EF9C5003210BE17E00C7563A /* CustomTableViewCellImageText.m */,
+				EF9C500C210BE17E00C7563A /* CustomTableViewCellImageText.xib */,
+				EF9C5019210BE17E00C7563A /* CustomTableViewCellImageTextButtonHalf.h */,
+				EF9C4FDD210BE17E00C7563A /* CustomTableViewCellImageTextButtonHalf.m */,
+				EF9C5015210BE17E00C7563A /* CustomTableViewCellImageTextButtonHalf.xib */,
+				EF9C4FBC210BE17D00C7563A /* CustomTableViewCellLabel.h */,
+				EF9C5000210BE17E00C7563A /* CustomTableViewCellLabel.m */,
+				EF9C4FFA210BE17E00C7563A /* CustomTableViewCellLabel.xib */,
+				EF9C4FC8210BE17E00C7563A /* CustomTableViewCellLabelLabel.h */,
+				EF9C4FF8210BE17E00C7563A /* CustomTableViewCellLabelLabel.m */,
+				EF9C5002210BE17E00C7563A /* CustomTableViewCellLabelLabel.xib */,
+				EF9C4FB7210BE17D00C7563A /* CustomTableViewCellLabelRemark.h */,
+				EF9C4FEE210BE17E00C7563A /* CustomTableViewCellLabelRemark.m */,
+				EF9C4FD6210BE17E00C7563A /* CustomTableViewCellLabelRemark.xib */,
+				EF9C4FDC210BE17E00C7563A /* CustomTableViewCellLabelSwitch.h */,
+				EF9C501A210BE17E00C7563A /* CustomTableViewCellLabelSwitch.m */,
+				EF9C5004210BE17E00C7563A /* CustomTableViewCellLabelSwitch.xib */,
+				EF9C4FC9210BE17E00C7563A /* CustomTableViewCellLabelText.h */,
+				EF9C4FF6210BE17E00C7563A /* CustomTableViewCellLabelText.m */,
+				EF9C4FCA210BE17E00C7563A /* CustomTableViewCellLabelText.xib */,
+				EF9C5014210BE17E00C7563A /* CustomTableViewCellLabelTextView.h */,
 				EF9C4FE6210BE17E00C7563A /* CustomTableViewCellLabelTextView.m */,
-				EF9C4FE7210BE17E00C7563A /* CustomTableViewCellSearchBar.m */,
-				EF9C4FE8210BE17E00C7563A /* CustomTableViewCellVoucherCode.xib */,
+				EF9C4FE3210BE17E00C7563A /* CustomTableViewCellLabelTextView.xib */,
+				EF9C4FCE210BE17E00C7563A /* CustomTableViewCellMenu.h */,
+				EF9C5010210BE17E00C7563A /* CustomTableViewCellMenu.m */,
+				EF9C4FB6210BE17D00C7563A /* CustomTableViewCellMenu.xib */,
+				EF9C4FBB210BE17D00C7563A /* CustomTableViewCellNote.h */,
 				EF9C4FE9210BE17E00C7563A /* CustomTableViewCellNote.m */,
-				EF9C4FEA210BE17E00C7563A /* CustomTableViewCellQuantity.xib */,
+				EF9C5001210BE17E00C7563A /* CustomTableViewCellNote.xib */,
+				EF9C4FF7210BE17E00C7563A /* CustomTableViewCellOrder.h */,
+				EF9C4FC7210BE17E00C7563A /* CustomTableViewCellOrder.m */,
+				EF9C500E210BE17E00C7563A /* CustomTableViewCellOrder.xib */,
+				EF9C4FBA210BE17D00C7563A /* CustomTableViewCellOrderSummary.h */,
 				EF9C4FEB210BE17E00C7563A /* CustomTableViewCellOrderSummary.m */,
 				EF9C4FEC210BE17E00C7563A /* CustomTableViewCellOrderSummary.xib */,
-				EF9C4FED210BE17E00C7563A /* CustomViewVoucher.m */,
-				EF9C4FEE210BE17E00C7563A /* CustomTableViewCellLabelRemark.m */,
-				EF9C4FEF210BE17E00C7563A /* CustomTableViewCellRedemption.m */,
-				EF9C4FF0210BE17E00C7563A /* CustomViewVoucher.xib */,
+				EF9C4FFC210BE17E00C7563A /* CustomTableViewCellProfile.h */,
+				EF9C4FC2210BE17E00C7563A /* CustomTableViewCellProfile.m */,
+				EF9C4FFB210BE17E00C7563A /* CustomTableViewCellProfile.xib */,
+				EF9C4FD2210BE17E00C7563A /* CustomTableViewCellPromoBanner.h */,
+				EF9C500D210BE17E00C7563A /* CustomTableViewCellPromoBanner.m */,
+				EF9C4FC4210BE17E00C7563A /* CustomTableViewCellPromoBanner.xib */,
+				EF9C5007210BE17E00C7563A /* CustomTableViewCellPromoThumbNail.h */,
+				EF9C4FD7210BE17E00C7563A /* CustomTableViewCellPromoThumbNail.m */,
+				EF9C4FE2210BE17E00C7563A /* CustomTableViewCellPromoThumbNail.xib */,
+				EF9C5011210BE17E00C7563A /* CustomTableViewCellQuantity.h */,
+				EF9C4FCF210BE17E00C7563A /* CustomTableViewCellQuantity.m */,
+				EF9C4FEA210BE17E00C7563A /* CustomTableViewCellQuantity.xib */,
+				EF9C4FB4210BE17D00C7563A /* CustomTableViewCellReceiptSummary.h */,
 				EF9C4FF1210BE17E00C7563A /* CustomTableViewCellReceiptSummary.m */,
 				EF9C4FF2210BE17E00C7563A /* CustomTableViewCellReceiptSummary.xib */,
-				EF9C4FF3210BE17E00C7563A /* CustomTableViewHeaderFooterOkCancel.xib */,
-				EF9C4FF4210BE17E00C7563A /* CustomTableViewCellCreditCard.h */,
-				EF9C4FF5210BE17E00C7563A /* CustomTableViewHeaderFooterButton.h */,
-				EF9C4FF6210BE17E00C7563A /* CustomTableViewCellLabelText.m */,
-				EF9C4FF7210BE17E00C7563A /* CustomTableViewCellOrder.h */,
-				EF9C4FF8210BE17E00C7563A /* CustomTableViewCellLabelLabel.m */,
-				EF9C4FF9210BE17E00C7563A /* CustomTableViewCellTotal.h */,
-				EF9C4FFA210BE17E00C7563A /* CustomTableViewCellLabel.xib */,
-				EF9C4FFB210BE17E00C7563A /* CustomTableViewCellProfile.xib */,
-				EF9C4FFC210BE17E00C7563A /* CustomTableViewCellProfile.h */,
-				EF9C4FFD210BE17E00C7563A /* CustomViewController.h */,
-				EF9C4FFE210BE17E00C7563A /* CustomTableViewHeaderButton.h */,
-				EF9C4FFF210BE17E00C7563A /* CustomTableViewCellRewardDetail.m */,
-				EF9C5000210BE17E00C7563A /* CustomTableViewCellLabel.m */,
-				EF9C5001210BE17E00C7563A /* CustomTableViewCellNote.xib */,
-				EF9C5002210BE17E00C7563A /* CustomTableViewCellLabelLabel.xib */,
-				EF9C5003210BE17E00C7563A /* CustomTableViewCellImageText.m */,
-				EF9C5004210BE17E00C7563A /* CustomTableViewCellLabelSwitch.xib */,
-				EF9C5005210BE17E00C7563A /* CustomTableViewHeaderLabel.h */,
-				EF9C5006210BE17E00C7563A /* CustomTableViewCellText.h */,
-				EF9C5007210BE17E00C7563A /* CustomTableViewCellPromoThumbNail.h */,
-				EF9C5008210BE17E00C7563A /* CustomCollectionReusableView.m */,
-				EF9C5009210BE17E00C7563A /* CustomTableViewCellVoucherCode.h */,
-				EF9C500A210BE17E00C7563A /* CustomTableViewHeaderFooterOkCancel.h */,
-				EF9C500B210BE17E00C7563A /* CustomTableViewHeaderButton.xib */,
-				EF9C500C210BE17E00C7563A /* CustomTableViewCellImageText.xib */,
-				EF9C500D210BE17E00C7563A /* CustomTableViewCellPromoBanner.m */,
-				EF9C500E210BE17E00C7563A /* CustomTableViewCellOrder.xib */,
-				EF9C500F210BE17E00C7563A /* CustomCollectionViewCellNote.h */,
-				EF9C5010210BE17E00C7563A /* CustomTableViewCellMenu.m */,
-				EF9C5011210BE17E00C7563A /* CustomTableViewCellQuantity.h */,
-				EF9C5012210BE17E00C7563A /* CustomTableViewCellButton.m */,
-				EF9C5013210BE17E00C7563A /* CustomTableViewCellSearchBar.h */,
-				EF9C5014210BE17E00C7563A /* CustomTableViewCellLabelTextView.h */,
-				EF9C5015210BE17E00C7563A /* CustomTableViewCellImageTextButtonHalf.xib */,
-				EF9C5016210BE17E00C7563A /* CustomTableViewCellImageLabelRemove.m */,
-				EF9C5017210BE17E00C7563A /* CustomTableViewCellReward.m */,
-				EF9C5018210BE17E00C7563A /* CustomTableViewCellDisputeDetail.h */,
-				EF9C5019210BE17E00C7563A /* CustomTableViewCellImageTextButtonHalf.h */,
-				EF9C501A210BE17E00C7563A /* CustomTableViewCellLabelSwitch.m */,
-				EF9C501B210BE17E00C7563A /* CustomTableViewHeaderLabel.xib */,
+				EF9C4FB5210BE17D00C7563A /* CustomTableViewCellRedemption.h */,
+				EF9C4FEF210BE17E00C7563A /* CustomTableViewCellRedemption.m */,
 				EF9C501C210BE17E00C7563A /* CustomTableViewCellRedemption.xib */,
+				EF9C4FDE210BE17E00C7563A /* CustomTableViewCellReward.h */,
+				EF9C5017210BE17E00C7563A /* CustomTableViewCellReward.m */,
+				EF9C4FBE210BE17D00C7563A /* CustomTableViewCellReward.xib */,
+				EF9C4FBF210BE17D00C7563A /* CustomTableViewCellRewardDetail.h */,
+				EF9C4FFF210BE17E00C7563A /* CustomTableViewCellRewardDetail.m */,
+				EF9C4FD1210BE17E00C7563A /* CustomTableViewCellRewardDetail.xib */,
+				EF9C5013210BE17E00C7563A /* CustomTableViewCellSearchBar.h */,
+				EF9C4FE7210BE17E00C7563A /* CustomTableViewCellSearchBar.m */,
+				EF9C4FDB210BE17E00C7563A /* CustomTableViewCellSearchBar.xib */,
+				EF9C5006210BE17E00C7563A /* CustomTableViewCellText.h */,
+				EF9C4FD8210BE17E00C7563A /* CustomTableViewCellText.m */,
+				EF9C4FE1210BE17E00C7563A /* CustomTableViewCellText.xib */,
+				EF9C4FF9210BE17E00C7563A /* CustomTableViewCellTotal.h */,
+				EF9C4FC6210BE17E00C7563A /* CustomTableViewCellTotal.m */,
+				EF9C4FE4210BE17E00C7563A /* CustomTableViewCellTotal.xib */,
+				EF9C5009210BE17E00C7563A /* CustomTableViewCellVoucherCode.h */,
+				EF9C4FD5210BE17E00C7563A /* CustomTableViewCellVoucherCode.m */,
+				EF9C4FE8210BE17E00C7563A /* CustomTableViewCellVoucherCode.xib */,
+				EF9C4FFE210BE17E00C7563A /* CustomTableViewHeaderButton.h */,
+				EF9C4FC0210BE17D00C7563A /* CustomTableViewHeaderButton.m */,
+				EF9C500B210BE17E00C7563A /* CustomTableViewHeaderButton.xib */,
+				EF9C4FF5210BE17E00C7563A /* CustomTableViewHeaderFooterButton.h */,
+				EF9C4FB2210BE17D00C7563A /* CustomTableViewHeaderFooterButton.m */,
+				EF9C4FB8210BE17D00C7563A /* CustomTableViewHeaderFooterButton.xib */,
+				EF9C500A210BE17E00C7563A /* CustomTableViewHeaderFooterOkCancel.h */,
+				EF9C4FD3210BE17E00C7563A /* CustomTableViewHeaderFooterOkCancel.m */,
+				EF9C4FF3210BE17E00C7563A /* CustomTableViewHeaderFooterOkCancel.xib */,
+				EF9C5005210BE17E00C7563A /* CustomTableViewHeaderLabel.h */,
+				EF9C4FD9210BE17E00C7563A /* CustomTableViewHeaderLabel.m */,
+				EF9C501B210BE17E00C7563A /* CustomTableViewHeaderLabel.xib */,
+				EF9C4FFD210BE17E00C7563A /* CustomViewController.h */,
+				EF9C4FC1210BE17E00C7563A /* CustomViewController.m */,
+				EF9C4FB9210BE17D00C7563A /* CustomViewVoucher.h */,
+				EF9C4FED210BE17E00C7563A /* CustomViewVoucher.m */,
+				EF9C4FF0210BE17E00C7563A /* CustomViewVoucher.xib */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -1792,7 +1779,6 @@
 				EF9C50F5210BE17E00C7563A /* remove light color.png in Resources */,
 				EF9C5128210BE17E00C7563A /* jummumLogoCrop2.png in Resources */,
 				EF9C51D3210BE17F00C7563A /* CustomTableViewCellReceiptSummary.xib in Resources */,
-				EF9C50BA210BE17E00C7563A /* Maintest.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1822,7 +1808,6 @@
 				EF9C5154210BE17E00C7563A /* RewardViewController.m in Sources */,
 				EF9C5184210BE17E00C7563A /* UserAccount.m in Sources */,
 				EF9C50B9210BE17E00C7563A /* Utility.m in Sources */,
-				EF9C5153210BE17E00C7563A /* BranchSelectViewController.m in Sources */,
 				EF9C51D5210BE17F00C7563A /* CustomTableViewCellLabelText.m in Sources */,
 				EF9C51B7210BE17F00C7563A /* CustomCollectionViewCellNote.m in Sources */,
 				EF9C51A0210BE17E00C7563A /* Promotion.m in Sources */,
@@ -1923,7 +1908,6 @@
 				EF9C5163210BE17E00C7563A /* SharedPromotionMenu.m in Sources */,
 				EF9C5195210BE17E00C7563A /* PushSync.m in Sources */,
 				EF9C5147210BE17E00C7563A /* PersonalDataViewController.m in Sources */,
-				EF9C5142210BE17E00C7563A /* ConfirmDispute2ViewController.m in Sources */,
 				EF9C5190210BE17E00C7563A /* CustomerTable.m in Sources */,
 				EF9C518E210BE17E00C7563A /* MenuTypeNote.m in Sources */,
 				EF9C5197210BE17E00C7563A /* SharedMenuType.m in Sources */,

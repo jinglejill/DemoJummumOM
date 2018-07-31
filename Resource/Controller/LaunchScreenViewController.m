@@ -7,7 +7,6 @@
 //
 
 #import "LaunchScreenViewController.h"
-#import "BranchSelectViewController.h"
 #import "LogInViewController.h"
 #import "CredentialsDb.h"
 #import "Credentials.h"
@@ -139,7 +138,7 @@
 {
     [super loadView];
 
-    [self presentAlertViewForPassword];
+//    [self presentAlertViewForPassword];
 }
 
 - (void)applicationExpired
@@ -241,16 +240,16 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if([[segue identifier] isEqualToString:@"segBranchSelect"])
-    {
-        BranchSelectViewController *vc = segue.destinationViewController;
-        vc.credentialsDbList = _credentialsDbList;
-    }
-    else if([[segue identifier] isEqualToString:@"segLogIn"])
-    {
-        LogInViewController *vc = segue.destinationViewController;
-        vc.credentialsDb = _credentialsDb;
-    }
+//    if([[segue identifier] isEqualToString:@"segBranchSelect"])
+//    {
+//        BranchSelectViewController *vc = segue.destinationViewController;
+//        vc.credentialsDbList = _credentialsDbList;
+//    }
+//    else if([[segue identifier] isEqualToString:@"segLogIn"])
+//    {
+//        LogInViewController *vc = segue.destinationViewController;
+//        vc.credentialsDb = _credentialsDb;
+//    }
 }
 
 -(void)viewDidLayoutSubviews
@@ -266,18 +265,18 @@
     // Do any additional setup after loading the view.
     
   
-    progressBar = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
-    progressBar.trackTintColor = [UIColor whiteColor];
-    progressBar.progressTintColor = cSystem2;
-    {
-        CGRect frame = progressBar.frame;
-        frame.origin.y = self.view.frame.size.height-20;
-        frame.size.width = self.view.frame.size.width - 40;
-        frame.origin.x = 20;
-        progressBar.frame = frame;
-    }
-
-    [self.view addSubview:progressBar];
+//    progressBar = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
+//    progressBar.trackTintColor = [UIColor whiteColor];
+//    progressBar.progressTintColor = cSystem2;
+//    {
+//        CGRect frame = progressBar.frame;
+//        frame.origin.y = self.view.frame.size.height-20;
+//        frame.size.width = self.view.frame.size.width - 40;
+//        frame.origin.x = 20;
+//        progressBar.frame = frame;
+//    }
+//
+//    [self.view addSubview:progressBar];
     
     
     
@@ -287,6 +286,16 @@
     NSString *message = [Setting getValue:@"054m" example:@"Pay for your order, earn and track rewards, ckeck your balance and more, all from your mobile device"];
     lblTitle.text = title;
     lblMessage.text = message;
+    
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    
+    [self performSegueWithIdentifier:@"segLogIn" sender:self];
 }
 
 -(NSString*) deviceName

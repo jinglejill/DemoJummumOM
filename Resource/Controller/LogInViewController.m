@@ -27,6 +27,7 @@
     BOOL _rememberMe;
     NSString *_username;
     NSMutableArray *allComments;
+    CredentialsDb *_credentialsDb;
 }
 @end
 
@@ -35,7 +36,7 @@
 @synthesize txtPassword;
 @synthesize btnRememberMe;
 @synthesize btnLogIn;
-@synthesize credentialsDb;
+//@synthesize credentialsDb;
 @synthesize imgVwValueHeight;
 @synthesize lblOrBottom;
 @synthesize imgVwLogoText;
@@ -202,12 +203,28 @@
         }
         else
         {
-            //insert useraccount,receipt,ordertaking,ordernote,menu to sharedObject
+            [Utility updateSharedObject:items];
+            
+            
             NSMutableArray *userAccountList = items[0];
             [UserAccount setCurrentUserAccount:userAccountList[0]];
-            [Utility addToSharedDataList:items];
             
-    
+            
+            NSMutableArray *credentialsDbList = items[[items count]-1];
+            _credentialsDb = credentialsDbList[0];
+            [CredentialsDb setCurrentCredentialsDb:_credentialsDb];
+            [Utility setBranchID:_credentialsDb.branchID];
+            [[NSUserDefaults standardUserDefaults] setValue:_credentialsDb.dbName forKey:BRANCH];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            //-----------**********
+            
+            
+            
+            
+            
+            
+            
+            //credential
             [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:@"logInSession"];
             [[NSUserDefaults standardUserDefaults] setInteger:_rememberMe forKey:@"rememberMe"];
             if(_rememberMe)
@@ -249,13 +266,13 @@
     if([[segue identifier] isEqualToString:@"segTermsOfService"])
     {
         TermsOfServiceViewController *vc = segue.destinationViewController;
-        vc.credentialsDb = credentialsDb;
+        vc.credentialsDb = _credentialsDb;
         vc.username = txtEmail.text;
     }
     else if([segue.identifier isEqualToString:@"segCustomerKitchen"])
     {
         MainTabBarController *vc = segue.destinationViewController;
-        vc.credentialsDb = credentialsDb;
+        vc.credentialsDb = _credentialsDb;
     }
 }
 

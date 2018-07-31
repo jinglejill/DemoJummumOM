@@ -1149,27 +1149,22 @@ static NSString * const reuseHeaderViewIdentifier = @"CustomCollectionReusableVi
     if(_lastSegConPrintStatus == 0)
     {
         _indexPathNew = tbvData.indexPathsForVisibleRows.firstObject;
-        NSLog(@"new : save indexPath => %ld,%ld",_indexPathNew.section,_indexPathNew.item);
     }
     else if(_lastSegConPrintStatus == 1)
     {
         _indexPathPrinted = tbvData.indexPathsForVisibleRows.firstObject;
-        NSLog(@"printed : save indexPath => %ld,%ld",_indexPathPrinted.section,_indexPathPrinted.item);
     }
     else if(_lastSegConPrintStatus == 2)
     {
         _indexPathDelivered = tbvData.indexPathsForVisibleRows.firstObject;
-        NSLog(@"delivery : save indexPath => %ld,%ld",_indexPathDelivered.section,_indexPathDelivered.item);
     }
     else if(_lastSegConPrintStatus == 3)
     {
         _indexPathAction = tbvData.indexPathsForVisibleRows.firstObject;
-        NSLog(@"action : save indexPath => %ld,%ld",_indexPathAction.section,_indexPathAction.item);
     }
     else if(_lastSegConPrintStatus == 4)
     {
         _indexPathOthers = tbvData.indexPathsForVisibleRows.firstObject;
-        NSLog(@"others : save indexPath => %ld,%ld",_indexPathOthers.section,_indexPathOthers.item);
     }
     [self reloadTableView];
     _lastSegConPrintStatus = segConPrintStatus.selectedSegmentIndex;
@@ -1259,7 +1254,6 @@ static NSString * const reuseHeaderViewIdentifier = @"CustomCollectionReusableVi
                 NSString *alertMessage = [NSString stringWithFormat:message,receipt.receiptNoID];
                 [self showAlert:@"" message:alertMessage];
             }
-            
         }
         
         

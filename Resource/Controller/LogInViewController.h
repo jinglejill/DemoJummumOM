@@ -23,7 +23,7 @@
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *imgVwValueHeight;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *lblLogInTop;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *lblOrBottom;
-@property (strong, nonatomic) CredentialsDb *credentialsDb;
+//@property (strong, nonatomic) CredentialsDb *credentialsDb;
 - (IBAction)rememberMe:(id)sender;
 - (IBAction)logIn:(id)sender;
 - (IBAction)registerNow:(id)sender;

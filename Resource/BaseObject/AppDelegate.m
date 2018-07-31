@@ -18,6 +18,7 @@
 #import "Utility.h"
 #import "PushSync.h"
 #import "Receipt.h"
+#import "Setting.h"
 #import "SharedCurrentUserAccount.h"
 #import <objc/runtime.h>
 #import <UserNotifications/UserNotifications.h>
@@ -27,24 +28,11 @@
 
 
 
-@interface AppDelegate (){
+@interface AppDelegate ()
+{
     HomeModel *_homeModel;
+    NSMutableDictionary *_dicTimer;
 }
-//printer part*******
-@property (nonatomic, copy) NSString *portName;
-@property (nonatomic, copy) NSString *portSettings;
-@property (nonatomic, copy) NSString *modelName;
-@property (nonatomic, copy) NSString *macAddress;
-
-@property (nonatomic) StarIoExtEmulation emulation;
-@property (nonatomic) BOOL               cashDrawerOpenActiveHigh;
-@property (nonatomic) NSInteger          allReceiptsSettings;
-@property (nonatomic) NSInteger          selectedIndex;
-@property (nonatomic) LanguageIndex      selectedLanguage;
-@property (nonatomic) PaperSizeIndex     selectedPaperSize;
-
-- (void)loadParam;
-//*******
 @end
 
 extern BOOL globalRotateFromSeg;
@@ -65,6 +53,7 @@ extern BOOL globalRotateFromSeg;
     
     return image;
 }
+
 - (void)photoUploaded
 {
     
@@ -84,15 +73,6 @@ void myExceptionHandler(NSException *exception)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    //printer part*******
-    [self loadParam];
-    
-    _selectedIndex     = 0;
-    _selectedLanguage  = LanguageIndexEnglish;
-    _selectedPaperSize = PaperSizeIndexThreeInch;
-    //*******
-    
     UIBarButtonItem *barButtonAppearance = [UIBarButtonItem appearance];
     [barButtonAppearance setBackgroundImage:[self imageWithColor:[UIColor clearColor]] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault]; // Change to your colour
     
@@ -101,6 +81,8 @@ void myExceptionHandler(NSException *exception)
 
     _homeModel = [[HomeModel alloc]init];
     _homeModel.delegate = self;
+    _dicTimer = [[NSMutableDictionary alloc]init];
+    
     
     
     globalRotateFromSeg = NO;
@@ -224,26 +206,68 @@ void myExceptionHandler(NSException *exception)
     NSDictionary *userInfo = notification.request.content.userInfo;
     NSLog(@"notification is delivered to a foreground app: %@", userInfo);
     
-    
-    
-    NSDictionary *myAps = [userInfo objectForKey:@"aps"];
-    NSString *categoryIdentifier = [myAps objectForKey:@"category"];
-    if([categoryIdentifier isEqualToString:@"cancelOrder"] || [categoryIdentifier isEqualToString:@"printKitchenBill"] || [categoryIdentifier isEqualToString:@"reminder"] || [categoryIdentifier isEqualToString:@"processing"] || [categoryIdentifier isEqualToString:@"delivered"] || [categoryIdentifier isEqualToString:@"clear"])
+    if([userInfo objectForKey:@"localNoti"])
     {
-        NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
-        _homeModel = [[HomeModel alloc]init];
-        _homeModel.delegate = self;
-        [_homeModel downloadItems:dbJummumReceipt withData:receiptID];
+        //Get current vc
+        CustomViewController *currentVc;
+        CustomViewController *parentViewController = (CustomViewController *)[[[UIApplication sharedApplication] delegate] window].rootViewController;
+        
+        while (parentViewController.presentedViewController != nil && ![parentViewController.presentedViewController isKindOfClass:[UIAlertController class]])
+        {
+            parentViewController = (CustomViewController *)parentViewController.presentedViewController;
+        }
+        if([parentViewController isKindOfClass:[UITabBarController class]])
+        {
+            currentVc = ((UITabBarController *)parentViewController).selectedViewController;
+        }
+        else
+        {
+            currentVc = parentViewController;
+        }
+        
+        
+        
+        if([currentVc isKindOfClass:[CustomerKitchenViewController class]])
+        {
+            NSDictionary *myAps = [userInfo objectForKey:@"aps"];
+            NSString *strReceiptID = [NSString stringWithFormat:@"%@",[myAps valueForKey:@"receiptID"]];
+            
+            NSTimer *timer = [_dicTimer valueForKey:strReceiptID];
+            [timer invalidate];
+        }
+        else if([currentVc isKindOfClass:[OrderDetailViewController class]])
+        {
+            NSDictionary *myAps = [userInfo objectForKey:@"aps"];
+            NSString *strReceiptID = [NSString stringWithFormat:@"%@",[myAps valueForKey:@"receiptID"]];
+            
+            
+            OrderDetailViewController *vc = (OrderDetailViewController *)currentVc;
+            if(vc.receipt.receiptID == [strReceiptID integerValue])
+            {
+                NSTimer *timer = [_dicTimer valueForKey:strReceiptID];
+                [timer invalidate];
+            }
+        }
     }
-    else if([categoryIdentifier isEqualToString:@"openingTime"])
+    else
     {
-        NSNumber *settingID = [myAps objectForKey:@"receiptID"];
-        _homeModel = [[HomeModel alloc]init];
-        _homeModel.delegate = self;
-        [_homeModel downloadItems:dbSetting withData:settingID];
+        NSDictionary *myAps = [userInfo objectForKey:@"aps"];
+        NSString *categoryIdentifier = [myAps objectForKey:@"category"];
+        if([categoryIdentifier isEqualToString:@"cancelOrder"] || [categoryIdentifier isEqualToString:@"printKitchenBill"] || [categoryIdentifier isEqualToString:@"reminder"] || [categoryIdentifier isEqualToString:@"processing"] || [categoryIdentifier isEqualToString:@"delivered"] || [categoryIdentifier isEqualToString:@"clear"])
+        {
+            NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
+            _homeModel = [[HomeModel alloc]init];
+            _homeModel.delegate = self;
+            [_homeModel downloadItems:dbJummumReceipt withData:receiptID];
+        }
+        else if([categoryIdentifier isEqualToString:@"openingTime"])
+        {
+            NSNumber *settingID = [myAps objectForKey:@"receiptID"];
+            _homeModel = [[HomeModel alloc]init];
+            _homeModel.delegate = self;
+            [_homeModel downloadItems:dbSetting withData:settingID];
+        }
     }
-    
-    
 }
 
 
@@ -257,44 +281,92 @@ void myExceptionHandler(NSException *exception)
     NSString *categoryIdentifier = [myAps objectForKey:@"category"];
     NSLog(@"action was selected by the user for a given notification: %@", userInfo);
     
-    
-    if([categoryIdentifier isEqualToString:@"cancelOrder"])
+    if([userInfo objectForKey:@"localNoti"])
     {
-        NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
-        _homeModel = [[HomeModel alloc]init];
-        _homeModel.delegate = self;
-        [_homeModel downloadItems:dbJummumReceiptTapNotificationIssue withData:receiptID];
+        //Get current vc
+        CustomViewController *currentVc;
+        CustomViewController *parentViewController = (CustomViewController *)[[[UIApplication sharedApplication] delegate] window].rootViewController;
+        
+        while (parentViewController.presentedViewController != nil && ![parentViewController.presentedViewController isKindOfClass:[UIAlertController class]])
+        {
+            parentViewController = (CustomViewController *)parentViewController.presentedViewController;
+        }
+        if([parentViewController isKindOfClass:[UITabBarController class]])
+        {
+            currentVc = ((UITabBarController *)parentViewController).selectedViewController;
+        }
+        else
+        {
+            currentVc = parentViewController;
+        }
+        
+        
+        
+        if([currentVc isKindOfClass:[CustomerKitchenViewController class]])
+        {
+            CustomerKitchenViewController *vc = (CustomerKitchenViewController *)currentVc;
+            [vc reloadTableViewNewOrderTab];
+        }
+        else if([currentVc isKindOfClass:[OrderDetailViewController class]] || [currentVc isKindOfClass:[PersonalDataViewController class]] || [currentVc isKindOfClass:[TosAndPrivacyPolicyViewController class]])
+        {
+            CustomViewController *vc = (CustomViewController *)currentVc;
+            vc.newOrderComing = 1;
+            [vc performSegueWithIdentifier:@"segUnwindToCustomerKitchen" sender:self];
+        }
+        else if([currentVc isKindOfClass:[MeViewController class]])
+        {
+            MeViewController *vc = (MeViewController *)currentVc;
+            [vc.tabBarController setSelectedIndex:0];
+            CustomerKitchenViewController *customerKitchenVc = vc.tabBarController.selectedViewController;
+            [customerKitchenVc reloadTableViewNewOrderTab];
+        }
+        
+        
+        //stop local noti
+        NSDictionary *myAps = [userInfo objectForKey:@"aps"];
+        NSString *strReceiptID = [NSString stringWithFormat:@"%@",[myAps valueForKey:@"receiptID"]];
+        
+        NSTimer *timer = [_dicTimer valueForKey:strReceiptID];
+        [timer invalidate];
     }
-    else if([categoryIdentifier isEqualToString:@"printKitchenBill"] || [categoryIdentifier isEqualToString:@"reminder"])
+    else
     {
-        NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
-        _homeModel = [[HomeModel alloc]init];
-        _homeModel.delegate = self;
-        [_homeModel downloadItems:dbJummumReceiptTapNotification withData:receiptID];
+        if([categoryIdentifier isEqualToString:@"cancelOrder"])
+        {
+            NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
+            _homeModel = [[HomeModel alloc]init];
+            _homeModel.delegate = self;
+            [_homeModel downloadItems:dbJummumReceiptTapNotificationIssue withData:receiptID];
+        }
+        else if([categoryIdentifier isEqualToString:@"printKitchenBill"] || [categoryIdentifier isEqualToString:@"reminder"])
+        {
+            NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
+            _homeModel = [[HomeModel alloc]init];
+            _homeModel.delegate = self;
+            [_homeModel downloadItems:dbJummumReceiptTapNotification withData:receiptID];
+        }
+        else if([categoryIdentifier isEqualToString:@"processing"])
+        {
+            NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
+            _homeModel = [[HomeModel alloc]init];
+            _homeModel.delegate = self;
+            [_homeModel downloadItems:dbJummumReceiptTapNotificationProcessing withData:receiptID];
+        }
+        else if([categoryIdentifier isEqualToString:@"delivered"])
+        {
+            NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
+            _homeModel = [[HomeModel alloc]init];
+            _homeModel.delegate = self;
+            [_homeModel downloadItems:dbJummumReceiptTapNotificationDelivered withData:receiptID];
+        }
+        else if([categoryIdentifier isEqualToString:@"clear"])
+        {
+            NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
+            _homeModel = [[HomeModel alloc]init];
+            _homeModel.delegate = self;
+            [_homeModel downloadItems:dbJummumReceiptTapNotificationClear withData:receiptID];
+        }
     }
-    else if([categoryIdentifier isEqualToString:@"processing"])
-    {
-        NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
-        _homeModel = [[HomeModel alloc]init];
-        _homeModel.delegate = self;
-        [_homeModel downloadItems:dbJummumReceiptTapNotificationProcessing withData:receiptID];
-    }
-    else if([categoryIdentifier isEqualToString:@"delivered"])
-    {
-        NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
-        _homeModel = [[HomeModel alloc]init];
-        _homeModel.delegate = self;
-        [_homeModel downloadItems:dbJummumReceiptTapNotificationDelivered withData:receiptID];
-    }
-    else if([categoryIdentifier isEqualToString:@"clear"])
-    {
-        NSNumber *receiptID = [myAps objectForKey:@"receiptID"];
-        _homeModel = [[HomeModel alloc]init];
-        _homeModel.delegate = self;
-        [_homeModel downloadItems:dbJummumReceiptTapNotificationClear withData:receiptID];
-    }
-    
-    
 }
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
@@ -316,7 +388,7 @@ void myExceptionHandler(NSException *exception)
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
     NSLog(@"didReceiveRemoteNotification: %@", userInfo);
-//    if (application.applicationState == UIApplicationStateBackground)
+
     
     NSDictionary *myAps = [userInfo objectForKey:@"aps"];
     NSString *categoryIdentifier = [myAps objectForKey:@"category"];
@@ -340,7 +412,22 @@ void myExceptionHandler(NSException *exception)
     
     
     
+    if([categoryIdentifier isEqualToString:@"printKitchenBill"])
+    {
+        float reminderInterval = [[Setting getSettingValueWithKeyName:@"reminderInterval"] floatValue];
+        [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:nil];
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:reminderInterval target:self selector:@selector(updateTimer:) userInfo:myAps repeats:YES];///test 5 sec
+        NSString *strReceiptID = [NSString stringWithFormat:@"%@",[myAps valueForKey:@"receiptID"]];
+//        NSMutableDictionary *mutDicAps = [myAps mutableCopy];
+//        [mutDicAps setValue:strReceiptID forKey:@"receiptID"];
+//        myAps = [mutDicAps copy];
+        [_dicTimer setValue:timer forKey:strReceiptID];
+        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    }
     
+    
+//    if (application.applicationState == UIApplicationStateBackground)
+
 //    if(application.applicationState == UIApplicationStateInactive)
 //    {
 //
@@ -369,6 +456,51 @@ void myExceptionHandler(NSException *exception)
 //
 //        completionHandler(UIBackgroundFetchResultNewData);
 //    }
+}
+
+-(void)updateTimer:(NSTimer *)timer
+{
+    NSDictionary *myAps = timer.userInfo;
+    NSLog(@"timer current time: %@", [NSDate date]);
+    
+    NSString *strReceiptID = [myAps valueForKey:@"receiptID"];
+    //check receipt status == 2
+    Receipt *receipt = [Receipt getReceipt:[strReceiptID integerValue]];
+    NSInteger statusEqualTwo = receipt.status == 2;
+    if(statusEqualTwo)
+    {
+        [self generateLocalNotification:myAps];
+    }
+    else
+    {
+        [timer invalidate];
+    }
+}
+
+- (void)generateLocalNotification:(NSDictionary *)myAps
+{
+    
+    NSString *msg = [NSString stringWithFormat:@"%@",[myAps valueForKey:@"alert"]];
+    UNMutableNotificationContent *localNotification = [UNMutableNotificationContent new];
+    //    localNotification.title = [NSString localizedUserNotificationStringForKey:@"Time for a run!" arguments:nil];
+    NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]init];
+    [userInfo setValue:myAps forKey:@"aps"];
+    [userInfo setValue:@"1" forKey:@"localNoti"];
+    localNotification.userInfo = userInfo;
+    localNotification.body = [NSString localizedUserNotificationStringForKey:msg arguments:nil];
+    localNotification.sound = [UNNotificationSound defaultSound];
+    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:1 repeats:NO];
+    
+    
+    //    localNotification.badge = @([[UIApplication sharedApplication] applicationIconBadgeNumber] +1);
+    UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:@"Time for a run!" content:localNotification trigger:trigger];
+    
+    
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    center.delegate = self;
+    [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        NSLog(@"Notification created");
+    }];
 }
 
 - (void)itemsUpdated
@@ -797,187 +929,76 @@ void myExceptionHandler(NSException *exception)
     [currentVc showAlert:title message:message];
 }
 
-
-//printer part******
-- (void)loadParam {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+- (void)alertMsg:(NSString *)msg
+{
+    NSString *title = @"";
+    NSString *message = msg;
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:title
+                                                                   message:message                                                            preferredStyle:UIAlertControllerStyleAlert];
     
-    [userDefaults registerDefaults:[NSDictionary dictionaryWithObject:@""                           forKey:@"portName"]];
-    [userDefaults registerDefaults:[NSDictionary dictionaryWithObject:@""                           forKey:@"portSettings"]];
-    [userDefaults registerDefaults:[NSDictionary dictionaryWithObject:@""                           forKey:@"modelName"]];
-    [userDefaults registerDefaults:[NSDictionary dictionaryWithObject:@""                           forKey:@"macAddress"]];
-    [userDefaults registerDefaults:[NSDictionary dictionaryWithObject:@(StarIoExtEmulationStarPRNT) forKey:@"emulation"]];
-    [userDefaults registerDefaults:[NSDictionary dictionaryWithObject:@YES                          forKey:@"cashDrawerOpenActiveHigh"]];
-    [userDefaults registerDefaults:[NSDictionary dictionaryWithObject:@0x00000007                   forKey:@"allReceiptsSettings"]];
+    NSMutableAttributedString *attrStringTitle = [[NSMutableAttributedString alloc] initWithString:title];
+    [attrStringTitle addAttribute:NSFontAttributeName
+                            value:[UIFont fontWithName:@"Prompt-SemiBold" size:17]
+                            range:NSMakeRange(0, title.length)];
+    [attrStringTitle addAttribute:NSForegroundColorAttributeName
+                            value:cSystem4
+                            range:NSMakeRange(0, title.length)];
+    [alert setValue:attrStringTitle forKey:@"attributedTitle"];
     
-    _portName                 = [userDefaults stringForKey :@"portName"];
-    _portSettings             = [userDefaults stringForKey :@"portSettings"];
-    _modelName                = [userDefaults stringForKey :@"modelName"];
-    _macAddress               = [userDefaults stringForKey :@"macAddress"];
-    _emulation                = [userDefaults integerForKey:@"emulation"];
-    _cashDrawerOpenActiveHigh = [userDefaults boolForKey   :@"cashDrawerOpenActiveHigh"];
-    _allReceiptsSettings      = [userDefaults integerForKey:@"allReceiptsSettings"];
-}
-
-+ (NSString *)getPortName {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     
-    return delegate.portName;
-}
-
-+ (void)setPortName:(NSString *)portName {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableAttributedString *attrStringMsg = [[NSMutableAttributedString alloc] initWithString:message];
+    [attrStringMsg addAttribute:NSFontAttributeName
+                          value:[UIFont fontWithName:@"Prompt-Regular" size:15]
+                          range:NSMakeRange(0, message.length)];
+    [attrStringTitle addAttribute:NSForegroundColorAttributeName
+                            value:cSystem4
+                            range:NSMakeRange(0, title.length)];
+    [alert setValue:attrStringMsg forKey:@"attributedMessage"];
     
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     
-    delegate.portName = portName;
     
-    [userDefaults setObject:delegate.portName forKey:@"portName"];
     
-    [userDefaults synchronize];
-}
-
-+ (NSString*)getPortSettings {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action)
+                                    {
+                                    }];
     
-    return delegate.portSettings;
-}
-
-+ (void)setPortSettings:(NSString *)portSettings {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [alert addAction:defaultAction];
     
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     
-    delegate.portSettings = portSettings;
     
-    [userDefaults setObject :delegate.portSettings forKey:@"portSettings"];
+    //Get current vc
+    CustomViewController *currentVc;
+    CustomViewController *parentViewController = (CustomViewController *)[[[UIApplication sharedApplication] delegate] window].rootViewController;
     
-    [userDefaults synchronize];
-}
-
-+ (NSString *)getModelName {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    while (parentViewController.presentedViewController != nil && ![parentViewController.presentedViewController isKindOfClass:[UIAlertController class]])
+    {
+        parentViewController = (CustomViewController *)parentViewController.presentedViewController;
+    }
+    if([parentViewController isKindOfClass:[UITabBarController class]])
+    {
+        currentVc = ((UITabBarController *)parentViewController).selectedViewController;
+    }
+    else
+    {
+        currentVc = parentViewController;
+    }
     
-    return delegate.modelName;
-}
-
-+ (void)setModelName:(NSString *)modelName {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    //present alertController
+    [currentVc removeOverlayViews];
+    [currentVc presentViewController:alert animated:YES completion:nil];
     
-    delegate.modelName = modelName;
     
-    [userDefaults setObject:delegate.modelName forKey:@"modelName"];
     
-    [userDefaults synchronize];
-}
-
-+ (NSString *)getMacAddress {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     
-    return delegate.macAddress;
-}
-
-+ (void)setMacAddress:(NSString *)macAddress {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    UIFont *font = [UIFont fontWithName:@"Prompt-SemiBold" size:15];
+    UIColor *color = cSystem1;
+    NSDictionary *attribute = @{NSForegroundColorAttributeName:color ,NSFontAttributeName: font};
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"OK" attributes:attribute];
     
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    delegate.macAddress = macAddress;
-    
-    [userDefaults setObject:delegate.macAddress forKey:@"macAddress"];
-    
-    [userDefaults synchronize];
-}
-
-+ (StarIoExtEmulation)getEmulation {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    return delegate.emulation;
-}
-
-+ (void)setEmulation:(StarIoExtEmulation)emulation {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    delegate.emulation = emulation;
-    
-    [userDefaults setInteger:delegate.emulation forKey:@"emulation"];
-    
-    [userDefaults synchronize];
-}
-
-+ (BOOL)getCashDrawerOpenActiveHigh {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    return delegate.cashDrawerOpenActiveHigh;
-}
-
-+ (void)setCashDrawerOpenActiveHigh:(BOOL)activeHigh {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    delegate.cashDrawerOpenActiveHigh = activeHigh;
-    
-    [userDefaults setInteger:delegate.cashDrawerOpenActiveHigh forKey:@"cashDrawerOpenActiveHigh"];
-    
-    [userDefaults synchronize];
-}
-
-+ (NSInteger)getAllReceiptsSettings {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    return delegate.allReceiptsSettings;
-}
-
-+ (void)setAllReceiptsSettings:(NSInteger)allReceiptsSettings {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    delegate.allReceiptsSettings = allReceiptsSettings;
-    
-    [userDefaults setInteger:delegate.allReceiptsSettings forKey:@"allReceiptsSettings"];
-    
-    [userDefaults synchronize];
-}
-
-+ (NSInteger)getSelectedIndex {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    return delegate.selectedIndex;
-}
-
-+ (void)setSelectedIndex:(NSInteger)index {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    delegate.selectedIndex = index;
-}
-
-+ (LanguageIndex)getSelectedLanguage {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    return delegate.selectedLanguage;
-}
-
-+ (void)setSelectedLanguage:(LanguageIndex)index {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    delegate.selectedLanguage = index;
-}
-
-+ (PaperSizeIndex)getSelectedPaperSize {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    return delegate.selectedPaperSize;
-}
-
-+ (void)setSelectedPaperSize:(PaperSizeIndex)index {
-    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    
-    delegate.selectedPaperSize = index;
+    UILabel *label = [[defaultAction valueForKey:@"__representer"] valueForKey:@"label"];
+    label.attributedText = attrString;
 }
 @end
+        

@@ -926,6 +926,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                             NSString *title = [Setting getValue:@"018t" example:@"ยกเลิก & คืนเงิน"];
                             [cell.btnValue setTitle:title forState:UIControlStateNormal];
                             cell.btnValue.backgroundColor = cSystem1;
+                            [cell.btnValue removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
                             [cell.btnValue addTarget:self action:@selector(moneyRefund:) forControlEvents:UIControlEventTouchUpInside];
                             [self setButtonDesign:cell.btnValue];
                         }
@@ -939,6 +940,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                             NSString *title = [Setting getValue:@"019t" example:@"ส่งคำร้อง & คืนเงิน"];
                             [cell.btnValue setTitle:title forState:UIControlStateNormal];
                             cell.btnValue.backgroundColor = cSystem1;
+                            [cell.btnValue removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
                             [cell.btnValue addTarget:self action:@selector(moneyRefund:) forControlEvents:UIControlEventTouchUpInside];
                             [self setButtonDesign:cell.btnValue];
                         }
@@ -1003,6 +1005,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                         [cell.btnValue setTitle:title forState:UIControlStateNormal];
                         cell.btnValue.backgroundColor = cSystem2;
                         [cell.btnValue setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                        [cell.btnValue removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
                         [cell.btnValue addTarget:self action:@selector(confirmCancel:) forControlEvents:UIControlEventTouchUpInside];
                         [self setButtonDesign:cell.btnValue];
                         
@@ -1020,6 +1023,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                         [cell.btnValue setTitle:title forState:UIControlStateNormal];
                         cell.btnValue.backgroundColor = cSystem4_10;
                         [cell.btnValue setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+                        [cell.btnValue removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
                         [cell.btnValue addTarget:self action:@selector(cancelCancel:) forControlEvents:UIControlEventTouchUpInside];
                         [self setButtonDesign:cell.btnValue];
                         
@@ -1084,6 +1088,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                         [cell.btnValue setTitle:title forState:UIControlStateNormal];
                         cell.btnValue.backgroundColor = cSystem1;
                         [cell.btnValue setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                        [cell.btnValue removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
                         [cell.btnValue addTarget:self action:@selector(confirmDispute:) forControlEvents:UIControlEventTouchUpInside];
                         [self setButtonDesign:cell.btnValue];
                         
@@ -1100,6 +1105,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                         [cell.btnValue setTitle:title forState:UIControlStateNormal];
                         cell.btnValue.backgroundColor = cSystem2;
                         [cell.btnValue setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                        [cell.btnValue removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
                         [cell.btnValue addTarget:self action:@selector(negotiate:) forControlEvents:UIControlEventTouchUpInside];
                         [self setButtonDesign:cell.btnValue];
                         
@@ -1117,6 +1123,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                         [cell.btnValue setTitle:title forState:UIControlStateNormal];
                         cell.btnValue.backgroundColor = cSystem4_10;
                         [cell.btnValue setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+                        [cell.btnValue removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
                         [cell.btnValue addTarget:self action:@selector(cancelDispute:) forControlEvents:UIControlEventTouchUpInside];
                         [self setButtonDesign:cell.btnValue];
                         
@@ -1380,6 +1387,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                         [cell.btnValue setTitle:title forState:UIControlStateNormal];
                         cell.btnValue.backgroundColor = cSystem2;
                         [cell.btnValue setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                        [cell.btnValue removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
                         [cell.btnValue addTarget:self action:@selector(confirmNegotiate:) forControlEvents:UIControlEventTouchUpInside];
                         [self setButtonDesign:cell.btnValue];
                         
@@ -1397,6 +1405,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                         [cell.btnValue setTitle:title forState:UIControlStateNormal];
                         cell.btnValue.backgroundColor = cSystem1;
                         [cell.btnValue setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                        [cell.btnValue removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
                         [cell.btnValue addTarget:self action:@selector(negotiate:) forControlEvents:UIControlEventTouchUpInside];
                         [self setButtonDesign:cell.btnValue];
                         
@@ -1414,6 +1423,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                         [cell.btnValue setTitle:title forState:UIControlStateNormal];
                         cell.btnValue.backgroundColor = cSystem4_10;
                         [cell.btnValue setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+                        [cell.btnValue removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
                         [cell.btnValue addTarget:self action:@selector(goBack:) forControlEvents:UIControlEventTouchUpInside];
                         [self setButtonDesign:cell.btnValue];
                         
@@ -1736,7 +1746,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
         {
             if(receipt.status == 2 || receipt.status == 5 || receipt.status == 6)
             {
-                return item == 0?34:38;
+                return item == 0?34:44;
             }
             else if(receipt.status == 7 || receipt.status == 8)
             {
@@ -1840,13 +1850,13 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                         
                         break;
                     case 2:
-                        return 38;//44+8;
+                        return 44;
                         break;
                     case 3:
-                        return 38;//44+8;
+                        return 44;
                         break;
                     case 4:
-                        return 38;//44+8;
+                        return 44;
                         break;
                     default:
                         break;
@@ -1879,6 +1889,10 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                             
                             NSString *message2 = [Setting getValue:@"073m" example:@"เหตุผล: "];
                             Dispute *dispute = [Dispute getDisputeWithReceiptID:receipt.receiptID type:1];
+                            if(!dispute)
+                            {
+                                dispute = [Dispute getDisputeWithReceiptID:receipt.receiptID type:3];
+                            }
                             DisputeReason *disputeReason = [DisputeReason getDisputeReason:dispute.disputeReasonID];
                             cell.lblReason.attributedText = [self setAttributedString:message2 text:disputeReason.text];
                             [cell.lblReason sizeToFit];
@@ -1923,6 +1937,10 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                             
                             NSString *message2 = [Setting getValue:@"073m" example:@"เหตุผล: "];
                             Dispute *dispute = [Dispute getDisputeWithReceiptID:receipt.receiptID type:2];
+                            if(!dispute)
+                            {
+                                dispute = [Dispute getDisputeWithReceiptID:receipt.receiptID type:4];
+                            }
                             DisputeReason *disputeReason = [DisputeReason getDisputeReason:dispute.disputeReasonID];
                             cell.lblReason.attributedText = [self setAttributedString:message2 text:disputeReason.text];
                             [cell.lblReason sizeToFit];
@@ -2138,7 +2156,7 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
                 }
                 else
                 {
-                    return 38;//44+8;
+                    return 38;
                 }
             }
         }
@@ -2473,6 +2491,18 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
         }
         else if(receipt.status == 9 || receipt.status == 10)
         {
+//            //ถ้าก่อนหน้า เป็น 5 หรือ 6
+//            NSInteger priorStatusIsFiveOrSix = 1;
+//            if(priorStatusIsFiveOrSix)
+//            {
+//                NSString *title = [Setting getValue:@"087t" example:@"สำเร็จ"];
+//                NSString *message = [Setting getValue:@"087m" example:@"ลูกค้าของคุณจะได้รับเงินคืนภายใน 48 ชม."];
+//            }
+//            else
+//            {
+//                NSString *title = [Setting getValue:@"087t" example:@"สำเร็จ"];
+//                NSString *message = [Setting getValue:@"087m" example:@"ลูกค้าของคุณจะได้รับเงินคืนภายใน 48 ชม."];
+//            }
             NSString *title = [Setting getValue:@"087t" example:@"สำเร็จ"];
             NSString *message = [Setting getValue:@"087m" example:@"ลูกค้าของคุณจะได้รับเงินคืนภายใน 48 ชม."];
             [self showAlert:title message:message];

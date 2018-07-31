@@ -1051,7 +1051,7 @@
                                 }
                                 else
                                 {
-                                    arrClassName = @[@"UserAccount",@"Receipt",@"OrderTaking",@"Menu",@"OrderNote",@"Note",@"NoteType"];
+                                    arrClassName = @[@"UserAccount",@"Setting",@"CustomerTable",@"MenuType",@"Menu",@"NoteType",@"Note",@"Receipt",@"OrderTaking",@"OrderNote",@"Dispute",@"DisputeReason",@"Branch"];
                                 }
                             }
                             else if([strTableName isEqualToString:@"UserAccountForgotPassword"])
