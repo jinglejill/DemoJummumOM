@@ -341,6 +341,7 @@
 		EF9C521F210BE17F00C7563A /* Kanit-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF9C5051210BE17E00C7563A /* Kanit-ExtraLightItalic.ttf */; };
 		EF9C5220210BE17F00C7563A /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF9C5052210BE17E00C7563A /* Kanit-Medium.ttf */; };
 		EF9C5221210BE17F00C7563A /* Kanit-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF9C5053210BE17E00C7563A /* Kanit-SemiBoldItalic.otf */; };
+		EF9C5C7321114A1C00C7563A /* triangle_demo_om.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9C5C7221114A1C00C7563A /* triangle_demo_om.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -843,6 +844,7 @@
 		EF9C5052210BE17E00C7563A /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		EF9C5053210BE17E00C7563A /* Kanit-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-SemiBoldItalic.otf"; sourceTree = "<group>"; };
 		EF9C5244210BFAF800C7563A /* DemoJummumOM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoJummumOM.entitlements; sourceTree = "<group>"; };
+		EF9C5C7221114A1C00C7563A /* triangle_demo_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle_demo_om.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -987,6 +989,7 @@
 		EF9C4E80210BE17D00C7563A /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				EF9C5C7221114A1C00C7563A /* triangle_demo_om.png */,
 				EF9C4E86210BE17D00C7563A /* added copy.png */,
 				EF9C4EBE210BE17D00C7563A /* added.png */,
 				EF9C4EBC210BE17D00C7563A /* alarm.png */,
@@ -1744,6 +1747,7 @@
 				EF9C5216210BE17F00C7563A /* Kanit-BlackItalic.ttf in Resources */,
 				EF9C5203210BE17F00C7563A /* Kanit-Thin.ttf in Resources */,
 				EF9C50E3210BE17E00C7563A /* added copy.png in Resources */,
+				EF9C5C7321114A1C00C7563A /* triangle_demo_om.png in Resources */,
 				EF9C511C210BE17E00C7563A /* check2.png in Resources */,
 				EF9C5217210BE17F00C7563A /* Kanit-LightItalic.otf in Resources */,
 				EF9C5117210BE17E00C7563A /* basket.png in Resources */,
