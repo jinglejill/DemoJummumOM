@@ -298,7 +298,8 @@ enum enumUrl
     urlBranchGet,
     urlOpeningTimeTextGet,
     urlSettingUpdate,
-    urlSettingGet
+    urlSettingGet,
+    urlContactUs
 //    ,
 //    urlTestPasswordInsertList
     
@@ -376,7 +377,6 @@ enum enumUrl
 + (BOOL)duplicateID:(NSObject *)object;
 + (float)floatValue:(NSString *)text;
 + (NSInteger)getLastDayOfMonth:(NSDate *)datetime;
-+ (void)itemsSynced:(NSString *)type action:(NSString *)action data:(NSArray *)data;
 + (void)itemsDownloaded:(NSArray *)items;
 + (NSDate *)addDay:(NSDate *)dateFrom numberOfDay:(NSInteger)days;
 + (NSDate *)addSecond:(NSDate *)dateFrom numberOfSecond:(NSInteger)second;

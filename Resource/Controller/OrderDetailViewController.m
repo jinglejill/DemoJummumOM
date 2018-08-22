@@ -2441,7 +2441,10 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
     {
         NSMutableArray *messageList = items[0];
         NSMutableArray *receiptList = items[1];
-        NSMutableArray *updateReceiptList = items[2];
+        NSMutableArray *dataList = [[NSMutableArray alloc]init];
+        [dataList addObject:receiptList];
+        [Utility updateSharedObject:dataList];
+        //        NSMutableArray *updateReceiptList = items[2];
         Message *message = messageList[0];
         BOOL alreadyDone = [message.text integerValue];
         Receipt *receipt = receiptList[0];
@@ -2470,10 +2473,11 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
         
         
         
-        //update receipt ที่มาใหม่หรือมีการ update
-        NSMutableArray *updateList = [[NSMutableArray alloc]init];
-        [updateList addObject:updateReceiptList];
-        [Utility updateSharedObject:updateList];
+        //        //update receipt ที่มาใหม่หรือมีการ update
+        //        NSMutableArray *updateList = [[NSMutableArray alloc]init];
+        //        [updateList addObject:updateReceiptList];
+        //        [Utility updateSharedObject:updateList];
+        
         
         
         
@@ -2491,18 +2495,6 @@ static NSString * const reuseIdentifierLabelRemark = @"CustomTableViewCellLabelR
         }
         else if(receipt.status == 9 || receipt.status == 10)
         {
-//            //ถ้าก่อนหน้า เป็น 5 หรือ 6
-//            NSInteger priorStatusIsFiveOrSix = 1;
-//            if(priorStatusIsFiveOrSix)
-//            {
-//                NSString *title = [Setting getValue:@"087t" example:@"สำเร็จ"];
-//                NSString *message = [Setting getValue:@"087m" example:@"ลูกค้าของคุณจะได้รับเงินคืนภายใน 48 ชม."];
-//            }
-//            else
-//            {
-//                NSString *title = [Setting getValue:@"087t" example:@"สำเร็จ"];
-//                NSString *message = [Setting getValue:@"087m" example:@"ลูกค้าของคุณจะได้รับเงินคืนภายใน 48 ชม."];
-//            }
             NSString *title = [Setting getValue:@"087t" example:@"สำเร็จ"];
             NSString *message = [Setting getValue:@"087m" example:@"ลูกค้าของคุณจะได้รับเงินคืนภายใน 48 ชม."];
             [self showAlert:title message:message];

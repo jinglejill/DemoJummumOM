@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF33CD64211BF99800560C69 /* contactUs.png in Resources */ = {isa = PBXBuildFile; fileRef = EF33CD63211BF99800560C69 /* contactUs.png */; };
+		EF5DC0A621171BB700FFEA60 /* triangle_demo_om.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5DC0A521171BB700FFEA60 /* triangle_demo_om.png */; };
 		EF9C4DAE210BE15000C7563A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4DAD210BE15000C7563A /* ViewController.m */; };
 		EF9C4DB3210BE15200C7563A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4DB2210BE15200C7563A /* Assets.xcassets */; };
 		EF9C4DB6210BE15200C7563A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4DB4210BE15200C7563A /* LaunchScreen.storyboard */; };
@@ -131,7 +133,6 @@
 		EF9C514A210BE17E00C7563A /* RewardDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EFC210BE17D00C7563A /* RewardDetailViewController.m */; };
 		EF9C514B210BE17E00C7563A /* TermsOfServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EFE210BE17D00C7563A /* TermsOfServiceViewController.m */; };
 		EF9C514C210BE17E00C7563A /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F01210BE17D00C7563A /* MeViewController.m */; };
-		EF9C514D210BE17E00C7563A /* SaveToCameraRollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F03210BE17D00C7563A /* SaveToCameraRollViewController.m */; };
 		EF9C514E210BE17E00C7563A /* OpeningTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F05210BE17D00C7563A /* OpeningTimeViewController.m */; };
 		EF9C514F210BE17E00C7563A /* TosAndPrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F07210BE17D00C7563A /* TosAndPrivacyPolicyViewController.m */; };
 		EF9C5150210BE17E00C7563A /* RegisterNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F09210BE17D00C7563A /* RegisterNowViewController.m */; };
@@ -341,7 +342,6 @@
 		EF9C521F210BE17F00C7563A /* Kanit-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF9C5051210BE17E00C7563A /* Kanit-ExtraLightItalic.ttf */; };
 		EF9C5220210BE17F00C7563A /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF9C5052210BE17E00C7563A /* Kanit-Medium.ttf */; };
 		EF9C5221210BE17F00C7563A /* Kanit-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF9C5053210BE17E00C7563A /* Kanit-SemiBoldItalic.otf */; };
-		EF9C5C7321114A1C00C7563A /* triangle_demo_om.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9C5C7221114A1C00C7563A /* triangle_demo_om.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -362,6 +362,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF33CD63211BF99800560C69 /* contactUs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contactUs.png; sourceTree = "<group>"; };
+		EF5DC0A521171BB700FFEA60 /* triangle_demo_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle_demo_om.png; sourceTree = "<group>"; };
 		EF9C4DA6210BE15000C7563A /* DemoJummumOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoJummumOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9C4DAC210BE15000C7563A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EF9C4DAD210BE15000C7563A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -493,7 +495,6 @@
 		EF9C4EE5210BE17D00C7563A /* LaunchScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
 		EF9C4EE6210BE17D00C7563A /* RewardDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardDetailViewController.h; sourceTree = "<group>"; };
 		EF9C4EE7210BE17D00C7563A /* MyRewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRewardViewController.m; sourceTree = "<group>"; };
-		EF9C4EE8210BE17D00C7563A /* SaveToCameraRollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveToCameraRollViewController.h; sourceTree = "<group>"; };
 		EF9C4EEA210BE17D00C7563A /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		EF9C4EEB210BE17D00C7563A /* RewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardViewController.h; sourceTree = "<group>"; };
 		EF9C4EEC210BE17D00C7563A /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
@@ -514,7 +515,6 @@
 		EF9C4EFF210BE17D00C7563A /* HotDealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotDealViewController.h; sourceTree = "<group>"; };
 		EF9C4F00210BE17D00C7563A /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		EF9C4F01210BE17D00C7563A /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
-		EF9C4F03210BE17D00C7563A /* SaveToCameraRollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveToCameraRollViewController.m; sourceTree = "<group>"; };
 		EF9C4F04210BE17D00C7563A /* RewardRedemptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardRedemptionViewController.h; sourceTree = "<group>"; };
 		EF9C4F05210BE17D00C7563A /* OpeningTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpeningTimeViewController.m; sourceTree = "<group>"; };
 		EF9C4F07210BE17D00C7563A /* TosAndPrivacyPolicyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TosAndPrivacyPolicyViewController.m; sourceTree = "<group>"; };
@@ -844,7 +844,6 @@
 		EF9C5052210BE17E00C7563A /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		EF9C5053210BE17E00C7563A /* Kanit-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-SemiBoldItalic.otf"; sourceTree = "<group>"; };
 		EF9C5244210BFAF800C7563A /* DemoJummumOM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoJummumOM.entitlements; sourceTree = "<group>"; };
-		EF9C5C7221114A1C00C7563A /* triangle_demo_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle_demo_om.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -989,7 +988,7 @@
 		EF9C4E80210BE17D00C7563A /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				EF9C5C7221114A1C00C7563A /* triangle_demo_om.png */,
+				EF33CD63211BF99800560C69 /* contactUs.png */,
 				EF9C4E86210BE17D00C7563A /* added copy.png */,
 				EF9C4EBE210BE17D00C7563A /* added.png */,
 				EF9C4EBC210BE17D00C7563A /* alarm.png */,
@@ -1078,6 +1077,7 @@
 				EF9C4E81210BE17D00C7563A /* takeAway2.png */,
 				EF9C4EBB210BE17D00C7563A /* takeAwayGrayOut.png */,
 				EF9C4E9E210BE17D00C7563A /* termsOfService.png */,
+				EF5DC0A521171BB700FFEA60 /* triangle_demo_om.png */,
 				EF9C4EB2210BE17D00C7563A /* triangle.png */,
 				EF9C4EC0210BE17D00C7563A /* turnLightOff.png */,
 				EF9C4EA8210BE17D00C7563A /* turnLightOn.png */,
@@ -1127,8 +1127,6 @@
 				EF9C4EF5210BE17D00C7563A /* RewardRedemptionViewController.m */,
 				EF9C4EEB210BE17D00C7563A /* RewardViewController.h */,
 				EF9C4F0E210BE17D00C7563A /* RewardViewController.m */,
-				EF9C4EE8210BE17D00C7563A /* SaveToCameraRollViewController.h */,
-				EF9C4F03210BE17D00C7563A /* SaveToCameraRollViewController.m */,
 				EF9C4EE4210BE17D00C7563A /* TermsOfServiceViewController.h */,
 				EF9C4EFE210BE17D00C7563A /* TermsOfServiceViewController.m */,
 				EF9C4EF2210BE17D00C7563A /* TosAndPrivacyPolicyViewController.h */,
@@ -1491,6 +1489,7 @@
 				EF9C4DA2210BE15000C7563A /* Sources */,
 				EF9C4DA3210BE15000C7563A /* Frameworks */,
 				EF9C4DA4210BE15000C7563A /* Resources */,
+				EF33CD65211BFA0500560C69 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1643,6 +1642,7 @@
 				EF9C5102210BE17E00C7563A /* profilePic.png in Resources */,
 				EF9C5205210BE17F00C7563A /* Kanit-Italic.otf in Resources */,
 				EF9C5129210BE17E00C7563A /* Icon-Small@3x.png in Resources */,
+				EF33CD64211BF99800560C69 /* contactUs.png in Resources */,
 				EF9C513A210BE17E00C7563A /* iTunesArtwork@2x in Resources */,
 				EF9C5219210BE17F00C7563A /* Kanit-Light.ttf in Resources */,
 				EF9C5121210BE17E00C7563A /* gift.png in Resources */,
@@ -1747,7 +1747,7 @@
 				EF9C5216210BE17F00C7563A /* Kanit-BlackItalic.ttf in Resources */,
 				EF9C5203210BE17F00C7563A /* Kanit-Thin.ttf in Resources */,
 				EF9C50E3210BE17E00C7563A /* added copy.png in Resources */,
-				EF9C5C7321114A1C00C7563A /* triangle_demo_om.png in Resources */,
+				EF5DC0A621171BB700FFEA60 /* triangle_demo_om.png in Resources */,
 				EF9C511C210BE17E00C7563A /* check2.png in Resources */,
 				EF9C5217210BE17F00C7563A /* Kanit-LightItalic.otf in Resources */,
 				EF9C5117210BE17E00C7563A /* basket.png in Resources */,
@@ -1801,6 +1801,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EF33CD65211BFA0500560C69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\nproductVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$INFOPLIST_FILE\")\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $productVersion\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF9C4DA2210BE15000C7563A /* Sources */ = {
@@ -1863,7 +1879,6 @@
 				EF9C51CF210BE17F00C7563A /* CustomTableViewCellLabelRemark.m in Sources */,
 				EF9C517A210BE17E00C7563A /* SharedCurrentMenu.m in Sources */,
 				EF9C5143210BE17E00C7563A /* OrderDetailViewController.m in Sources */,
-				EF9C514D210BE17E00C7563A /* SaveToCameraRollViewController.m in Sources */,
 				EF9C51CE210BE17F00C7563A /* CustomViewVoucher.m in Sources */,
 				EF9C50BE210BE17E00C7563A /* AppDelegate.m in Sources */,
 				EF9C51A1210BE17E00C7563A /* CreditCard.m in Sources */,

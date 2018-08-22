@@ -74,6 +74,7 @@ CGFloat animatedDistance;
     [super viewDidLayoutSubviews];
     
     
+    //triangle band
     UIImageView *demoView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"triangle_demo_om.png"]];
     CGRect frame = demoView.frame;
     frame.size.width = 64;

@@ -171,7 +171,7 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMPushSyncUpdateTimeSynced.php";
             break;
         case urlMasterGet:
-            url = @"/JMM/DemoJummumOM/JMSMasterGet.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSMasterGet.php";
             break;
         case urlLogInInsert:
             url = @"/JMM/JUMMUM3/JMMLogInInsert.php";
@@ -180,7 +180,7 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMLogInUserAccountInsert.php";
             break;
         case urlWriteLog:
-            url = @"/JMM/DemoJummumOM/JMSWriteLog.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSWriteLog.php";
             break;
         case urlMenuInsert:
             url = @"/JMM/JUMMUM3/JMMMenuInsert.php";
@@ -249,7 +249,7 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMCustomerTableGetList.php";
             break;
         case urlReceiptSummaryGetList:
-            url = @"/JMM/DemoJummumOM/JMSReceiptSummaryGetList.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSReceiptSummaryGetList.php";
             break;
         case urlPromotionGetList:
             url = @"/JMM/JUMMUM3/JMMPromotionGetList.php";
@@ -258,7 +258,7 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/FacebookCommentInsertList.php";
             break;
         case urlUserAccountValidate:
-            url = @"/JMM/DemoJummumOM/JMSUserAccountValidate.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSUserAccountValidate.php";
             break;
         case urlUserAccountGet:
             url = @"/JMM/JUMMUM3/JMMUserAccountGet.php";
@@ -267,10 +267,10 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMUserAccountInsert.php";
             break;
         case urlTermsOfService:
-            url = @"/JMM/DemoJummumOM/HtmlTermsOfService.html";
+            url = @"/DEMO/DEMO_JUMMUM_OM/HtmlTermsOfService.php";
             break;
         case urlUserAccountForgotPasswordInsert:
-            url = @"/JMM/DemoJummumOM/JMSUserAccountForgotPasswordInsert.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSUserAccountForgotPasswordInsert.php";
             break;
         case urlRewardPointInsert:
             url = @"/JMM/JUMMUM3/JMMRewardPointInsert.php";
@@ -387,13 +387,13 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMUserRewardRedemptionUsedDeleteList.php";
             break;
         case urlReceiptMaxModifiedDateGetList:
-            url = @"/JMM/DemoJummumOM/JMSReceiptMaxModifiedDateGetList.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSReceiptMaxModifiedDateGetList.php";
             break;
         case urlReceiptWithModifiedDateGet:
             url = @"/JMM/JUMMUM3/JMMReceiptWithModifiedDateGet.php";
             break;
         case urlReceiptGet:
-            url = @"/JMM/DemoJummumOM/JMSReceiptGet.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSReceiptGet.php";
             break;
         case urlDisputeReasonInsert:
             url = @"/JMM/JUMMUM3/JMMDisputeReasonInsert.php";
@@ -414,13 +414,13 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMDisputeReasonDeleteList.php";
             break;
         case urlDisputeReasonGetList:
-            url = @"/JMM/DemoJummumOM/JMSDisputeReasonGetList.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSDisputeReasonGetList.php";
             break;
         case urlDisputeInsert:
-            url = @"/JMM/DemoJummumOM/JMSDisputeInsert.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSDisputeInsert.php";
             break;
         case urlDisputeCancelInsert:
-            url = @"/JMM/DemoJummumOM/JMSDisputeCancelInsert.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSDisputeCancelInsert.php";
             break;
         case urlDisputeUpdate:
             url = @"/JMM/JUMMUM3/JMMDisputeUpdate.php";
@@ -444,34 +444,37 @@ extern NSString *globalModifiedUser;
             url = @"/JMM/JUMMUM3/JMMReceiptUpdate.php";
             break;
         case urlCredentialsDbGet:
-            url = @"/JMM/DemoJummumOM/JMSCredentialsDbGet.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSCredentialsDbGet.php";
             break;
         case urlCredentialsValidate:
-            url = @"/JMM/DemoJummumOM/JMSCredentialsValidate.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSCredentialsValidate.php";
             break;
         case urlDeviceInsert:
-            url = @"/JMM/DemoJummumOM/JMSDeviceInsert.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSDeviceInsert.php";
             break;
         case urlJummumReceiptGetList:
-            url = @"/JMM/DemoJummumOM/JMSJummumReceiptGetList.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSJummumReceiptGetList.php";
             break;
         case urlJummumReceiptUpdate:
-            url = @"/JMM/DemoJummumOM/JMSJummumReceiptUpdate.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSJummumReceiptUpdate.php";
             break;
         case urlJummumReceiptSendToKitchen:
-            url = @"/JMM/DemoJummumOM/JMSJummumReceiptSendToKitchen.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSJummumReceiptSendToKitchen.php";
             break;
         case urlBranchGet:
-            url = @"/JMM/DemoJummumOM/JMSBranchGet.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSBranchGet.php";
             break;
         case urlOpeningTimeTextGet:
-            url = @"/JMM/DemoJummumOM/JMSOpeningTimeTextGet.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSOpeningTimeTextGet.php";
             break;
         case urlSettingUpdate:
-            url = @"/JMM/DemoJummumOM/JMSSettingUpdate.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSSettingUpdate.php";
             break;
         case urlSettingGet:
-            url = @"/JMM/DemoJummumOM/JMSSettingGet.php";
+            url = @"/DEMO/DEMO_JUMMUM_OM/JMSSettingGet.php";
+            break;
+        case urlContactUs:
+            url = @"/DEMO/DEMO_JUMMUM_OM/HtmlContactUs.php";
             break;
         default:
             break;
@@ -848,19 +851,22 @@ extern NSString *globalModifiedUser;
     else if([text length] > 10)
     {
         NSString *strPhoneNo = @"";
-        NSArray *arrPhoneNo = [text componentsSeparatedByString:@","];
-        for(int i=0; i<[arrPhoneNo count]; i++)
+        if([text rangeOfString:@","].location != NSNotFound)
         {
-            if(i==0)
+            NSArray *arrPhoneNo = [text componentsSeparatedByString:@","];
+            for(int i=0; i<[arrPhoneNo count]; i++)
             {
-                strPhoneNo = [self setPhoneNoFormat:arrPhoneNo[i]];
+                if(i==0)
+                {
+                    strPhoneNo = [self setPhoneNoFormat:arrPhoneNo[i]];
+                }
+                else
+                {
+                    strPhoneNo = [NSString stringWithFormat:@"%@,%@",strPhoneNo,[self setPhoneNoFormat:arrPhoneNo[i]]];
+                }
             }
-            else
-            {
-                strPhoneNo = [NSString stringWithFormat:@"%@,%@",strPhoneNo,[self setPhoneNoFormat:arrPhoneNo[i]]];
-            }
+            return strPhoneNo;
         }
-        return strPhoneNo;
     }
     return text;
 }
@@ -1034,220 +1040,6 @@ extern NSString *globalModifiedUser;
     
     return daysRange.length;
 }
-
-+ (void)itemsSynced:(NSString *)type action:(NSString *)action data:(NSArray *)data
-{
-//    NSLog(@"items synced table:%@",type);
-    NSString *className = type;
-    NSString *strNameID = [Utility getPrimaryKeyFromClassName:className];
-    
-    
-    Class class = NSClassFromString([NSString stringWithFormat:@"Shared%@",className]);
-    SEL selector = NSSelectorFromString([NSString stringWithFormat:@"shared%@",className]);
-    SEL selectorList = NSSelectorFromString([NSString stringWithFormat:@"%@List",[Utility makeFirstLetterLowerCase:className]]);
-    NSMutableArray *dataList = [[class performSelector:selector] performSelector:selectorList];
-    
-    
-    //insert,update,delete data
-    for(int i=0; i<[data count]; i++)
-    {
-        NSDictionary *jsonElement = data[i];
-        NSObject *object = [[NSClassFromString(className) alloc] init];
-        
-        unsigned int propertyCount = 0;
-        objc_property_t * properties = class_copyPropertyList([object class], &propertyCount);
-        
-        for (unsigned int i = 0; i < propertyCount; ++i)
-        {
-            objc_property_t property = properties[i];
-            const char * name = property_getName(property);
-            NSString *key = [NSString stringWithUTF8String:name];
-            
-            
-            NSString *dbColumnName = [Utility makeFirstLetterUpperCase:key];
-            if(!jsonElement[dbColumnName])
-            {
-                continue;
-            }
-            
-            
-            if([Utility isDateColumn:dbColumnName])
-            {
-                NSDate *date = [Utility stringToDate:jsonElement[dbColumnName] fromFormat:@"yyyy-MM-dd HH:mm:ss"];
-                [object setValue:date forKey:key];
-            }
-            else
-            {
-                [object setValue:jsonElement[dbColumnName] forKey:key];
-            }
-        }
-        
-        
-        if([action isEqualToString:@"u"])
-        {
-            for(NSObject *item in dataList)
-            {
-                if([[item valueForKey:strNameID] integerValue] == [[object valueForKey:strNameID] integerValue])
-                {
-                    unsigned int propertyCount = 0;
-                    objc_property_t * properties = class_copyPropertyList([item class], &propertyCount);
-                    
-                    for (unsigned int i = 0; i < propertyCount; ++i)
-                    {
-                        objc_property_t property = properties[i];
-                        const char * name = property_getName(property);
-                        NSString *key = [NSString stringWithUTF8String:name];
-                        
-
-                        [item setValue:[object valueForKey:key] forKey:key];
-                    }
-                    break;
-                }
-            }
-        }
-        else if([action isEqualToString:@"i"])
-        {
-            if(![Utility duplicate:object])
-            {
-                [dataList addObject:object];
-            }            
-        }
-        else if([action isEqualToString:@"d"])
-        {
-            //////////
-            for(NSObject *item in dataList)
-            {
-                //replaceSelf ถ้าเท่ากับ 1 ให้ เช็ค column modifiedUser = ตัวเอง ถึงจะมองว่า match (ที่ให้เช็คไม่เท่ากับตัวเอง เนื่องจากแก้ปัญหา duplicate key ตอน insert พร้อมกัน 2 เครื่อง เราดึงข้อมูลของตัวที่ insert ก่อนเข้ามา เพื่อมาลบตัว insert ทีหลังออก แล้ว insert ตัวหลังด้วย ID ใหม่แทน)
-                //ถ้าเท่ากับ 0 ให้ remove item โดยการเช็ค ID ตามปกติ
-                
-                
-                BOOL match = [[item valueForKey:strNameID] integerValue] == [[object valueForKey:strNameID] integerValue];
-                
-                if([[object valueForKey:@"replaceSelf"] integerValue]==1)
-                {
-                    match = match && [[item valueForKey:@"modifiedUser"] isEqualToString:[object valueForKey:@"modifiedUser"]];  
-                }
-                
-                
-                if(match)
-                {
-                    [dataList removeObject:item];
-                    break;
-                }
-            }
-            ////////
-
-        }
-    }
-}
-
-//+ (void)itemsSynced:(NSString *)type action:(NSString *)action data:(NSArray *)data
-//{
-//    //    NSLog(@"items synced table:%@",type);
-//    NSString *className = type;
-//    NSString *strNameID = [Utility getPrimaryKeyFromClassName:type];
-//
-//
-//    Class class = NSClassFromString([NSString stringWithFormat:@"Shared%@",className]);
-//    SEL selector = NSSelectorFromString([NSString stringWithFormat:@"shared%@",className]);
-//    SEL selectorList = NSSelectorFromString([NSString stringWithFormat:@"%@List",[Utility makeFirstLetterLowerCase:className]]);
-//    NSMutableArray *dataList = [[class performSelector:selector] performSelector:selectorList];
-//
-//
-//    //insert,update,delete data
-//    for(int i=0; i<[data count]; i++)
-//    {
-//        NSDictionary *jsonElement = data[i];
-//        NSObject *object = [[NSClassFromString(className) alloc] init];
-//
-//        unsigned int propertyCount = 0;
-//        objc_property_t * properties = class_copyPropertyList([object class], &propertyCount);
-//
-//        for (unsigned int i = 0; i < propertyCount; ++i)
-//        {
-//            objc_property_t property = properties[i];
-//            const char * name = property_getName(property);
-//            NSString *key = [NSString stringWithUTF8String:name];
-//
-//
-//            NSString *dbColumnName = [Utility makeFirstLetterUpperCase:key];
-//            if(!jsonElement[dbColumnName])
-//            {
-//                continue;
-//            }
-//
-//
-//            if([Utility isDateColumn:dbColumnName])
-//            {
-//                NSDate *date = [Utility stringToDate:jsonElement[dbColumnName] fromFormat:@"yyyy-MM-dd HH:mm:ss"];
-//                [object setValue:date forKey:key];
-//            }
-//            else
-//            {
-//                [object setValue:jsonElement[dbColumnName] forKey:key];
-//            }
-//        }
-//
-//
-//        if([action isEqualToString:@"u"])
-//        {
-//            for(NSObject *item in dataList)
-//            {
-//                if([[item valueForKey:strNameID] integerValue] == [[object valueForKey:strNameID] integerValue])
-//                {
-//                    unsigned int propertyCount = 0;
-//                    objc_property_t * properties = class_copyPropertyList([item class], &propertyCount);
-//
-//                    for (unsigned int i = 0; i < propertyCount; ++i)
-//                    {
-//                        objc_property_t property = properties[i];
-//                        const char * name = property_getName(property);
-//                        NSString *key = [NSString stringWithUTF8String:name];
-//
-//
-//                        [item setValue:[object valueForKey:key] forKey:key];
-//                    }
-//                    break;
-//                }
-//            }
-//        }
-//        else if([action isEqualToString:@"i"])
-//        {
-//            if(![Utility duplicate:object])
-//            {
-//                [dataList addObject:object];
-//            }
-//        }
-//        else if([action isEqualToString:@"d"])
-//        {
-//            //////////
-//            for(NSObject *item in dataList)
-//            {
-//                //replaceSelf ถ้าเท่ากับ 1 ให้ เช็ค column modifiedUser = ตัวเอง ถึงจะมองว่า match (ที่ให้เช็คไม่เท่ากับตัวเอง เนื่องจากแก้ปัญหา duplicate key ตอน insert พร้อมกัน 2 เครื่อง เราดึงข้อมูลของตัวที่ insert ก่อนเข้ามา เพื่อมาลบตัว insert ทีหลังออก แล้ว insert ตัวหลังด้วย ID ใหม่แทน)
-//                //ถ้าเท่ากับ 0 ให้ remove item โดยการเช็ค ID ตามปกติ
-//
-//
-//                BOOL match = [[item valueForKey:strNameID] integerValue] == [[object valueForKey:strNameID] integerValue];
-//
-//                if([[object valueForKey:@"replaceSelf"] integerValue]==1)
-//                {
-//                    match = match && [[item valueForKey:@"modifiedUser"] isEqualToString:[object valueForKey:@"modifiedUser"]];
-//
-//
-//                }
-//
-//
-//                if(match)
-//                {
-//                    [dataList removeObject:item];
-//                    break;
-//                }
-//            }
-//            ////////
-//
-//        }
-//    }
-//}
 
 + (BOOL)duplicate:(NSObject *)object
 {
