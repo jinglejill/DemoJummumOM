@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86B300AA4C8931121C0803C2 /* libPods-DemoJummumOMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C816BDE0D7B08F0C4E6F303 /* libPods-DemoJummumOMTests.a */; };
+		D48496BE0B3589BD4E0D8E5F /* libPods-DemoJummumOMUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32333749C48C5F33650BEB1A /* libPods-DemoJummumOMUITests.a */; };
+		D8B7CC51A92C2D463C1B3B03 /* libPods-DemoJummumOM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A03F0525B5ABA887223FD6D9 /* libPods-DemoJummumOM.a */; };
 		EF33CD64211BF99800560C69 /* contactUs.png in Resources */ = {isa = PBXBuildFile; fileRef = EF33CD63211BF99800560C69 /* contactUs.png */; };
+		EF5D28C8212D52BB0073F1A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF5D28C7212D52BB0073F1A1 /* GoogleService-Info.plist */; };
+		EF5D28CB212D57C20073F1A1 /* SharedDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D28C9212D57C20073F1A1 /* SharedDevice.m */; };
+		EF5D28CE212D57E20073F1A1 /* NewVersionUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D28CD212D57E20073F1A1 /* NewVersionUpdateViewController.m */; };
 		EF5DC0A621171BB700FFEA60 /* triangle_demo_om.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5DC0A521171BB700FFEA60 /* triangle_demo_om.png */; };
 		EF9C4DAE210BE15000C7563A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4DAD210BE15000C7563A /* ViewController.m */; };
 		EF9C4DB3210BE15200C7563A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4DB2210BE15200C7563A /* Assets.xcassets */; };
@@ -121,23 +127,17 @@
 		EF9C513C210BE17E00C7563A /* expand all.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4EDF210BE17D00C7563A /* expand all.png */; };
 		EF9C513D210BE17E00C7563A /* selfService.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4EE0210BE17D00C7563A /* selfService.png */; };
 		EF9C513E210BE17E00C7563A /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EE2210BE17D00C7563A /* ForgotPasswordViewController.m */; };
-		EF9C513F210BE17E00C7563A /* HotDealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EE3210BE17D00C7563A /* HotDealViewController.m */; };
 		EF9C5140210BE17E00C7563A /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EE5210BE17D00C7563A /* LaunchScreenViewController.m */; };
-		EF9C5141210BE17E00C7563A /* MyRewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EE7210BE17D00C7563A /* MyRewardViewController.m */; };
 		EF9C5143210BE17E00C7563A /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EEC210BE17D00C7563A /* OrderDetailViewController.m */; };
 		EF9C5144210BE17E00C7563A /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EF1210BE17D00C7563A /* LogInViewController.m */; };
-		EF9C5146210BE17E00C7563A /* RewardRedemptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EF5210BE17D00C7563A /* RewardRedemptionViewController.m */; };
 		EF9C5147210BE17E00C7563A /* PersonalDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EF7210BE17D00C7563A /* PersonalDataViewController.m */; };
 		EF9C5148210BE17E00C7563A /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EF9210BE17D00C7563A /* MainTabBarController.m */; };
 		EF9C5149210BE17E00C7563A /* DisputeFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EFA210BE17D00C7563A /* DisputeFormViewController.m */; };
-		EF9C514A210BE17E00C7563A /* RewardDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EFC210BE17D00C7563A /* RewardDetailViewController.m */; };
 		EF9C514B210BE17E00C7563A /* TermsOfServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4EFE210BE17D00C7563A /* TermsOfServiceViewController.m */; };
 		EF9C514C210BE17E00C7563A /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F01210BE17D00C7563A /* MeViewController.m */; };
 		EF9C514E210BE17E00C7563A /* OpeningTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F05210BE17D00C7563A /* OpeningTimeViewController.m */; };
 		EF9C514F210BE17E00C7563A /* TosAndPrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F07210BE17D00C7563A /* TosAndPrivacyPolicyViewController.m */; };
-		EF9C5150210BE17E00C7563A /* RegisterNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F09210BE17D00C7563A /* RegisterNowViewController.m */; };
 		EF9C5151210BE17E00C7563A /* CustomerKitchenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F0A210BE17D00C7563A /* CustomerKitchenViewController.m */; };
-		EF9C5154210BE17E00C7563A /* RewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F0E210BE17D00C7563A /* RewardViewController.m */; };
 		EF9C5156210BE17E00C7563A /* ConfirmDisputeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F13210BE17D00C7563A /* ConfirmDisputeViewController.m */; };
 		EF9C5157210BE17E00C7563A /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4F15210BE17D00C7563A /* beep.mp3 */; };
 		EF9C5158210BE17E00C7563A /* Pic.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F17210BE17D00C7563A /* Pic.m */; };
@@ -362,7 +362,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C816BDE0D7B08F0C4E6F303 /* libPods-DemoJummumOMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoJummumOMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9E0BCDBDF2B3C5CE27B376 /* Pods-DemoJummumOMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJummumOMUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJummumOMUITests/Pods-DemoJummumOMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		32333749C48C5F33650BEB1A /* libPods-DemoJummumOMUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoJummumOMUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03F0525B5ABA887223FD6D9 /* libPods-DemoJummumOM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoJummumOM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A786AEF6420C3D30E57E462D /* Pods-DemoJummumOMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJummumOMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJummumOMTests/Pods-DemoJummumOMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAC24F08385F03DE6CC080DB /* Pods-DemoJummumOM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJummumOM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJummumOM/Pods-DemoJummumOM.debug.xcconfig"; sourceTree = "<group>"; };
+		D640655509227783FB07637A /* Pods-DemoJummumOMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJummumOMUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJummumOMUITests/Pods-DemoJummumOMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E97FDE819FA7FC4CE2C18DB9 /* Pods-DemoJummumOM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJummumOM.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJummumOM/Pods-DemoJummumOM.release.xcconfig"; sourceTree = "<group>"; };
 		EF33CD63211BF99800560C69 /* contactUs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contactUs.png; sourceTree = "<group>"; };
+		EF5D28C7212D52BB0073F1A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF5D28C9212D57C20073F1A1 /* SharedDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedDevice.m; sourceTree = "<group>"; };
+		EF5D28CA212D57C20073F1A1 /* SharedDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedDevice.h; sourceTree = "<group>"; };
+		EF5D28CC212D57E10073F1A1 /* NewVersionUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewVersionUpdateViewController.h; sourceTree = "<group>"; };
+		EF5D28CD212D57E20073F1A1 /* NewVersionUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewVersionUpdateViewController.m; sourceTree = "<group>"; };
 		EF5DC0A521171BB700FFEA60 /* triangle_demo_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle_demo_om.png; sourceTree = "<group>"; };
 		EF9C4DA6210BE15000C7563A /* DemoJummumOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoJummumOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9C4DAC210BE15000C7563A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -490,39 +503,27 @@
 		EF9C4EDF210BE17D00C7563A /* expand all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expand all.png"; sourceTree = "<group>"; };
 		EF9C4EE0210BE17D00C7563A /* selfService.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selfService.png; sourceTree = "<group>"; };
 		EF9C4EE2210BE17D00C7563A /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
-		EF9C4EE3210BE17D00C7563A /* HotDealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotDealViewController.m; sourceTree = "<group>"; };
 		EF9C4EE4210BE17D00C7563A /* TermsOfServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsOfServiceViewController.h; sourceTree = "<group>"; };
 		EF9C4EE5210BE17D00C7563A /* LaunchScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
-		EF9C4EE6210BE17D00C7563A /* RewardDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardDetailViewController.h; sourceTree = "<group>"; };
-		EF9C4EE7210BE17D00C7563A /* MyRewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRewardViewController.m; sourceTree = "<group>"; };
 		EF9C4EEA210BE17D00C7563A /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
-		EF9C4EEB210BE17D00C7563A /* RewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardViewController.h; sourceTree = "<group>"; };
 		EF9C4EEC210BE17D00C7563A /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
 		EF9C4EEF210BE17D00C7563A /* CustomerKitchenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerKitchenViewController.h; sourceTree = "<group>"; };
-		EF9C4EF0210BE17D00C7563A /* RegisterNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterNowViewController.h; sourceTree = "<group>"; };
 		EF9C4EF1210BE17D00C7563A /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 		EF9C4EF2210BE17D00C7563A /* TosAndPrivacyPolicyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TosAndPrivacyPolicyViewController.h; sourceTree = "<group>"; };
 		EF9C4EF4210BE17D00C7563A /* OpeningTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeningTimeViewController.h; sourceTree = "<group>"; };
-		EF9C4EF5210BE17D00C7563A /* RewardRedemptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardRedemptionViewController.m; sourceTree = "<group>"; };
 		EF9C4EF6210BE17D00C7563A /* ConfirmDisputeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmDisputeViewController.h; sourceTree = "<group>"; };
 		EF9C4EF7210BE17D00C7563A /* PersonalDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalDataViewController.m; sourceTree = "<group>"; };
 		EF9C4EF9210BE17D00C7563A /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		EF9C4EFA210BE17D00C7563A /* DisputeFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisputeFormViewController.m; sourceTree = "<group>"; };
-		EF9C4EFB210BE17D00C7563A /* MyRewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRewardViewController.h; sourceTree = "<group>"; };
-		EF9C4EFC210BE17D00C7563A /* RewardDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardDetailViewController.m; sourceTree = "<group>"; };
 		EF9C4EFD210BE17D00C7563A /* LaunchScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchScreenViewController.h; sourceTree = "<group>"; };
 		EF9C4EFE210BE17D00C7563A /* TermsOfServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsOfServiceViewController.m; sourceTree = "<group>"; };
-		EF9C4EFF210BE17D00C7563A /* HotDealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotDealViewController.h; sourceTree = "<group>"; };
 		EF9C4F00210BE17D00C7563A /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		EF9C4F01210BE17D00C7563A /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
-		EF9C4F04210BE17D00C7563A /* RewardRedemptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardRedemptionViewController.h; sourceTree = "<group>"; };
 		EF9C4F05210BE17D00C7563A /* OpeningTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpeningTimeViewController.m; sourceTree = "<group>"; };
 		EF9C4F07210BE17D00C7563A /* TosAndPrivacyPolicyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TosAndPrivacyPolicyViewController.m; sourceTree = "<group>"; };
 		EF9C4F08210BE17D00C7563A /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
-		EF9C4F09210BE17D00C7563A /* RegisterNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterNowViewController.m; sourceTree = "<group>"; };
 		EF9C4F0A210BE17D00C7563A /* CustomerKitchenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerKitchenViewController.m; sourceTree = "<group>"; };
 		EF9C4F0C210BE17D00C7563A /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
-		EF9C4F0E210BE17D00C7563A /* RewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardViewController.m; sourceTree = "<group>"; };
 		EF9C4F0F210BE17D00C7563A /* DisputeFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisputeFormViewController.h; sourceTree = "<group>"; };
 		EF9C4F10210BE17D00C7563A /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		EF9C4F12210BE17D00C7563A /* PersonalDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalDataViewController.h; sourceTree = "<group>"; };
@@ -844,6 +845,7 @@
 		EF9C5052210BE17E00C7563A /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		EF9C5053210BE17E00C7563A /* Kanit-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-SemiBoldItalic.otf"; sourceTree = "<group>"; };
 		EF9C5244210BFAF800C7563A /* DemoJummumOM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoJummumOM.entitlements; sourceTree = "<group>"; };
+		FC9E78C32B6933F3AA6F35A0 /* Pods-DemoJummumOMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJummumOMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJummumOMTests/Pods-DemoJummumOMTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -851,6 +853,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B7CC51A92C2D463C1B3B03 /* libPods-DemoJummumOM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,6 +861,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B300AA4C8931121C0803C2 /* libPods-DemoJummumOMTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -865,12 +869,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48496BE0B3589BD4E0D8E5F /* libPods-DemoJummumOMUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EC836125EA81F5D70365794 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAC24F08385F03DE6CC080DB /* Pods-DemoJummumOM.debug.xcconfig */,
+				E97FDE819FA7FC4CE2C18DB9 /* Pods-DemoJummumOM.release.xcconfig */,
+				A786AEF6420C3D30E57E462D /* Pods-DemoJummumOMTests.debug.xcconfig */,
+				FC9E78C32B6933F3AA6F35A0 /* Pods-DemoJummumOMTests.release.xcconfig */,
+				2A9E0BCDBDF2B3C5CE27B376 /* Pods-DemoJummumOMUITests.debug.xcconfig */,
+				D640655509227783FB07637A /* Pods-DemoJummumOMUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A91EEF2DDCC615C31EC92D59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A03F0525B5ABA887223FD6D9 /* libPods-DemoJummumOM.a */,
+				1C816BDE0D7B08F0C4E6F303 /* libPods-DemoJummumOMTests.a */,
+				32333749C48C5F33650BEB1A /* libPods-DemoJummumOMUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF9C4D9D210BE15000C7563A = {
 			isa = PBXGroup;
 			children = (
@@ -879,6 +907,8 @@
 				EF9C4DC1210BE15200C7563A /* DemoJummumOMTests */,
 				EF9C4DCC210BE15200C7563A /* DemoJummumOMUITests */,
 				EF9C4DA7210BE15000C7563A /* Products */,
+				1EC836125EA81F5D70365794 /* Pods */,
+				A91EEF2DDCC615C31EC92D59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -895,6 +925,7 @@
 		EF9C4DA8210BE15000C7563A /* DemoJummumOM */ = {
 			isa = PBXGroup;
 			children = (
+				EF5D28C7212D52BB0073F1A1 /* GoogleService-Info.plist */,
 				EF9C5244210BFAF800C7563A /* DemoJummumOM.entitlements */,
 				EF9C4DAC210BE15000C7563A /* ViewController.h */,
 				EF9C4DAD210BE15000C7563A /* ViewController.m */,
@@ -1093,6 +1124,8 @@
 		EF9C4EE1210BE17D00C7563A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EF5D28CC212D57E10073F1A1 /* NewVersionUpdateViewController.h */,
+				EF5D28CD212D57E20073F1A1 /* NewVersionUpdateViewController.m */,
 				EF9C4EF6210BE17D00C7563A /* ConfirmDisputeViewController.h */,
 				EF9C4F13210BE17D00C7563A /* ConfirmDisputeViewController.m */,
 				EF9C4EEF210BE17D00C7563A /* CustomerKitchenViewController.h */,
@@ -1101,8 +1134,6 @@
 				EF9C4EFA210BE17D00C7563A /* DisputeFormViewController.m */,
 				EF9C4F00210BE17D00C7563A /* ForgotPasswordViewController.h */,
 				EF9C4EE2210BE17D00C7563A /* ForgotPasswordViewController.m */,
-				EF9C4EFF210BE17D00C7563A /* HotDealViewController.h */,
-				EF9C4EE3210BE17D00C7563A /* HotDealViewController.m */,
 				EF9C4EFD210BE17D00C7563A /* LaunchScreenViewController.h */,
 				EF9C4EE5210BE17D00C7563A /* LaunchScreenViewController.m */,
 				EF9C4F08210BE17D00C7563A /* LogInViewController.h */,
@@ -1111,22 +1142,12 @@
 				EF9C4EF9210BE17D00C7563A /* MainTabBarController.m */,
 				EF9C4EEA210BE17D00C7563A /* MeViewController.h */,
 				EF9C4F01210BE17D00C7563A /* MeViewController.m */,
-				EF9C4EFB210BE17D00C7563A /* MyRewardViewController.h */,
-				EF9C4EE7210BE17D00C7563A /* MyRewardViewController.m */,
 				EF9C4EF4210BE17D00C7563A /* OpeningTimeViewController.h */,
 				EF9C4F05210BE17D00C7563A /* OpeningTimeViewController.m */,
 				EF9C4F0C210BE17D00C7563A /* OrderDetailViewController.h */,
 				EF9C4EEC210BE17D00C7563A /* OrderDetailViewController.m */,
 				EF9C4F12210BE17D00C7563A /* PersonalDataViewController.h */,
 				EF9C4EF7210BE17D00C7563A /* PersonalDataViewController.m */,
-				EF9C4EF0210BE17D00C7563A /* RegisterNowViewController.h */,
-				EF9C4F09210BE17D00C7563A /* RegisterNowViewController.m */,
-				EF9C4EE6210BE17D00C7563A /* RewardDetailViewController.h */,
-				EF9C4EFC210BE17D00C7563A /* RewardDetailViewController.m */,
-				EF9C4F04210BE17D00C7563A /* RewardRedemptionViewController.h */,
-				EF9C4EF5210BE17D00C7563A /* RewardRedemptionViewController.m */,
-				EF9C4EEB210BE17D00C7563A /* RewardViewController.h */,
-				EF9C4F0E210BE17D00C7563A /* RewardViewController.m */,
 				EF9C4EE4210BE17D00C7563A /* TermsOfServiceViewController.h */,
 				EF9C4EFE210BE17D00C7563A /* TermsOfServiceViewController.m */,
 				EF9C4EF2210BE17D00C7563A /* TosAndPrivacyPolicyViewController.h */,
@@ -1146,160 +1167,162 @@
 		EF9C4F16210BE17D00C7563A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EF9C4F17210BE17D00C7563A /* Pic.m */,
-				EF9C4F18210BE17D00C7563A /* SharedPromoCode.h */,
-				EF9C4F19210BE17D00C7563A /* UserRewardRedemptionUsed.m */,
-				EF9C4F1A210BE17D00C7563A /* InvoiceComposer.m */,
-				EF9C4F1B210BE17D00C7563A /* FacebookComment.m */,
-				EF9C4F1C210BE17D00C7563A /* SharedReceiptPrint.m */,
-				EF9C4F1D210BE17D00C7563A /* Receipt.m */,
-				EF9C4F1E210BE17D00C7563A /* Printer.h */,
-				EF9C4F1F210BE17D00C7563A /* SharedBranch.h */,
-				EF9C4F20210BE17D00C7563A /* SharedSubMenuType.m */,
-				EF9C4F21210BE17D00C7563A /* SharedPic.h */,
-				EF9C4F22210BE17D00C7563A /* SharedCurrentCredentialsDb.m */,
-				EF9C4F23210BE17D00C7563A /* SharedMenu.m */,
-				EF9C4F24210BE17D00C7563A /* OrderTaking.h */,
-				EF9C4F25210BE17D00C7563A /* SharedNoteType.h */,
-				EF9C4F26210BE17D00C7563A /* MenuType.m */,
-				EF9C4F27210BE17D00C7563A /* SharedRewardPoint.m */,
-				EF9C4F28210BE17D00C7563A /* Device.h */,
-				EF9C4F29210BE17D00C7563A /* PushSync.h */,
-				EF9C4F2A210BE17D00C7563A /* OrderKitchen.h */,
-				EF9C4F2B210BE17D00C7563A /* SharedCustomerTable.h */,
-				EF9C4F2C210BE17D00C7563A /* PromoCode.h */,
-				EF9C4F2D210BE17D00C7563A /* SharedPromotionMenu.m */,
-				EF9C4F2E210BE17D00C7563A /* Credentials.m */,
-				EF9C4F2F210BE17D00C7563A /* PromotionMenu.m */,
-				EF9C4F30210BE17D00C7563A /* SharedUserRewardRedemptionUsed.m */,
-				EF9C4F31210BE17D00C7563A /* Menu.m */,
-				EF9C4F32210BE17D00C7563A /* SharedReceipt.m */,
-				EF9C4F33210BE17D00C7563A /* SharedPrinter.h */,
-				EF9C4F34210BE17D00C7563A /* CustomerTable.h */,
-				EF9C4F35210BE17D00C7563A /* MenuTypeNote.h */,
-				EF9C4F36210BE17D00C7563A /* SharedUserAccount.h */,
-				EF9C4F37210BE17D00C7563A /* SharedCurrentUserAccount.h */,
+				EF5D28CA212D57C20073F1A1 /* SharedDevice.h */,
+				EF5D28C9212D57C20073F1A1 /* SharedDevice.m */,
 				EF9C4F38210BE17D00C7563A /* Branch.h */,
-				EF9C4F39210BE17D00C7563A /* SharedUserPromotionUsed.m */,
-				EF9C4F3A210BE17D00C7563A /* SharedNote.m */,
-				EF9C4F3B210BE17D00C7563A /* SharedSpecialPriceProgram.h */,
-				EF9C4F3C210BE17D00C7563A /* SharedDisputeReason.h */,
-				EF9C4F3D210BE17D00C7563A /* SharedSetting.m */,
-				EF9C4F3E210BE17D00C7563A /* SharedTableNo.m */,
-				EF9C4F3F210BE17D00C7563A /* OrderNote.m */,
-				EF9C4F40210BE17D00C7563A /* SharedMenuTypeNote.h */,
-				EF9C4F41210BE17D00C7563A /* SharedDispute.m */,
-				EF9C4F42210BE17D00C7563A /* SharedPromotion.h */,
-				EF9C4F43210BE17D00C7563A /* Shop.m */,
-				EF9C4F44210BE17D00C7563A /* SharedOrderKitchen.h */,
-				EF9C4F45210BE17D00C7563A /* CredentialsDb.h */,
-				EF9C4F46210BE17D00C7563A /* SubMenuType.h */,
-				EF9C4F47210BE17D00C7563A /* SharedMenuPic.m */,
-				EF9C4F48210BE17D00C7563A /* DisputeReason.h */,
-				EF9C4F49210BE17D00C7563A /* SharedMenuType.h */,
-				EF9C4F4A210BE17D00C7563A /* SharedOrderTaking.m */,
-				EF9C4F4B210BE17D00C7563A /* HotDeal.m */,
-				EF9C4F4C210BE17D00C7563A /* SharedCurrentOrderTaking.m */,
-				EF9C4F4D210BE17D00C7563A /* SharedPushSync.m */,
-				EF9C4F4E210BE17D00C7563A /* Message.h */,
-				EF9C4F4F210BE17D00C7563A /* SharedHotDeal.m */,
-				EF9C4F50210BE17D00C7563A /* RewardPoint.h */,
-				EF9C4F51210BE17D00C7563A /* NoteType.m */,
-				EF9C4F52210BE17D00C7563A /* SharedOrderNote.m */,
-				EF9C4F53210BE17D00C7563A /* SpecialPriceProgram.m */,
-				EF9C4F54210BE17D00C7563A /* LogIn.m */,
-				EF9C4F55210BE17D00C7563A /* SharedCurrentMenu.m */,
-				EF9C4F56210BE17D00C7563A /* MenuPic.m */,
-				EF9C4F57210BE17D00C7563A /* UserPromotionUsed.m */,
-				EF9C4F58210BE17D00C7563A /* Note.m */,
-				EF9C4F59210BE17D00C7563A /* SharedLogIn.m */,
-				EF9C4F5A210BE17D00C7563A /* RewardRedemption.h */,
-				EF9C4F5B210BE17D00C7563A /* Setting.m */,
-				EF9C4F5C210BE17D00C7563A /* TableNo.m */,
-				EF9C4F5D210BE17D00C7563A /* Dispute.m */,
-				EF9C4F5E210BE17D00C7563A /* CreditCard.h */,
-				EF9C4F5F210BE17D00C7563A /* ReceiptPrint.m */,
-				EF9C4F60210BE17D00C7563A /* SharedRewardRedemption.m */,
-				EF9C4F61210BE17D00C7563A /* UserAccount.m */,
-				EF9C4F62210BE17D00C7563A /* SharedShop.m */,
-				EF9C4F63210BE17D00C7563A /* Promotion.h */,
-				EF9C4F64210BE17D00C7563A /* SharedNoteType.m */,
-				EF9C4F65210BE17D00C7563A /* OrderTaking.m */,
-				EF9C4F66210BE17D00C7563A /* SharedCurrentCredentialsDb.h */,
-				EF9C4F67210BE17D00C7563A /* SharedMenu.h */,
-				EF9C4F68210BE17D00C7563A /* SharedPic.m */,
-				EF9C4F69210BE17D00C7563A /* SharedSubMenuType.h */,
-				EF9C4F6A210BE17D00C7563A /* SharedBranch.m */,
-				EF9C4F6B210BE17D00C7563A /* SharedReceiptPrint.h */,
-				EF9C4F6C210BE17D00C7563A /* Receipt.h */,
-				EF9C4F6D210BE17D00C7563A /* Printer.m */,
-				EF9C4F6E210BE17D00C7563A /* FacebookComment.h */,
-				EF9C4F6F210BE17D00C7563A /* InvoiceComposer.h */,
-				EF9C4F70210BE17D00C7563A /* UserRewardRedemptionUsed.h */,
-				EF9C4F71210BE17D00C7563A /* SharedPromoCode.m */,
-				EF9C4F72210BE17D00C7563A /* Pic.h */,
-				EF9C4F73210BE17D00C7563A /* SharedUserPromotionUsed.h */,
 				EF9C4F74210BE17D00C7563A /* Branch.m */,
-				EF9C4F75210BE17D00C7563A /* SharedCurrentUserAccount.m */,
-				EF9C4F76210BE17D00C7563A /* MenuTypeNote.m */,
-				EF9C4F77210BE17D00C7563A /* SharedUserAccount.m */,
-				EF9C4F78210BE17D00C7563A /* CustomerTable.m */,
-				EF9C4F79210BE17D00C7563A /* Menu.h */,
-				EF9C4F7A210BE17D00C7563A /* SharedUserRewardRedemptionUsed.h */,
-				EF9C4F7B210BE17D00C7563A /* SharedReceipt.h */,
-				EF9C4F7C210BE17D00C7563A /* SharedPrinter.m */,
 				EF9C4F7D210BE17D00C7563A /* Credentials.h */,
-				EF9C4F7E210BE17D00C7563A /* PromotionMenu.h */,
-				EF9C4F7F210BE17D00C7563A /* SharedPromotionMenu.h */,
-				EF9C4F80210BE17D00C7563A /* PromoCode.m */,
-				EF9C4F81210BE17D00C7563A /* SharedCustomerTable.m */,
-				EF9C4F82210BE17D00C7563A /* OrderKitchen.m */,
-				EF9C4F83210BE17D00C7563A /* PushSync.m */,
-				EF9C4F84210BE17D00C7563A /* Device.m */,
-				EF9C4F85210BE17D00C7563A /* MenuType.h */,
-				EF9C4F86210BE17D00C7563A /* SharedRewardPoint.h */,
-				EF9C4F87210BE17D00C7563A /* SharedPushSync.h */,
-				EF9C4F88210BE17D00C7563A /* HotDeal.h */,
-				EF9C4F89210BE17D00C7563A /* SharedCurrentOrderTaking.h */,
-				EF9C4F8A210BE17D00C7563A /* SharedMenuType.m */,
-				EF9C4F8B210BE17D00C7563A /* SharedOrderTaking.h */,
-				EF9C4F8C210BE17D00C7563A /* DisputeReason.m */,
-				EF9C4F8D210BE17D00C7563A /* SubMenuType.m */,
-				EF9C4F8E210BE17D00C7563A /* SharedMenuPic.h */,
+				EF9C4F2E210BE17D00C7563A /* Credentials.m */,
+				EF9C4F45210BE17D00C7563A /* CredentialsDb.h */,
 				EF9C4F8F210BE17D00C7563A /* CredentialsDb.m */,
-				EF9C4F90210BE17D00C7563A /* SharedOrderKitchen.m */,
-				EF9C4F91210BE17D00C7563A /* Shop.h */,
-				EF9C4F92210BE17D00C7563A /* SharedPromotion.m */,
-				EF9C4F93210BE17D00C7563A /* SharedDispute.h */,
-				EF9C4F94210BE17D00C7563A /* SharedMenuTypeNote.m */,
-				EF9C4F95210BE17D00C7563A /* SharedSetting.h */,
-				EF9C4F96210BE17D00C7563A /* SharedTableNo.h */,
-				EF9C4F97210BE17D00C7563A /* OrderNote.h */,
-				EF9C4F98210BE17D00C7563A /* SharedDisputeReason.m */,
-				EF9C4F99210BE17D00C7563A /* SharedSpecialPriceProgram.m */,
-				EF9C4F9A210BE17D00C7563A /* SharedNote.h */,
-				EF9C4F9B210BE17D00C7563A /* UserAccount.h */,
-				EF9C4F9C210BE17D00C7563A /* Promotion.m */,
-				EF9C4F9D210BE17D00C7563A /* SharedShop.h */,
-				EF9C4F9E210BE17D00C7563A /* SharedRewardRedemption.h */,
-				EF9C4F9F210BE17D00C7563A /* ReceiptPrint.h */,
-				EF9C4FA0210BE17D00C7563A /* Dispute.h */,
+				EF9C4F5E210BE17D00C7563A /* CreditCard.h */,
 				EF9C4FA1210BE17D00C7563A /* CreditCard.m */,
-				EF9C4FA2210BE17D00C7563A /* Setting.h */,
-				EF9C4FA3210BE17D00C7563A /* TableNo.h */,
-				EF9C4FA4210BE17D00C7563A /* SharedLogIn.h */,
-				EF9C4FA5210BE17D00C7563A /* RewardRedemption.m */,
-				EF9C4FA6210BE17D00C7563A /* UserPromotionUsed.h */,
-				EF9C4FA7210BE17D00C7563A /* Note.h */,
-				EF9C4FA8210BE17D00C7563A /* MenuPic.h */,
-				EF9C4FA9210BE17D00C7563A /* SharedCurrentMenu.h */,
-				EF9C4FAA210BE17D00C7563A /* NoteType.h */,
-				EF9C4FAB210BE17D00C7563A /* SpecialPriceProgram.h */,
-				EF9C4FAC210BE17D00C7563A /* SharedOrderNote.h */,
+				EF9C4F34210BE17D00C7563A /* CustomerTable.h */,
+				EF9C4F78210BE17D00C7563A /* CustomerTable.m */,
+				EF9C4F28210BE17D00C7563A /* Device.h */,
+				EF9C4F84210BE17D00C7563A /* Device.m */,
+				EF9C4FA0210BE17D00C7563A /* Dispute.h */,
+				EF9C4F5D210BE17D00C7563A /* Dispute.m */,
+				EF9C4F48210BE17D00C7563A /* DisputeReason.h */,
+				EF9C4F8C210BE17D00C7563A /* DisputeReason.m */,
+				EF9C4F6E210BE17D00C7563A /* FacebookComment.h */,
+				EF9C4F1B210BE17D00C7563A /* FacebookComment.m */,
+				EF9C4F88210BE17D00C7563A /* HotDeal.h */,
+				EF9C4F4B210BE17D00C7563A /* HotDeal.m */,
+				EF9C4F6F210BE17D00C7563A /* InvoiceComposer.h */,
+				EF9C4F1A210BE17D00C7563A /* InvoiceComposer.m */,
 				EF9C4FAD210BE17D00C7563A /* LogIn.h */,
-				EF9C4FAE210BE17D00C7563A /* RewardPoint.m */,
+				EF9C4F54210BE17D00C7563A /* LogIn.m */,
+				EF9C4F79210BE17D00C7563A /* Menu.h */,
+				EF9C4F31210BE17D00C7563A /* Menu.m */,
+				EF9C4FA8210BE17D00C7563A /* MenuPic.h */,
+				EF9C4F56210BE17D00C7563A /* MenuPic.m */,
+				EF9C4F85210BE17D00C7563A /* MenuType.h */,
+				EF9C4F26210BE17D00C7563A /* MenuType.m */,
+				EF9C4F35210BE17D00C7563A /* MenuTypeNote.h */,
+				EF9C4F76210BE17D00C7563A /* MenuTypeNote.m */,
+				EF9C4F4E210BE17D00C7563A /* Message.h */,
 				EF9C4FAF210BE17D00C7563A /* Message.m */,
+				EF9C4FA7210BE17D00C7563A /* Note.h */,
+				EF9C4F58210BE17D00C7563A /* Note.m */,
+				EF9C4FAA210BE17D00C7563A /* NoteType.h */,
+				EF9C4F51210BE17D00C7563A /* NoteType.m */,
+				EF9C4F2A210BE17D00C7563A /* OrderKitchen.h */,
+				EF9C4F82210BE17D00C7563A /* OrderKitchen.m */,
+				EF9C4F97210BE17D00C7563A /* OrderNote.h */,
+				EF9C4F3F210BE17D00C7563A /* OrderNote.m */,
+				EF9C4F24210BE17D00C7563A /* OrderTaking.h */,
+				EF9C4F65210BE17D00C7563A /* OrderTaking.m */,
+				EF9C4F72210BE17D00C7563A /* Pic.h */,
+				EF9C4F17210BE17D00C7563A /* Pic.m */,
+				EF9C4F1E210BE17D00C7563A /* Printer.h */,
+				EF9C4F6D210BE17D00C7563A /* Printer.m */,
+				EF9C4F2C210BE17D00C7563A /* PromoCode.h */,
+				EF9C4F80210BE17D00C7563A /* PromoCode.m */,
+				EF9C4F63210BE17D00C7563A /* Promotion.h */,
+				EF9C4F9C210BE17D00C7563A /* Promotion.m */,
+				EF9C4F7E210BE17D00C7563A /* PromotionMenu.h */,
+				EF9C4F2F210BE17D00C7563A /* PromotionMenu.m */,
+				EF9C4F29210BE17D00C7563A /* PushSync.h */,
+				EF9C4F83210BE17D00C7563A /* PushSync.m */,
+				EF9C4F6C210BE17D00C7563A /* Receipt.h */,
+				EF9C4F1D210BE17D00C7563A /* Receipt.m */,
+				EF9C4F9F210BE17D00C7563A /* ReceiptPrint.h */,
+				EF9C4F5F210BE17D00C7563A /* ReceiptPrint.m */,
+				EF9C4F50210BE17D00C7563A /* RewardPoint.h */,
+				EF9C4FAE210BE17D00C7563A /* RewardPoint.m */,
+				EF9C4F5A210BE17D00C7563A /* RewardRedemption.h */,
+				EF9C4FA5210BE17D00C7563A /* RewardRedemption.m */,
+				EF9C4FA2210BE17D00C7563A /* Setting.h */,
+				EF9C4F5B210BE17D00C7563A /* Setting.m */,
+				EF9C4F1F210BE17D00C7563A /* SharedBranch.h */,
+				EF9C4F6A210BE17D00C7563A /* SharedBranch.m */,
+				EF9C4F66210BE17D00C7563A /* SharedCurrentCredentialsDb.h */,
+				EF9C4F22210BE17D00C7563A /* SharedCurrentCredentialsDb.m */,
+				EF9C4FA9210BE17D00C7563A /* SharedCurrentMenu.h */,
+				EF9C4F55210BE17D00C7563A /* SharedCurrentMenu.m */,
+				EF9C4F89210BE17D00C7563A /* SharedCurrentOrderTaking.h */,
+				EF9C4F4C210BE17D00C7563A /* SharedCurrentOrderTaking.m */,
+				EF9C4F37210BE17D00C7563A /* SharedCurrentUserAccount.h */,
+				EF9C4F75210BE17D00C7563A /* SharedCurrentUserAccount.m */,
+				EF9C4F2B210BE17D00C7563A /* SharedCustomerTable.h */,
+				EF9C4F81210BE17D00C7563A /* SharedCustomerTable.m */,
+				EF9C4F93210BE17D00C7563A /* SharedDispute.h */,
+				EF9C4F41210BE17D00C7563A /* SharedDispute.m */,
+				EF9C4F3C210BE17D00C7563A /* SharedDisputeReason.h */,
+				EF9C4F98210BE17D00C7563A /* SharedDisputeReason.m */,
 				EF9C4FB0210BE17D00C7563A /* SharedHotDeal.h */,
+				EF9C4F4F210BE17D00C7563A /* SharedHotDeal.m */,
+				EF9C4FA4210BE17D00C7563A /* SharedLogIn.h */,
+				EF9C4F59210BE17D00C7563A /* SharedLogIn.m */,
+				EF9C4F67210BE17D00C7563A /* SharedMenu.h */,
+				EF9C4F23210BE17D00C7563A /* SharedMenu.m */,
+				EF9C4F8E210BE17D00C7563A /* SharedMenuPic.h */,
+				EF9C4F47210BE17D00C7563A /* SharedMenuPic.m */,
+				EF9C4F49210BE17D00C7563A /* SharedMenuType.h */,
+				EF9C4F8A210BE17D00C7563A /* SharedMenuType.m */,
+				EF9C4F40210BE17D00C7563A /* SharedMenuTypeNote.h */,
+				EF9C4F94210BE17D00C7563A /* SharedMenuTypeNote.m */,
+				EF9C4F9A210BE17D00C7563A /* SharedNote.h */,
+				EF9C4F3A210BE17D00C7563A /* SharedNote.m */,
+				EF9C4F25210BE17D00C7563A /* SharedNoteType.h */,
+				EF9C4F64210BE17D00C7563A /* SharedNoteType.m */,
+				EF9C4F44210BE17D00C7563A /* SharedOrderKitchen.h */,
+				EF9C4F90210BE17D00C7563A /* SharedOrderKitchen.m */,
+				EF9C4FAC210BE17D00C7563A /* SharedOrderNote.h */,
+				EF9C4F52210BE17D00C7563A /* SharedOrderNote.m */,
+				EF9C4F8B210BE17D00C7563A /* SharedOrderTaking.h */,
+				EF9C4F4A210BE17D00C7563A /* SharedOrderTaking.m */,
+				EF9C4F21210BE17D00C7563A /* SharedPic.h */,
+				EF9C4F68210BE17D00C7563A /* SharedPic.m */,
+				EF9C4F33210BE17D00C7563A /* SharedPrinter.h */,
+				EF9C4F7C210BE17D00C7563A /* SharedPrinter.m */,
+				EF9C4F18210BE17D00C7563A /* SharedPromoCode.h */,
+				EF9C4F71210BE17D00C7563A /* SharedPromoCode.m */,
+				EF9C4F42210BE17D00C7563A /* SharedPromotion.h */,
+				EF9C4F92210BE17D00C7563A /* SharedPromotion.m */,
+				EF9C4F7F210BE17D00C7563A /* SharedPromotionMenu.h */,
+				EF9C4F2D210BE17D00C7563A /* SharedPromotionMenu.m */,
+				EF9C4F87210BE17D00C7563A /* SharedPushSync.h */,
+				EF9C4F4D210BE17D00C7563A /* SharedPushSync.m */,
+				EF9C4F7B210BE17D00C7563A /* SharedReceipt.h */,
+				EF9C4F32210BE17D00C7563A /* SharedReceipt.m */,
+				EF9C4F6B210BE17D00C7563A /* SharedReceiptPrint.h */,
+				EF9C4F1C210BE17D00C7563A /* SharedReceiptPrint.m */,
+				EF9C4F86210BE17D00C7563A /* SharedRewardPoint.h */,
+				EF9C4F27210BE17D00C7563A /* SharedRewardPoint.m */,
+				EF9C4F9E210BE17D00C7563A /* SharedRewardRedemption.h */,
+				EF9C4F60210BE17D00C7563A /* SharedRewardRedemption.m */,
+				EF9C4F95210BE17D00C7563A /* SharedSetting.h */,
+				EF9C4F3D210BE17D00C7563A /* SharedSetting.m */,
+				EF9C4F9D210BE17D00C7563A /* SharedShop.h */,
+				EF9C4F62210BE17D00C7563A /* SharedShop.m */,
+				EF9C4F3B210BE17D00C7563A /* SharedSpecialPriceProgram.h */,
+				EF9C4F99210BE17D00C7563A /* SharedSpecialPriceProgram.m */,
+				EF9C4F69210BE17D00C7563A /* SharedSubMenuType.h */,
+				EF9C4F20210BE17D00C7563A /* SharedSubMenuType.m */,
+				EF9C4F96210BE17D00C7563A /* SharedTableNo.h */,
+				EF9C4F3E210BE17D00C7563A /* SharedTableNo.m */,
+				EF9C4F36210BE17D00C7563A /* SharedUserAccount.h */,
+				EF9C4F77210BE17D00C7563A /* SharedUserAccount.m */,
+				EF9C4F73210BE17D00C7563A /* SharedUserPromotionUsed.h */,
+				EF9C4F39210BE17D00C7563A /* SharedUserPromotionUsed.m */,
+				EF9C4F7A210BE17D00C7563A /* SharedUserRewardRedemptionUsed.h */,
+				EF9C4F30210BE17D00C7563A /* SharedUserRewardRedemptionUsed.m */,
+				EF9C4F91210BE17D00C7563A /* Shop.h */,
+				EF9C4F43210BE17D00C7563A /* Shop.m */,
+				EF9C4FAB210BE17D00C7563A /* SpecialPriceProgram.h */,
+				EF9C4F53210BE17D00C7563A /* SpecialPriceProgram.m */,
+				EF9C4F46210BE17D00C7563A /* SubMenuType.h */,
+				EF9C4F8D210BE17D00C7563A /* SubMenuType.m */,
+				EF9C4FA3210BE17D00C7563A /* TableNo.h */,
+				EF9C4F5C210BE17D00C7563A /* TableNo.m */,
+				EF9C4F9B210BE17D00C7563A /* UserAccount.h */,
+				EF9C4F61210BE17D00C7563A /* UserAccount.m */,
+				EF9C4FA6210BE17D00C7563A /* UserPromotionUsed.h */,
+				EF9C4F57210BE17D00C7563A /* UserPromotionUsed.m */,
+				EF9C4F70210BE17D00C7563A /* UserRewardRedemptionUsed.h */,
+				EF9C4F19210BE17D00C7563A /* UserRewardRedemptionUsed.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1486,6 +1509,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF9C4DD2210BE15200C7563A /* Build configuration list for PBXNativeTarget "DemoJummumOM" */;
 			buildPhases = (
+				D7C33EA881D905691B2B4821 /* [CP] Check Pods Manifest.lock */,
 				EF9C4DA2210BE15000C7563A /* Sources */,
 				EF9C4DA3210BE15000C7563A /* Frameworks */,
 				EF9C4DA4210BE15000C7563A /* Resources */,
@@ -1504,6 +1528,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF9C4DD5210BE15200C7563A /* Build configuration list for PBXNativeTarget "DemoJummumOMTests" */;
 			buildPhases = (
+				9DF89A23E6416A2113902148 /* [CP] Check Pods Manifest.lock */,
 				EF9C4DBA210BE15200C7563A /* Sources */,
 				EF9C4DBB210BE15200C7563A /* Frameworks */,
 				EF9C4DBC210BE15200C7563A /* Resources */,
@@ -1522,6 +1547,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF9C4DD8210BE15200C7563A /* Build configuration list for PBXNativeTarget "DemoJummumOMUITests" */;
 			buildPhases = (
+				54F3456FB86962F4ADB195C3 /* [CP] Check Pods Manifest.lock */,
 				EF9C4DC5210BE15200C7563A /* Sources */,
 				EF9C4DC6210BE15200C7563A /* Frameworks */,
 				EF9C4DC7210BE15200C7563A /* Resources */,
@@ -1637,6 +1663,7 @@
 				EF9C51D4210BE17F00C7563A /* CustomTableViewHeaderFooterOkCancel.xib in Resources */,
 				EF9C51B3210BE17E00C7563A /* CustomTableViewCellLabelText.xib in Resources */,
 				EF9C51AF210BE17E00C7563A /* CustomTableViewCellPromoBanner.xib in Resources */,
+				EF5D28C8212D52BB0073F1A1 /* GoogleService-Info.plist in Resources */,
 				EF9C51F9210BE17F00C7563A /* Kanit-Black.ttf in Resources */,
 				EF9C51C6210BE17F00C7563A /* CustomTableViewCellTotal.xib in Resources */,
 				EF9C5102210BE17E00C7563A /* profilePic.png in Resources */,
@@ -1803,6 +1830,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		54F3456FB86962F4ADB195C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoJummumOMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DF89A23E6416A2113902148 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoJummumOMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C33EA881D905691B2B4821 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoJummumOM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EF33CD65211BFA0500560C69 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1825,7 +1906,6 @@
 			files = (
 				EF9C51C0210BE17F00C7563A /* CustomTableViewCellImageTextButtonHalf.m in Sources */,
 				EF9C51DD210BE17F00C7563A /* CustomTableViewCellImageText.m in Sources */,
-				EF9C5154210BE17E00C7563A /* RewardViewController.m in Sources */,
 				EF9C5184210BE17E00C7563A /* UserAccount.m in Sources */,
 				EF9C50B9210BE17E00C7563A /* Utility.m in Sources */,
 				EF9C51D5210BE17F00C7563A /* CustomTableViewCellLabelText.m in Sources */,
@@ -1840,7 +1920,6 @@
 				EF9C51D2210BE17F00C7563A /* CustomTableViewCellReceiptSummary.m in Sources */,
 				EF9C518C210BE17E00C7563A /* Branch.m in Sources */,
 				EF9C5164210BE17E00C7563A /* Credentials.m in Sources */,
-				EF9C513F210BE17E00C7563A /* HotDealViewController.m in Sources */,
 				EF9C5168210BE17E00C7563A /* SharedReceipt.m in Sources */,
 				EF9C5161210BE17E00C7563A /* MenuType.m in Sources */,
 				EF9C5191210BE17E00C7563A /* SharedPrinter.m in Sources */,
@@ -1897,7 +1976,6 @@
 				EF9C5192210BE17E00C7563A /* PromoCode.m in Sources */,
 				EF9C517B210BE17E00C7563A /* MenuPic.m in Sources */,
 				EF9C519D210BE17E00C7563A /* SharedMenuTypeNote.m in Sources */,
-				EF9C5141210BE17E00C7563A /* MyRewardViewController.m in Sources */,
 				EF9C515D210BE17E00C7563A /* Receipt.m in Sources */,
 				EF9C51E5210BE17F00C7563A /* CustomTableViewCellButton.m in Sources */,
 				EF9C519B210BE17E00C7563A /* SharedOrderKitchen.m in Sources */,
@@ -1909,7 +1987,7 @@
 				EF9C51A3210BE17E00C7563A /* RewardPoint.m in Sources */,
 				EF9C51E2210BE17F00C7563A /* CustomTableViewCellPromoBanner.m in Sources */,
 				EF9C517D210BE17E00C7563A /* Note.m in Sources */,
-				EF9C5146210BE17E00C7563A /* RewardRedemptionViewController.m in Sources */,
+				EF5D28CB212D57C20073F1A1 /* SharedDevice.m in Sources */,
 				EF9C516E210BE17E00C7563A /* SharedDispute.m in Sources */,
 				EF9C5156210BE17E00C7563A /* ConfirmDisputeViewController.m in Sources */,
 				EF9C514F210BE17E00C7563A /* TosAndPrivacyPolicyViewController.m in Sources */,
@@ -1922,7 +2000,6 @@
 				EF9C51A4210BE17E00C7563A /* Message.m in Sources */,
 				EF9C5171210BE17E00C7563A /* SharedOrderTaking.m in Sources */,
 				EF9C5176210BE17E00C7563A /* NoteType.m in Sources */,
-				EF9C5150210BE17E00C7563A /* RegisterNowViewController.m in Sources */,
 				EF9C514E210BE17E00C7563A /* OpeningTimeViewController.m in Sources */,
 				EF9C5163210BE17E00C7563A /* SharedPromotionMenu.m in Sources */,
 				EF9C5195210BE17E00C7563A /* PushSync.m in Sources */,
@@ -1933,7 +2010,6 @@
 				EF9C5162210BE17E00C7563A /* SharedRewardPoint.m in Sources */,
 				EF9C5193210BE17E00C7563A /* SharedCustomerTable.m in Sources */,
 				EF9C51CC210BE17F00C7563A /* CustomTableViewCellOrderSummary.m in Sources */,
-				EF9C514A210BE17E00C7563A /* RewardDetailViewController.m in Sources */,
 				EF9C5170210BE17E00C7563A /* SharedMenuPic.m in Sources */,
 				EF9C5194210BE17E00C7563A /* OrderKitchen.m in Sources */,
 				EF9C5158210BE17E00C7563A /* Pic.m in Sources */,
@@ -1958,6 +2034,7 @@
 				EF9C5186210BE17E00C7563A /* SharedNoteType.m in Sources */,
 				EF9C519E210BE17E00C7563A /* SharedDisputeReason.m in Sources */,
 				EF9C519A210BE17E00C7563A /* CredentialsDb.m in Sources */,
+				EF5D28CE212D57E20073F1A1 /* NewVersionUpdateViewController.m in Sources */,
 				EF9C51D9210BE17F00C7563A /* CustomTableViewCellRewardDetail.m in Sources */,
 				EF9C516A210BE17E00C7563A /* SharedNote.m in Sources */,
 				EF9C51C1210BE17F00C7563A /* CustomTableViewCellDisputeDetail.m in Sources */,
@@ -2123,6 +2200,7 @@
 		};
 		EF9C4DD3210BE15200C7563A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC24F08385F03DE6CC080DB /* Pods-DemoJummumOM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DemoJummumOM/DemoJummumOM.entitlements;
@@ -2147,6 +2225,7 @@
 		};
 		EF9C4DD4210BE15200C7563A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97FDE819FA7FC4CE2C18DB9 /* Pods-DemoJummumOM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DemoJummumOM/DemoJummumOM.entitlements;
@@ -2171,6 +2250,7 @@
 		};
 		EF9C4DD6210BE15200C7563A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A786AEF6420C3D30E57E462D /* Pods-DemoJummumOMTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -2190,6 +2270,7 @@
 		};
 		EF9C4DD7210BE15200C7563A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9E78C32B6933F3AA6F35A0 /* Pods-DemoJummumOMTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -2209,6 +2290,7 @@
 		};
 		EF9C4DD9210BE15200C7563A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A9E0BCDBDF2B3C5CE27B376 /* Pods-DemoJummumOMUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DF8AZLDC5D;
@@ -2227,6 +2309,7 @@
 		};
 		EF9C4DDA210BE15200C7563A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D640655509227783FB07637A /* Pods-DemoJummumOMUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DF8AZLDC5D;
