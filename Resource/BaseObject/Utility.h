@@ -16,8 +16,8 @@
 
 
 #define mRedThemeColor      [UIColor colorWithRed:255/255.0 green:51/255.0 blue:51/255.0 alpha:1]
-#define mGrayColor          [UIColor colorWithRed:156/255.0 green:156/255.0 blue:156/255.0 alpha:1]
 #define mLightGrayColor     [UIColor colorWithRed:204/255.0 green:204/255.0 blue:204/255.0 alpha:1]
+#define mGrayColor          [UIColor colorWithRed:156/255.0 green:156/255.0 blue:156/255.0 alpha:1]
 #define mDarkGrayColor      [UIColor colorWithRed:85/255.0 green:85/255.0 blue:85/255.0 alpha:1]
 #define mYellowColor        [UIColor colorWithRed:255/255.0 green:255/255.0 blue:253/255.0 alpha:1]
 #define mBlueColor          [UIColor colorWithRed:51/255.0 green:153/255.0 blue:255/255.0 alpha:1]
@@ -31,19 +31,20 @@
 #define mColVwBgColor       [UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1]
 #define mGreen              [UIColor colorWithRed:0/255.0 green:168/255.0 blue:136/255.0 alpha:1]
 #define mSeparatorLine      [UIColor colorWithRed:224/255.0 green:224/255.0 blue:224/255.0 alpha:1]
-#define mPlaceHolder     [UIColor colorWithRed:199/255.0 green:199/255.0 blue:205/255.0 alpha:1]
 #define mButtonColor     [UIColor colorWithRed:30/255.0 green:177/255.0 blue:237/255.0 alpha:1]
 #define mNotActiveColor     [UIColor colorWithRed:229/255.0 green:229/255.0 blue:229/255.0 alpha:1]
 #define mOrange     [UIColor colorWithRed:246/255.0 green:139/255.0 blue:31/255.0 alpha:1]
 #define mPink     [UIColor colorWithRed:238/255.0 green:69/255.0 blue:123/255.0 alpha:1]
 #define mButtonText     [UIColor colorWithRed:21/255.0 green:126/255.0 blue:251/255.0 alpha:1]
 #define mSelectionStyleGray     [UIColor colorWithRed:217/255.0 green:217/255.0 blue:217/255.0 alpha:1]
-#define mPlaceHolder     [UIColor colorWithRed:199/255.0 green:199/255.0 blue:205/255.0 alpha:1]
+#define cPlaceHolder     [UIColor colorWithRed:199/255.0 green:199/255.0 blue:205/255.0 alpha:1]
 #define cSystem2     [UIColor colorWithRed:236/255.0 green:62/255.0 blue:72/255.0 alpha:1]
 #define cSystem1     [UIColor colorWithRed:107/255.0 green:213/255.0 blue:194/255.0 alpha:1]
 #define cSystem3     [UIColor colorWithRed:0/255.0 green:95/255.0 blue:77/255.0 alpha:1]
 #define cSystem4     [UIColor colorWithRed:77/255.0 green:78/255.0 blue:78/255.0 alpha:1]
+#define cSystem4_50     [UIColor colorWithRed:162/255.0 green:162/255.0 blue:162/255.0 alpha:1]
 #define cSystem4_10     [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1]
+
 
 #define UIColorFromRGB(rgbValue) \
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
@@ -397,5 +398,7 @@ enum enumUrl
 + (void)addObjectIfNotDuplicate:(NSObject *)object;
 +(void)updateSharedObject:(NSArray *)arrOfObjectList;
 +(NSString *)formatPhoneNo:(NSString *)phoneNo;
++(BOOL)showPrintButton;
++(void)setShowPrintButton:(BOOL)show;
 @end
 
