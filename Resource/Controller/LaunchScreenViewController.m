@@ -9,7 +9,6 @@
 #import "LaunchScreenViewController.h"
 #import "LogInViewController.h"
 #import "NewVersionUpdateViewController.h"
-#import "CredentialsDb.h"
 #import "Credentials.h"
 #import "Device.h"
 #import "Message.h"
@@ -111,6 +110,10 @@
     NSString* appID = infoDictionary[@"CFBundleIdentifier"];
     NSURL* url = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.apple.com/lookup?bundleId=%@", appID]];
     NSData* data = [NSData dataWithContentsOfURL:url];
+    if(!data)
+    {
+        return NO;
+    }
     NSDictionary* lookup = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     
     if ([lookup[@"resultCount"] integerValue] == 1)

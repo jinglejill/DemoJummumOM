@@ -15,18 +15,17 @@
 @end
 
 @implementation MainTabBarController
-@synthesize credentialsDb;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    CustomerKitchenViewController *vc = [[self viewControllers] objectAtIndex:0];
-    vc.credentialsDb = credentialsDb;
-    
     
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName: [UIFont fontWithName:@"Prompt-Regular" size:11.0f]} forState:UIControlStateNormal];
+    
+    [[UITabBar appearance] setBarTintColor:cSystem3];
+    
 
 }
 

@@ -16,6 +16,8 @@
 #import "OpeningTimeViewController.h"
 #import "PrinterSettingViewController.h"
 #import "PrinterChoosingViewController.h"
+#import "ReportViewController.h"
+#import "ReportDetailsByDayViewController.h"
 #import "HomeModel.h"
 #import "Utility.h"
 #import "PushSync.h"
@@ -99,6 +101,8 @@ void myExceptionHandler(NSException *exception)
 //    NSString *key = [NSString stringWithFormat:@"dismiss verion:1.2"];
 //        [[NSUserDefaults standardUserDefaults] setValue:@0 forKey:key];
 //
+
+    
     
     
     UIBarButtonItem *barButtonAppearance = [UIBarButtonItem appearance];
@@ -716,7 +720,7 @@ void myExceptionHandler(NSException *exception)
             CustomerKitchenViewController *vc = (CustomerKitchenViewController *)currentVc;
             [vc reloadTableViewNewOrderTab];
         }
-        else if([currentVc isKindOfClass:[OrderDetailViewController class]] || [currentVc isKindOfClass:[PersonalDataViewController class]] || [currentVc isKindOfClass:[TosAndPrivacyPolicyViewController class]] || [currentVc isKindOfClass:[PrinterSettingViewController class]] || [currentVc isKindOfClass:[PrinterChoosingViewController class]])
+        else if([currentVc isKindOfClass:[OrderDetailViewController class]] || [currentVc isKindOfClass:[PersonalDataViewController class]] || [currentVc isKindOfClass:[TosAndPrivacyPolicyViewController class]] || [currentVc isKindOfClass:[PrinterSettingViewController class]] || [currentVc isKindOfClass:[PrinterChoosingViewController class]] || [currentVc isKindOfClass:[ReportViewController class]] || [currentVc isKindOfClass:[ReportDetailsByDayViewController class]])
         {
             CustomViewController *vc = (CustomViewController *)currentVc;
             vc.newOrderComing = 1;
@@ -759,7 +763,7 @@ void myExceptionHandler(NSException *exception)
             CustomerKitchenViewController *vc = (CustomerKitchenViewController *)currentVc;
             [vc reloadTableViewIssueTab];
         }
-        else if([currentVc isKindOfClass:[OrderDetailViewController class]] || [currentVc isKindOfClass:[PersonalDataViewController class]] || [currentVc isKindOfClass:[TosAndPrivacyPolicyViewController class]] || [currentVc isKindOfClass:[PrinterSettingViewController class]] || [currentVc isKindOfClass:[PrinterChoosingViewController class]])
+        else if([currentVc isKindOfClass:[OrderDetailViewController class]] || [currentVc isKindOfClass:[PersonalDataViewController class]] || [currentVc isKindOfClass:[TosAndPrivacyPolicyViewController class]] || [currentVc isKindOfClass:[PrinterSettingViewController class]] || [currentVc isKindOfClass:[PrinterChoosingViewController class]] || [currentVc isKindOfClass:[ReportViewController class]] || [currentVc isKindOfClass:[ReportDetailsByDayViewController class]])
         {
             CustomViewController *vc = (CustomViewController *)currentVc;
             vc.issueComing = 1;
@@ -802,7 +806,7 @@ void myExceptionHandler(NSException *exception)
             CustomerKitchenViewController *vc = (CustomerKitchenViewController *)currentVc;
             [vc reloadTableViewProcessingTab];
         }
-        else if([currentVc isKindOfClass:[OrderDetailViewController class]] || [currentVc isKindOfClass:[PersonalDataViewController class]] || [currentVc isKindOfClass:[TosAndPrivacyPolicyViewController class]] || [currentVc isKindOfClass:[PrinterSettingViewController class]] || [currentVc isKindOfClass:[PrinterChoosingViewController class]])
+        else if([currentVc isKindOfClass:[OrderDetailViewController class]] || [currentVc isKindOfClass:[PersonalDataViewController class]] || [currentVc isKindOfClass:[TosAndPrivacyPolicyViewController class]] || [currentVc isKindOfClass:[PrinterSettingViewController class]] || [currentVc isKindOfClass:[PrinterChoosingViewController class]] || [currentVc isKindOfClass:[ReportViewController class]] || [currentVc isKindOfClass:[ReportDetailsByDayViewController class]])
         {
             CustomViewController *vc = (CustomViewController *)currentVc;
             vc.issueComing = 1;
@@ -845,7 +849,7 @@ void myExceptionHandler(NSException *exception)
             CustomerKitchenViewController *vc = (CustomerKitchenViewController *)currentVc;
             [vc reloadTableViewDeliveredTab];
         }
-        else if([currentVc isKindOfClass:[OrderDetailViewController class]] || [currentVc isKindOfClass:[PersonalDataViewController class]] || [currentVc isKindOfClass:[TosAndPrivacyPolicyViewController class]] || [currentVc isKindOfClass:[PrinterSettingViewController class]] || [currentVc isKindOfClass:[PrinterChoosingViewController class]])
+        else if([currentVc isKindOfClass:[OrderDetailViewController class]] || [currentVc isKindOfClass:[PersonalDataViewController class]] || [currentVc isKindOfClass:[TosAndPrivacyPolicyViewController class]] || [currentVc isKindOfClass:[PrinterSettingViewController class]] || [currentVc isKindOfClass:[PrinterChoosingViewController class]] || [currentVc isKindOfClass:[ReportViewController class]] || [currentVc isKindOfClass:[ReportDetailsByDayViewController class]])
         {
             CustomViewController *vc = (CustomViewController *)currentVc;
             vc.issueComing = 1;
@@ -887,7 +891,7 @@ void myExceptionHandler(NSException *exception)
             CustomerKitchenViewController *vc = (CustomerKitchenViewController *)currentVc;
             [vc reloadTableViewClearTab];
         }
-        else if([currentVc isKindOfClass:[OrderDetailViewController class]] || [currentVc isKindOfClass:[PersonalDataViewController class]] || [currentVc isKindOfClass:[TosAndPrivacyPolicyViewController class]] || [currentVc isKindOfClass:[PrinterSettingViewController class]] || [currentVc isKindOfClass:[PrinterChoosingViewController class]])
+        else if([currentVc isKindOfClass:[OrderDetailViewController class]] || [currentVc isKindOfClass:[PersonalDataViewController class]] || [currentVc isKindOfClass:[TosAndPrivacyPolicyViewController class]] || [currentVc isKindOfClass:[PrinterSettingViewController class]] || [currentVc isKindOfClass:[PrinterChoosingViewController class]] || [currentVc isKindOfClass:[ReportViewController class]] || [currentVc isKindOfClass:[ReportDetailsByDayViewController class]])
         {
             CustomViewController *vc = (CustomViewController *)currentVc;
             vc.issueComing = 1;
