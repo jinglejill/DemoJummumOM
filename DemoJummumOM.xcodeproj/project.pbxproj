@@ -70,6 +70,8 @@
 		EF5D2AAD212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5D2AAB212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.xib */; };
 		EF5D2AAE212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D2AAC212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.m */; };
 		EF5D2AB0212FF08C0073F1A1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5D2AAF212FF08C0073F1A1 /* CoreBluetooth.framework */; };
+		EF7E94D8218999820009B945 /* hourGlass2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7E94D7218999820009B945 /* hourGlass2.png */; };
+		EF7E94DB218999930009B945 /* RunningReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94D9218999930009B945 /* RunningReceiptViewController.m */; };
 		EF9C4DAE210BE15000C7563A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4DAD210BE15000C7563A /* ViewController.m */; };
 		EF9C4DB3210BE15200C7563A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4DB2210BE15200C7563A /* Assets.xcassets */; };
 		EF9C4DB6210BE15200C7563A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4DB4210BE15200C7563A /* LaunchScreen.storyboard */; };
@@ -453,6 +455,9 @@
 		EF5D2AAB212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCellReceiptSummary2.xib; sourceTree = "<group>"; };
 		EF5D2AAC212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCellReceiptSummary2.m; sourceTree = "<group>"; };
 		EF5D2AAF212FF08C0073F1A1 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		EF7E94D7218999820009B945 /* hourGlass2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hourGlass2.png; sourceTree = "<group>"; };
+		EF7E94D9218999930009B945 /* RunningReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningReceiptViewController.m; sourceTree = "<group>"; };
+		EF7E94DA218999930009B945 /* RunningReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningReceiptViewController.h; sourceTree = "<group>"; };
 		EF9C4DA6210BE15000C7563A /* DemoJummumOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoJummumOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9C4DAC210BE15000C7563A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EF9C4DAD210BE15000C7563A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -1102,6 +1107,7 @@
 		EF9C4E80210BE17D00C7563A /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				EF7E94D7218999820009B945 /* hourGlass2.png */,
 				EF14CE03216697BD0035A292 /* badgeGray.png */,
 				EF14CE09216697BE0035A292 /* badgeWhite.png */,
 				EF14CE08216697BE0035A292 /* printerGreen.png */,
@@ -1155,6 +1161,8 @@
 		EF9C4EE1210BE17D00C7563A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EF7E94DA218999930009B945 /* RunningReceiptViewController.h */,
+				EF7E94D9218999930009B945 /* RunningReceiptViewController.m */,
 				EF14CE13216697D50035A292 /* ReportDetailsByDayViewController.h */,
 				EF14CE14216697D50035A292 /* ReportDetailsByDayViewController.m */,
 				EF14CE15216697D50035A292 /* ReportViewController.h */,
@@ -1724,6 +1732,7 @@
 				EF9C51C6210BE17F00C7563A /* CustomTableViewCellTotal.xib in Resources */,
 				EF9C5102210BE17E00C7563A /* profilePic.png in Resources */,
 				EF9C5205210BE17F00C7563A /* Kanit-Italic.otf in Resources */,
+				EF7E94D8218999820009B945 /* hourGlass2.png in Resources */,
 				EF9C5129210BE17E00C7563A /* Icon-Small@3x.png in Resources */,
 				EF33CD64211BF99800560C69 /* contactUs.png in Resources */,
 				EF9C513A210BE17E00C7563A /* iTunesArtwork@2x in Resources */,
@@ -2070,6 +2079,7 @@
 				EF9C514C210BE17E00C7563A /* MeViewController.m in Sources */,
 				EF9C51C8210BE17F00C7563A /* CustomTableViewCellSearchBar.m in Sources */,
 				EF9C515E210BE17E00C7563A /* SharedSubMenuType.m in Sources */,
+				EF7E94DB218999930009B945 /* RunningReceiptViewController.m in Sources */,
 				EF9C51DF210BE17F00C7563A /* CustomCollectionReusableView.m in Sources */,
 				EF9C5173210BE17E00C7563A /* SharedCurrentOrderTaking.m in Sources */,
 				EF9C51AB210BE17E00C7563A /* CustomTableViewHeaderButton.m in Sources */,
