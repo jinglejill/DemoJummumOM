@@ -336,6 +336,12 @@
 		EF9C521F210BE17F00C7563A /* Kanit-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF9C5051210BE17E00C7563A /* Kanit-ExtraLightItalic.ttf */; };
 		EF9C5220210BE17F00C7563A /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF9C5052210BE17E00C7563A /* Kanit-Medium.ttf */; };
 		EF9C5221210BE17F00C7563A /* Kanit-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF9C5053210BE17E00C7563A /* Kanit-SemiBoldItalic.otf */; };
+		EFCE2EAF21BE273700E84B8F /* SharedPrinterMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCE2EAC21BE273700E84B8F /* SharedPrinterMenu.m */; };
+		EFCE2EB021BE273700E84B8F /* PrinterMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCE2EAD21BE273700E84B8F /* PrinterMenu.m */; };
+		EFCE2EC621C0E7C300E84B8F /* CustomTableViewCellSeparatorLine.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCE2EC021C0E7BB00E84B8F /* CustomTableViewCellSeparatorLine.xib */; };
+		EFCE2EC721C0E7C300E84B8F /* CustomTableViewCellLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCE2EC221C0E7BE00E84B8F /* CustomTableViewCellLogo.m */; };
+		EFCE2EC821C0E7C300E84B8F /* CustomTableViewCellSeparatorLine.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCE2EC421C0E7BF00E84B8F /* CustomTableViewCellSeparatorLine.m */; };
+		EFCE2EC921C0E7C300E84B8F /* CustomTableViewCellLogo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCE2EC521C0E7C300E84B8F /* CustomTableViewCellLogo.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -860,6 +866,16 @@
 		EF9C5052210BE17E00C7563A /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		EF9C5053210BE17E00C7563A /* Kanit-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-SemiBoldItalic.otf"; sourceTree = "<group>"; };
 		EF9C5244210BFAF800C7563A /* DemoJummumOM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoJummumOM.entitlements; sourceTree = "<group>"; };
+		EFCE2EAB21BE273600E84B8F /* PrinterMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterMenu.h; sourceTree = "<group>"; };
+		EFCE2EAC21BE273700E84B8F /* SharedPrinterMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedPrinterMenu.m; sourceTree = "<group>"; };
+		EFCE2EAD21BE273700E84B8F /* PrinterMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterMenu.m; sourceTree = "<group>"; };
+		EFCE2EAE21BE273700E84B8F /* SharedPrinterMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedPrinterMenu.h; sourceTree = "<group>"; };
+		EFCE2EC021C0E7BB00E84B8F /* CustomTableViewCellSeparatorLine.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCellSeparatorLine.xib; sourceTree = "<group>"; };
+		EFCE2EC121C0E7BE00E84B8F /* CustomTableViewCellLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCellLogo.h; sourceTree = "<group>"; };
+		EFCE2EC221C0E7BE00E84B8F /* CustomTableViewCellLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCellLogo.m; sourceTree = "<group>"; };
+		EFCE2EC321C0E7BF00E84B8F /* CustomTableViewCellSeparatorLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCellSeparatorLine.h; sourceTree = "<group>"; };
+		EFCE2EC421C0E7BF00E84B8F /* CustomTableViewCellSeparatorLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCellSeparatorLine.m; sourceTree = "<group>"; };
+		EFCE2EC521C0E7C300E84B8F /* CustomTableViewCellLogo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCellLogo.xib; sourceTree = "<group>"; };
 		FC9E78C32B6933F3AA6F35A0 /* Pods-DemoJummumOMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJummumOMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJummumOMTests/Pods-DemoJummumOMTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1161,18 +1177,6 @@
 		EF9C4EE1210BE17D00C7563A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EF7E94DA218999930009B945 /* RunningReceiptViewController.h */,
-				EF7E94D9218999930009B945 /* RunningReceiptViewController.m */,
-				EF14CE13216697D50035A292 /* ReportDetailsByDayViewController.h */,
-				EF14CE14216697D50035A292 /* ReportDetailsByDayViewController.m */,
-				EF14CE15216697D50035A292 /* ReportViewController.h */,
-				EF14CE12216697D40035A292 /* ReportViewController.m */,
-				EF5D2AA4212FEE940073F1A1 /* PrinterChoosingViewController.h */,
-				EF5D2AA6212FEE940073F1A1 /* PrinterChoosingViewController.m */,
-				EF5D2AA5212FEE940073F1A1 /* PrinterSettingViewController.h */,
-				EF5D2AA7212FEE940073F1A1 /* PrinterSettingViewController.m */,
-				EF5D28CC212D57E10073F1A1 /* NewVersionUpdateViewController.h */,
-				EF5D28CD212D57E20073F1A1 /* NewVersionUpdateViewController.m */,
 				EF9C4EF6210BE17D00C7563A /* ConfirmDisputeViewController.h */,
 				EF9C4F13210BE17D00C7563A /* ConfirmDisputeViewController.m */,
 				EF9C4EEF210BE17D00C7563A /* CustomerKitchenViewController.h */,
@@ -1189,12 +1193,24 @@
 				EF9C4EF9210BE17D00C7563A /* MainTabBarController.m */,
 				EF9C4EEA210BE17D00C7563A /* MeViewController.h */,
 				EF9C4F01210BE17D00C7563A /* MeViewController.m */,
+				EF5D28CC212D57E10073F1A1 /* NewVersionUpdateViewController.h */,
+				EF5D28CD212D57E20073F1A1 /* NewVersionUpdateViewController.m */,
 				EF9C4EF4210BE17D00C7563A /* OpeningTimeViewController.h */,
 				EF9C4F05210BE17D00C7563A /* OpeningTimeViewController.m */,
 				EF9C4F0C210BE17D00C7563A /* OrderDetailViewController.h */,
 				EF9C4EEC210BE17D00C7563A /* OrderDetailViewController.m */,
 				EF9C4F12210BE17D00C7563A /* PersonalDataViewController.h */,
 				EF9C4EF7210BE17D00C7563A /* PersonalDataViewController.m */,
+				EF5D2AA4212FEE940073F1A1 /* PrinterChoosingViewController.h */,
+				EF5D2AA6212FEE940073F1A1 /* PrinterChoosingViewController.m */,
+				EF5D2AA5212FEE940073F1A1 /* PrinterSettingViewController.h */,
+				EF5D2AA7212FEE940073F1A1 /* PrinterSettingViewController.m */,
+				EF14CE13216697D50035A292 /* ReportDetailsByDayViewController.h */,
+				EF14CE14216697D50035A292 /* ReportDetailsByDayViewController.m */,
+				EF14CE15216697D50035A292 /* ReportViewController.h */,
+				EF14CE12216697D40035A292 /* ReportViewController.m */,
+				EF7E94DA218999930009B945 /* RunningReceiptViewController.h */,
+				EF7E94D9218999930009B945 /* RunningReceiptViewController.m */,
 				EF9C4EE4210BE17D00C7563A /* TermsOfServiceViewController.h */,
 				EF9C4EFE210BE17D00C7563A /* TermsOfServiceViewController.m */,
 				EF9C4EF2210BE17D00C7563A /* TosAndPrivacyPolicyViewController.h */,
@@ -1214,6 +1230,10 @@
 		EF9C4F16210BE17D00C7563A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EFCE2EAB21BE273600E84B8F /* PrinterMenu.h */,
+				EFCE2EAD21BE273700E84B8F /* PrinterMenu.m */,
+				EFCE2EAE21BE273700E84B8F /* SharedPrinterMenu.h */,
+				EFCE2EAC21BE273700E84B8F /* SharedPrinterMenu.m */,
 				EF14CE1B216697ED0035A292 /* ReportDaily.h */,
 				EF14CE18216697ED0035A292 /* ReportDaily.m */,
 				EF14CE1C216697EE0035A292 /* ReportDetailsByOrder.h */,
@@ -1377,6 +1397,12 @@
 		EF9C4FB1210BE17D00C7563A /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				EFCE2EC121C0E7BE00E84B8F /* CustomTableViewCellLogo.h */,
+				EFCE2EC221C0E7BE00E84B8F /* CustomTableViewCellLogo.m */,
+				EFCE2EC521C0E7C300E84B8F /* CustomTableViewCellLogo.xib */,
+				EFCE2EC321C0E7BF00E84B8F /* CustomTableViewCellSeparatorLine.h */,
+				EFCE2EC421C0E7BF00E84B8F /* CustomTableViewCellSeparatorLine.m */,
+				EFCE2EC021C0E7BB00E84B8F /* CustomTableViewCellSeparatorLine.xib */,
 				EF14CE272166981B0035A292 /* CustomTableViewCellButtonDetail.h */,
 				EF14CE2D2166981C0035A292 /* CustomTableViewCellButtonDetail.m */,
 				EF14CE2A2166981B0035A292 /* CustomTableViewCellButtonDetail.xib */,
@@ -1692,6 +1718,7 @@
 				EF9C51DB210BE17F00C7563A /* CustomTableViewCellNote.xib in Resources */,
 				EF9C5134210BE17E00C7563A /* badge.png in Resources */,
 				EF9C521B210BE17F00C7563A /* Kanit-LightItalic.ttf in Resources */,
+				EFCE2EC621C0E7C300E84B8F /* CustomTableViewCellSeparatorLine.xib in Resources */,
 				EF9C51B5210BE17F00C7563A /* CustomTableViewCellImageLabelRemove.xib in Resources */,
 				EF9C51C2210BE17F00C7563A /* CustomCollectionReusableView.xib in Resources */,
 				EF9C50E0210BE17E00C7563A /* me.png in Resources */,
@@ -1797,6 +1824,7 @@
 				EF9C50EF210BE17E00C7563A /* Icon-76@3x.png in Resources */,
 				EF9C4DB3210BE15200C7563A /* Assets.xcassets in Resources */,
 				EF9C5213210BE17F00C7563A /* Kanit-Medium.otf in Resources */,
+				EFCE2EC921C0E7C300E84B8F /* CustomTableViewCellLogo.xib in Resources */,
 				EF9C520E210BE17F00C7563A /* Prompt-SemiBold.ttf in Resources */,
 				EF9C5220210BE17F00C7563A /* Kanit-Medium.ttf in Resources */,
 				EF9C51FE210BE17F00C7563A /* Prompt-Light.ttf in Resources */,
@@ -1941,6 +1969,7 @@
 				EF9C51B7210BE17F00C7563A /* CustomCollectionViewCellNote.m in Sources */,
 				EF9C51A0210BE17E00C7563A /* Promotion.m in Sources */,
 				EF9C5140210BE17E00C7563A /* LaunchScreenViewController.m in Sources */,
+				EFCE2EAF21BE273700E84B8F /* SharedPrinterMenu.m in Sources */,
 				EF9C51A2210BE17E00C7563A /* RewardRedemption.m in Sources */,
 				EF9C5196210BE17E00C7563A /* Device.m in Sources */,
 				EF9C4DAE210BE15000C7563A /* ViewController.m in Sources */,
@@ -1950,6 +1979,7 @@
 				EF14CE1F216697EE0035A292 /* SharedCurrentBranch.m in Sources */,
 				EF9C5165210BE17E00C7563A /* PromotionMenu.m in Sources */,
 				EF9C51D2210BE17F00C7563A /* CustomTableViewCellReceiptSummary.m in Sources */,
+				EFCE2EB021BE273700E84B8F /* PrinterMenu.m in Sources */,
 				EF9C518C210BE17E00C7563A /* Branch.m in Sources */,
 				EF9C5164210BE17E00C7563A /* Credentials.m in Sources */,
 				EF9C5168210BE17E00C7563A /* SharedReceipt.m in Sources */,
@@ -2086,6 +2116,8 @@
 				EF9C5199210BE17E00C7563A /* SubMenuType.m in Sources */,
 				EF9C5149210BE17E00C7563A /* DisputeFormViewController.m in Sources */,
 				EF9C519F210BE17E00C7563A /* SharedSpecialPriceProgram.m in Sources */,
+				EFCE2EC721C0E7C300E84B8F /* CustomTableViewCellLogo.m in Sources */,
+				EFCE2EC821C0E7C300E84B8F /* CustomTableViewCellSeparatorLine.m in Sources */,
 				EF9C5189210BE17E00C7563A /* SharedBranch.m in Sources */,
 				EF9C5185210BE17E00C7563A /* SharedShop.m in Sources */,
 				EF9C51BA210BE17F00C7563A /* CustomTableViewCellVoucherCode.m in Sources */,

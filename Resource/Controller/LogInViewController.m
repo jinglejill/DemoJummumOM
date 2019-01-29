@@ -80,8 +80,6 @@
     float bottomPadding = window.safeAreaInsets.bottom;    
     
     
-    
-//    lblLogInTop.constant = 7 + bottomPadding;
     float spaceHeading = bottomPadding?30:0;
     lblLogInTop.constant = 7 + spaceHeading;
     lblLogInBottom.constant = 7 + spaceHeading;
@@ -127,7 +125,6 @@
     Device *device = [[Device alloc]initWithDeviceToken:[Utility deviceToken] model:[self deviceName] remark:@""];
     [self.homeModel insertItems:dbUserAccountValidate withData:@[userAccount,logIn,device] actionScreen:@"validate userAccount"];
     [self loadingOverlayView];
-    
 }
 
 - (IBAction)registerNow:(id)sender
@@ -164,7 +161,6 @@
         [btnRememberMe setTitle:message forState:UIControlStateNormal];
         _rememberMe = NO;
     }
-    
     
     
     
@@ -219,6 +215,22 @@
         else
         {
             [Utility updateSharedObject:items];
+         
+         
+            //jummumLogo for receipt
+            [Utility createCacheFoler:@"/JMS"];
+            [Utility createCacheFoler:@"/JMS/Image"];
+            NSString *jummumLogo = [Setting getSettingValueWithKeyName:@"JummumLogo"];
+            NSString *noImageFileName = [NSString stringWithFormat:@"/JMS/Image/NoImage.jpg"];
+            NSString *imageFileName = [NSString stringWithFormat:@"/JMS/Image/%@",jummumLogo];
+            imageFileName = [Utility isStringEmpty:jummumLogo]?noImageFileName:imageFileName;
+            [self.homeModel downloadImageWithFileName:jummumLogo type:5 branchID:0 completionBlock:^(BOOL succeeded, UIImage *image)
+             {
+                 if (succeeded)
+                 {
+                    [Utility saveImageInCache:image imageName:imageFileName];
+                 }
+             }];
             
             
             NSMutableArray *userAccountList = items[0];
@@ -228,14 +240,7 @@
             NSMutableArray *branchList = items[[items count]-1];
             _branch = branchList[0];
             [Branch setCurrentBranch:_branch];
-//            [CredentialsDb setCurrentCredentialsDb:_credentialsDb];
-//            [Utility setBranchID:_credentialsDb.branchID];
             //-----------**********
-            
-            
-            
-            
-            
             
             
             //credential

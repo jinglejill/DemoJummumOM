@@ -162,7 +162,7 @@ extern NSString *globalBundleID;
             url = @"/JMM/JUMMUM3/uploadPhoto.php";
             break;
         case urlDownloadPhoto:
-            url = @"/JMM/JUMMUM3/downloadImage.php";
+            url = @"JMSDownloadImage.php";
             break;
         case urlDownloadFile:
             url = @"/JMM/JUMMUM3/downloadFile.php";
@@ -250,6 +250,15 @@ extern NSString *globalBundleID;
             break;
         case urlReceiptBuffetEndedUpdate:
             url = @"JMSReceiptBuffetEndedUpdate.php";
+            break;
+        case urlPrinterGetList:
+            url = @"JMSPrinterGetList.php";
+            break;
+        case urlReceiptUpdate:
+            url = @"JMSReceiptPrintUpdate.php";
+            break;
+        case urlReceiptPrintGetList:
+            url = @"JMSReceiptPrintGetList.php";
             break;
         default:
             break;
@@ -1534,6 +1543,64 @@ extern NSString *globalBundleID;
 +(NSString *)encloseWithBracket:(NSString *)text
 {
     return [NSString stringWithFormat:@"(%@)",text];
+}
+
++(void)createCacheFoler:(NSString *)folderName
+{
+    NSError *error;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *cachesDirectory = [paths objectAtIndex:0]; // Get Caches folder
+    NSString *dataPath = [cachesDirectory stringByAppendingPathComponent:folderName];
+
+    if (![[NSFileManager defaultManager] fileExistsAtPath:dataPath])
+        [[NSFileManager defaultManager] createDirectoryAtPath:dataPath withIntermediateDirectories:NO attributes:nil error:&error];
+    
+        if(error)
+        {
+            NSLog(@"create folder error:%@",error.description);
+        }
+        else
+        {
+            NSLog(@"create folder success:%@",dataPath);
+        }
+}
+
++(UIImage *)getImageFromCache:(NSString *)imageName
+{
+    NSString *strPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
+    NSString *imagePath = [NSString stringWithFormat:@"%@%@",strPath,imageName];
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfFile:imagePath]];
+    return image;
+}
+
++(void)saveImageInCache:(UIImage *)image imageName:(NSString *)imageName
+{
+    NSString *strPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
+    NSString *imagePath = [NSString stringWithFormat:@"%@%@",strPath,imageName];
+    BOOL writeSuccess =  [UIImagePNGRepresentation(image) writeToFile:imagePath atomically:YES];
+}
+
++(void)deleteFileInCache:(NSString *)fileName
+{
+    NSString *strPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
+    NSString *filePath = [NSString stringWithFormat:@"%@%@",strPath,fileName];
+    
+    NSLog(@"delete filename:%@",filePath);
+    NSError *error;
+    
+    if([[NSFileManager defaultManager] isDeletableFileAtPath:filePath])
+    {
+        [[NSFileManager defaultManager]removeItemAtPath:filePath error:&error];
+        if (error)
+        {
+          // file deletion failed
+          NSLog(@"file deletion failed: %@, %@, %@",error.localizedDescription,error.description,error.description);
+        }
+    }
+    else
+    {
+        NSLog(@"not deletable");
+    }
 }
 @end
 
