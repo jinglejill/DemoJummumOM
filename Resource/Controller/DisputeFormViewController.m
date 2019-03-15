@@ -443,7 +443,7 @@ static NSString * const reuseIdentifierHeaderFooterOkCancel = @"CustomTableViewH
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 
                 
-                NSString *message = [Setting getValue:@"024m" example:@"เหตุผลเพิ่มเติมในการขอเงินคืน"];
+                NSString *message = @"เหตุผลเพิ่มเติมในการขอเงินคืน";
                 NSString *strTitle = message;
                 
                 

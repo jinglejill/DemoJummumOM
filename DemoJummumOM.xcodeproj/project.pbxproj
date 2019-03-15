@@ -20,7 +20,6 @@
 		EF14CDFF216697A00035A292 /* CardNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF14CDF52166979F0035A292 /* CardNumber.swift */; };
 		EF14CE00216697A00035A292 /* OmiseSDKClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF14CDF62166979F0035A292 /* OmiseSDKClient.swift */; };
 		EF14CE01216697A00035A292 /* OmiseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF14CDF72166979F0035A292 /* OmiseError.swift */; };
-		EF14CE0A216697BF0035A292 /* triangle_demo.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14CE02216697BD0035A292 /* triangle_demo.png */; };
 		EF14CE0B216697BF0035A292 /* badgeGray.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14CE03216697BD0035A292 /* badgeGray.png */; };
 		EF14CE0C216697BF0035A292 /* triangle_and_om.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14CE04216697BD0035A292 /* triangle_and_om.png */; };
 		EF14CE0D216697BF0035A292 /* triangle_dev_om.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14CE05216697BE0035A292 /* triangle_dev_om.png */; };
@@ -70,6 +69,14 @@
 		EF5D2AAD212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5D2AAB212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.xib */; };
 		EF5D2AAE212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5D2AAC212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.m */; };
 		EF5D2AB0212FF08C0073F1A1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5D2AAF212FF08C0073F1A1 /* CoreBluetooth.framework */; };
+		EF759FD02200493A00A6146F /* libeposeasyselect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF759FC62200493A00A6146F /* libeposeasyselect.a */; };
+		EF759FD12200493A00A6146F /* libepos2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF759FC82200493A00A6146F /* libepos2.a */; };
+		EF759FD22200493A00A6146F /* libGprinterSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF759FCD2200493A00A6146F /* libGprinterSDK.a */; };
+		EF759FD92200494700A6146F /* PrinterChoosingEpsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF759FD32200494600A6146F /* PrinterChoosingEpsonViewController.m */; };
+		EF759FDA2200494700A6146F /* PrinterBrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF759FD62200494700A6146F /* PrinterBrandViewController.m */; };
+		EF759FDB2200494700A6146F /* PrinterChoosingGPrinterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF759FD82200494700A6146F /* PrinterChoosingGPrinterViewController.m */; };
+		EF759FDD22004A4700A6146F /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EF759FDC22004A4700A6146F /* libxml2.2.tbd */; };
+		EF759FDF22004A4D00A6146F /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF759FDE22004A4D00A6146F /* ExternalAccessory.framework */; };
 		EF7E94D8218999820009B945 /* hourGlass2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7E94D7218999820009B945 /* hourGlass2.png */; };
 		EF7E94DB218999930009B945 /* RunningReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94D9218999930009B945 /* RunningReceiptViewController.m */; };
 		EF9C4DAE210BE15000C7563A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4DAD210BE15000C7563A /* ViewController.m */; };
@@ -163,7 +170,6 @@
 		EF9C5171210BE17E00C7563A /* SharedOrderTaking.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F4A210BE17D00C7563A /* SharedOrderTaking.m */; };
 		EF9C5172210BE17E00C7563A /* HotDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F4B210BE17D00C7563A /* HotDeal.m */; };
 		EF9C5173210BE17E00C7563A /* SharedCurrentOrderTaking.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F4C210BE17D00C7563A /* SharedCurrentOrderTaking.m */; };
-		EF9C5174210BE17E00C7563A /* SharedPushSync.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F4D210BE17D00C7563A /* SharedPushSync.m */; };
 		EF9C5175210BE17E00C7563A /* SharedHotDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F4F210BE17D00C7563A /* SharedHotDeal.m */; };
 		EF9C5176210BE17E00C7563A /* NoteType.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F51210BE17D00C7563A /* NoteType.m */; };
 		EF9C5177210BE17E00C7563A /* SharedOrderNote.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F52210BE17D00C7563A /* SharedOrderNote.m */; };
@@ -196,7 +202,6 @@
 		EF9C5192210BE17E00C7563A /* PromoCode.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F80210BE17D00C7563A /* PromoCode.m */; };
 		EF9C5193210BE17E00C7563A /* SharedCustomerTable.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F81210BE17D00C7563A /* SharedCustomerTable.m */; };
 		EF9C5194210BE17E00C7563A /* OrderKitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F82210BE17D00C7563A /* OrderKitchen.m */; };
-		EF9C5195210BE17E00C7563A /* PushSync.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F83210BE17D00C7563A /* PushSync.m */; };
 		EF9C5196210BE17E00C7563A /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F84210BE17D00C7563A /* Device.m */; };
 		EF9C5197210BE17E00C7563A /* SharedMenuType.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F8A210BE17D00C7563A /* SharedMenuType.m */; };
 		EF9C5198210BE17E00C7563A /* DisputeReason.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4F8C210BE17D00C7563A /* DisputeReason.m */; };
@@ -342,6 +347,7 @@
 		EFCE2EC721C0E7C300E84B8F /* CustomTableViewCellLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCE2EC221C0E7BE00E84B8F /* CustomTableViewCellLogo.m */; };
 		EFCE2EC821C0E7C300E84B8F /* CustomTableViewCellSeparatorLine.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCE2EC421C0E7BF00E84B8F /* CustomTableViewCellSeparatorLine.m */; };
 		EFCE2EC921C0E7C300E84B8F /* CustomTableViewCellLogo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCE2EC521C0E7C300E84B8F /* CustomTableViewCellLogo.xib */; };
+		EFF109722203F93000DE0578 /* triangle_demo_om.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF109712203F93000DE0578 /* triangle_demo_om.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -383,7 +389,6 @@
 		EF14CDF52166979F0035A292 /* CardNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardNumber.swift; sourceTree = "<group>"; };
 		EF14CDF62166979F0035A292 /* OmiseSDKClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmiseSDKClient.swift; sourceTree = "<group>"; };
 		EF14CDF72166979F0035A292 /* OmiseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmiseError.swift; sourceTree = "<group>"; };
-		EF14CE02216697BD0035A292 /* triangle_demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle_demo.png; sourceTree = "<group>"; };
 		EF14CE03216697BD0035A292 /* badgeGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badgeGray.png; sourceTree = "<group>"; };
 		EF14CE04216697BD0035A292 /* triangle_and_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle_and_om.png; sourceTree = "<group>"; };
 		EF14CE05216697BE0035A292 /* triangle_dev_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle_dev_om.png; sourceTree = "<group>"; };
@@ -461,6 +466,23 @@
 		EF5D2AAB212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCellReceiptSummary2.xib; sourceTree = "<group>"; };
 		EF5D2AAC212FEEBE0073F1A1 /* CustomTableViewCellReceiptSummary2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCellReceiptSummary2.m; sourceTree = "<group>"; };
 		EF5D2AAF212FF08C0073F1A1 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		EF759FC62200493A00A6146F /* libeposeasyselect.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libeposeasyselect.a; sourceTree = "<group>"; };
+		EF759FC72200493A00A6146F /* ePOS2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ePOS2.h; sourceTree = "<group>"; };
+		EF759FC82200493A00A6146F /* libepos2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libepos2.a; sourceTree = "<group>"; };
+		EF759FC92200493A00A6146F /* ePOSEasySelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ePOSEasySelect.h; sourceTree = "<group>"; };
+		EF759FCB2200493A00A6146F /* GprinterReceiptCheckCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GprinterReceiptCheckCommand.h; sourceTree = "<group>"; };
+		EF759FCC2200493A00A6146F /* GprinterReceiptCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GprinterReceiptCommand.h; sourceTree = "<group>"; };
+		EF759FCD2200493A00A6146F /* libGprinterSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGprinterSDK.a; sourceTree = "<group>"; };
+		EF759FCE2200493A00A6146F /* GprinterBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GprinterBluetooth.h; sourceTree = "<group>"; };
+		EF759FCF2200493A00A6146F /* GprinterLabelCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GprinterLabelCommand.h; sourceTree = "<group>"; };
+		EF759FD32200494600A6146F /* PrinterChoosingEpsonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterChoosingEpsonViewController.m; sourceTree = "<group>"; };
+		EF759FD42200494600A6146F /* PrinterChoosingGPrinterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterChoosingGPrinterViewController.h; sourceTree = "<group>"; };
+		EF759FD52200494600A6146F /* PrinterBrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterBrandViewController.h; sourceTree = "<group>"; };
+		EF759FD62200494700A6146F /* PrinterBrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterBrandViewController.m; sourceTree = "<group>"; };
+		EF759FD72200494700A6146F /* PrinterChoosingEpsonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterChoosingEpsonViewController.h; sourceTree = "<group>"; };
+		EF759FD82200494700A6146F /* PrinterChoosingGPrinterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterChoosingGPrinterViewController.m; sourceTree = "<group>"; };
+		EF759FDC22004A4700A6146F /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		EF759FDE22004A4D00A6146F /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		EF7E94D7218999820009B945 /* hourGlass2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hourGlass2.png; sourceTree = "<group>"; };
 		EF7E94D9218999930009B945 /* RunningReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningReceiptViewController.m; sourceTree = "<group>"; };
 		EF7E94DA218999930009B945 /* RunningReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningReceiptViewController.h; sourceTree = "<group>"; };
@@ -572,7 +594,6 @@
 		EF9C4F26210BE17D00C7563A /* MenuType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuType.m; sourceTree = "<group>"; };
 		EF9C4F27210BE17D00C7563A /* SharedRewardPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedRewardPoint.m; sourceTree = "<group>"; };
 		EF9C4F28210BE17D00C7563A /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
-		EF9C4F29210BE17D00C7563A /* PushSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushSync.h; sourceTree = "<group>"; };
 		EF9C4F2A210BE17D00C7563A /* OrderKitchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderKitchen.h; sourceTree = "<group>"; };
 		EF9C4F2B210BE17D00C7563A /* SharedCustomerTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedCustomerTable.h; sourceTree = "<group>"; };
 		EF9C4F2C210BE17D00C7563A /* PromoCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromoCode.h; sourceTree = "<group>"; };
@@ -607,7 +628,6 @@
 		EF9C4F4A210BE17D00C7563A /* SharedOrderTaking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedOrderTaking.m; sourceTree = "<group>"; };
 		EF9C4F4B210BE17D00C7563A /* HotDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotDeal.m; sourceTree = "<group>"; };
 		EF9C4F4C210BE17D00C7563A /* SharedCurrentOrderTaking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedCurrentOrderTaking.m; sourceTree = "<group>"; };
-		EF9C4F4D210BE17D00C7563A /* SharedPushSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedPushSync.m; sourceTree = "<group>"; };
 		EF9C4F4E210BE17D00C7563A /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		EF9C4F4F210BE17D00C7563A /* SharedHotDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedHotDeal.m; sourceTree = "<group>"; };
 		EF9C4F50210BE17D00C7563A /* RewardPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardPoint.h; sourceTree = "<group>"; };
@@ -659,11 +679,9 @@
 		EF9C4F80210BE17D00C7563A /* PromoCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromoCode.m; sourceTree = "<group>"; };
 		EF9C4F81210BE17D00C7563A /* SharedCustomerTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedCustomerTable.m; sourceTree = "<group>"; };
 		EF9C4F82210BE17D00C7563A /* OrderKitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderKitchen.m; sourceTree = "<group>"; };
-		EF9C4F83210BE17D00C7563A /* PushSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushSync.m; sourceTree = "<group>"; };
 		EF9C4F84210BE17D00C7563A /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
 		EF9C4F85210BE17D00C7563A /* MenuType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuType.h; sourceTree = "<group>"; };
 		EF9C4F86210BE17D00C7563A /* SharedRewardPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedRewardPoint.h; sourceTree = "<group>"; };
-		EF9C4F87210BE17D00C7563A /* SharedPushSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedPushSync.h; sourceTree = "<group>"; };
 		EF9C4F88210BE17D00C7563A /* HotDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotDeal.h; sourceTree = "<group>"; };
 		EF9C4F89210BE17D00C7563A /* SharedCurrentOrderTaking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedCurrentOrderTaking.h; sourceTree = "<group>"; };
 		EF9C4F8A210BE17D00C7563A /* SharedMenuType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedMenuType.m; sourceTree = "<group>"; };
@@ -876,6 +894,7 @@
 		EFCE2EC321C0E7BF00E84B8F /* CustomTableViewCellSeparatorLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCellSeparatorLine.h; sourceTree = "<group>"; };
 		EFCE2EC421C0E7BF00E84B8F /* CustomTableViewCellSeparatorLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCellSeparatorLine.m; sourceTree = "<group>"; };
 		EFCE2EC521C0E7C300E84B8F /* CustomTableViewCellLogo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCellLogo.xib; sourceTree = "<group>"; };
+		EFF109712203F93000DE0578 /* triangle_demo_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle_demo_om.png; sourceTree = "<group>"; };
 		FC9E78C32B6933F3AA6F35A0 /* Pods-DemoJummumOMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJummumOMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJummumOMTests/Pods-DemoJummumOMTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -884,11 +903,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF759FDF22004A4D00A6146F /* ExternalAccessory.framework in Frameworks */,
+				EF759FDD22004A4700A6146F /* libxml2.2.tbd in Frameworks */,
+				EF759FD02200493A00A6146F /* libeposeasyselect.a in Frameworks */,
 				EF5D2AB0212FF08C0073F1A1 /* CoreBluetooth.framework in Frameworks */,
 				EF5D2A9A212FEE540073F1A1 /* StarIO_Extension.framework in Frameworks */,
+				EF759FD22200493A00A6146F /* libGprinterSDK.a in Frameworks */,
 				EF5D2A96212FEE530073F1A1 /* StarIO.framework in Frameworks */,
 				EF5D2A99212FEE530073F1A1 /* SMCloudServices.framework in Frameworks */,
 				D8B7CC51A92C2D463C1B3B03 /* libPods-DemoJummumOM.a in Frameworks */,
+				EF759FD12200493A00A6146F /* libepos2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,6 +951,8 @@
 		A91EEF2DDCC615C31EC92D59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF759FDE22004A4D00A6146F /* ExternalAccessory.framework */,
+				EF759FDC22004A4700A6146F /* libxml2.2.tbd */,
 				EF5D2AAF212FF08C0073F1A1 /* CoreBluetooth.framework */,
 				A03F0525B5ABA887223FD6D9 /* libPods-DemoJummumOM.a */,
 				1C816BDE0D7B08F0C4E6F303 /* libPods-DemoJummumOMTests.a */,
@@ -999,6 +1025,29 @@
 				EF5D2A8F212FEE530073F1A1 /* Communication.m */,
 			);
 			path = Communications;
+			sourceTree = "<group>";
+		};
+		EF759FC52200493A00A6146F /* Epson */ = {
+			isa = PBXGroup;
+			children = (
+				EF759FC62200493A00A6146F /* libeposeasyselect.a */,
+				EF759FC72200493A00A6146F /* ePOS2.h */,
+				EF759FC82200493A00A6146F /* libepos2.a */,
+				EF759FC92200493A00A6146F /* ePOSEasySelect.h */,
+			);
+			path = Epson;
+			sourceTree = "<group>";
+		};
+		EF759FCA2200493A00A6146F /* GPrinter */ = {
+			isa = PBXGroup;
+			children = (
+				EF759FCB2200493A00A6146F /* GprinterReceiptCheckCommand.h */,
+				EF759FCC2200493A00A6146F /* GprinterReceiptCommand.h */,
+				EF759FCD2200493A00A6146F /* libGprinterSDK.a */,
+				EF759FCE2200493A00A6146F /* GprinterBluetooth.h */,
+				EF759FCF2200493A00A6146F /* GprinterLabelCommand.h */,
+			);
+			path = GPrinter;
 			sourceTree = "<group>";
 		};
 		EF9C4D9D210BE15000C7563A = {
@@ -1091,6 +1140,8 @@
 		EF9C4E55210BE17D00C7563A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				EF759FC52200493A00A6146F /* Epson */,
+				EF759FCA2200493A00A6146F /* GPrinter */,
 				EF14CDEA2166979F0035A292 /* Omise */,
 				EF5D2A7B212FEE530073F1A1 /* Star */,
 				EF9C4E56210BE17D00C7563A /* Encryption */,
@@ -1123,18 +1174,11 @@
 		EF9C4E80210BE17D00C7563A /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				EF7E94D7218999820009B945 /* hourGlass2.png */,
+				EF9C4ED7210BE17D00C7563A /* badge.png */,
 				EF14CE03216697BD0035A292 /* badgeGray.png */,
 				EF14CE09216697BE0035A292 /* badgeWhite.png */,
-				EF14CE08216697BE0035A292 /* printerGreen.png */,
-				EF14CE06216697BE0035A292 /* printerGreenNo.png */,
-				EF14CE07216697BE0035A292 /* report.png */,
-				EF14CE04216697BD0035A292 /* triangle_and_om.png */,
-				EF14CE02216697BD0035A292 /* triangle_demo.png */,
-				EF14CE05216697BE0035A292 /* triangle_dev_om.png */,
-				EF5D2A9E212FEE640073F1A1 /* printer.png */,
 				EF33CD63211BF99800560C69 /* contactUs.png */,
-				EF9C4ED7210BE17D00C7563A /* badge.png */,
+				EF7E94D7218999820009B945 /* hourGlass2.png */,
 				EF9C4ECE210BE17D00C7563A /* Icon-20.png */,
 				EF9C4E9D210BE17D00C7563A /* Icon-60.png */,
 				EF9C4EB5210BE17D00C7563A /* Icon-60@2x.png */,
@@ -1165,10 +1209,17 @@
 				EF9C4EB1210BE17D00C7563A /* list.png */,
 				EF9C4EA2210BE17D00C7563A /* logOut.png */,
 				EF9C4E83210BE17D00C7563A /* me.png */,
+				EF5D2A9E212FEE640073F1A1 /* printer.png */,
+				EF14CE08216697BE0035A292 /* printerGreen.png */,
+				EF14CE06216697BE0035A292 /* printerGreenNo.png */,
 				EF9C4EA5210BE17D00C7563A /* profilePic.png */,
 				EF9C4EDB210BE17D00C7563A /* refresh.png */,
+				EF14CE07216697BE0035A292 /* report.png */,
 				EF9C4EE0210BE17D00C7563A /* selfService.png */,
 				EF9C4E9E210BE17D00C7563A /* termsOfService.png */,
+				EF14CE04216697BD0035A292 /* triangle_and_om.png */,
+				EF14CE05216697BE0035A292 /* triangle_dev_om.png */,
+				EFF109712203F93000DE0578 /* triangle_demo_om.png */,
 				EF9C4EB2210BE17D00C7563A /* triangle.png */,
 			);
 			path = Image;
@@ -1177,6 +1228,12 @@
 		EF9C4EE1210BE17D00C7563A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EF759FD52200494600A6146F /* PrinterBrandViewController.h */,
+				EF759FD62200494700A6146F /* PrinterBrandViewController.m */,
+				EF759FD72200494700A6146F /* PrinterChoosingEpsonViewController.h */,
+				EF759FD32200494600A6146F /* PrinterChoosingEpsonViewController.m */,
+				EF759FD42200494600A6146F /* PrinterChoosingGPrinterViewController.h */,
+				EF759FD82200494700A6146F /* PrinterChoosingGPrinterViewController.m */,
 				EF9C4EF6210BE17D00C7563A /* ConfirmDisputeViewController.h */,
 				EF9C4F13210BE17D00C7563A /* ConfirmDisputeViewController.m */,
 				EF9C4EEF210BE17D00C7563A /* CustomerKitchenViewController.h */,
@@ -1292,8 +1349,6 @@
 				EF9C4F9C210BE17D00C7563A /* Promotion.m */,
 				EF9C4F7E210BE17D00C7563A /* PromotionMenu.h */,
 				EF9C4F2F210BE17D00C7563A /* PromotionMenu.m */,
-				EF9C4F29210BE17D00C7563A /* PushSync.h */,
-				EF9C4F83210BE17D00C7563A /* PushSync.m */,
 				EF9C4F6C210BE17D00C7563A /* Receipt.h */,
 				EF9C4F1D210BE17D00C7563A /* Receipt.m */,
 				EF9C4F9F210BE17D00C7563A /* ReceiptPrint.h */,
@@ -1350,8 +1405,6 @@
 				EF9C4F92210BE17D00C7563A /* SharedPromotion.m */,
 				EF9C4F7F210BE17D00C7563A /* SharedPromotionMenu.h */,
 				EF9C4F2D210BE17D00C7563A /* SharedPromotionMenu.m */,
-				EF9C4F87210BE17D00C7563A /* SharedPushSync.h */,
-				EF9C4F4D210BE17D00C7563A /* SharedPushSync.m */,
 				EF9C4F7B210BE17D00C7563A /* SharedReceipt.h */,
 				EF9C4F32210BE17D00C7563A /* SharedReceipt.m */,
 				EF9C4F6B210BE17D00C7563A /* SharedReceiptPrint.h */,
@@ -1781,7 +1834,6 @@
 				EF9C51F1210BE17F00C7563A /* Kanit-Bold.otf in Resources */,
 				EF9C5138210BE17E00C7563A /* refresh.png in Resources */,
 				EF14CE11216697BF0035A292 /* badgeWhite.png in Resources */,
-				EF14CE0A216697BF0035A292 /* triangle_demo.png in Resources */,
 				EF9C512B210BE17E00C7563A /* Icon-20.png in Resources */,
 				EF9C5106210BE17E00C7563A /* Icon-Spotlight-40.png in Resources */,
 				EF14CE0E216697BF0035A292 /* printerGreenNo.png in Resources */,
@@ -1799,6 +1851,7 @@
 				EF9C521E210BE17F00C7563A /* Prompt-Black.ttf in Resources */,
 				EF9C51FA210BE17F00C7563A /* Kanit-Regular.ttf in Resources */,
 				EF9C5218210BE17F00C7563A /* Kanit-ExtraLightItalic.otf in Resources */,
+				EFF109722203F93000DE0578 /* triangle_demo_om.png in Resources */,
 				EF9C50EC210BE17E00C7563A /* iTunesArtwork in Resources */,
 				EF9C50BF210BE17E00C7563A /* Property List.plist in Resources */,
 				EF9C5202210BE17F00C7563A /* Prompt-ExtraBold.ttf in Resources */,
@@ -1970,6 +2023,7 @@
 				EF9C51A0210BE17E00C7563A /* Promotion.m in Sources */,
 				EF9C5140210BE17E00C7563A /* LaunchScreenViewController.m in Sources */,
 				EFCE2EAF21BE273700E84B8F /* SharedPrinterMenu.m in Sources */,
+				EF759FDA2200494700A6146F /* PrinterBrandViewController.m in Sources */,
 				EF9C51A2210BE17E00C7563A /* RewardRedemption.m in Sources */,
 				EF9C5196210BE17E00C7563A /* Device.m in Sources */,
 				EF9C4DAE210BE15000C7563A /* ViewController.m in Sources */,
@@ -1997,7 +2051,6 @@
 				EF9C51CA210BE17F00C7563A /* CustomTableViewCellNote.m in Sources */,
 				EF9C518F210BE17E00C7563A /* SharedUserAccount.m in Sources */,
 				EF9C516D210BE17E00C7563A /* OrderNote.m in Sources */,
-				EF9C5174210BE17E00C7563A /* SharedPushSync.m in Sources */,
 				EF9C5166210BE17E00C7563A /* SharedUserRewardRedemptionUsed.m in Sources */,
 				EF9C51B2210BE17E00C7563A /* CustomTableViewCellOrder.m in Sources */,
 				EF14CDFF216697A00035A292 /* CardNumber.swift in Sources */,
@@ -2028,6 +2081,7 @@
 				EF9C51CF210BE17F00C7563A /* CustomTableViewCellLabelRemark.m in Sources */,
 				EF9C517A210BE17E00C7563A /* SharedCurrentMenu.m in Sources */,
 				EF9C5143210BE17E00C7563A /* OrderDetailViewController.m in Sources */,
+				EF759FD92200494700A6146F /* PrinterChoosingEpsonViewController.m in Sources */,
 				EF9C51CE210BE17F00C7563A /* CustomViewVoucher.m in Sources */,
 				EF9C50BE210BE17E00C7563A /* AppDelegate.m in Sources */,
 				EF9C51A1210BE17E00C7563A /* CreditCard.m in Sources */,
@@ -2049,6 +2103,7 @@
 				EF9C5192210BE17E00C7563A /* PromoCode.m in Sources */,
 				EF9C517B210BE17E00C7563A /* MenuPic.m in Sources */,
 				EF14CE472166981E0035A292 /* NTMonthYearPicker.m in Sources */,
+				EF759FDB2200494700A6146F /* PrinterChoosingGPrinterViewController.m in Sources */,
 				EF9C519D210BE17E00C7563A /* SharedMenuTypeNote.m in Sources */,
 				EF9C515D210BE17E00C7563A /* Receipt.m in Sources */,
 				EF9C51E5210BE17F00C7563A /* CustomTableViewCellButton.m in Sources */,
@@ -2081,7 +2136,6 @@
 				EF9C5176210BE17E00C7563A /* NoteType.m in Sources */,
 				EF9C514E210BE17E00C7563A /* OpeningTimeViewController.m in Sources */,
 				EF9C5163210BE17E00C7563A /* SharedPromotionMenu.m in Sources */,
-				EF9C5195210BE17E00C7563A /* PushSync.m in Sources */,
 				EF9C5147210BE17E00C7563A /* PersonalDataViewController.m in Sources */,
 				EF14CE3A2166981E0035A292 /* CustomTableViewCellMonthYear.m in Sources */,
 				EF9C5190210BE17E00C7563A /* CustomerTable.m in Sources */,
@@ -2300,6 +2354,7 @@
 				CODE_SIGN_ENTITLEMENTS = DemoJummumOM/DemoJummumOM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Resource/StarMicronics",
@@ -2310,6 +2365,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resource/Library/Epson",
+					"$(PROJECT_DIR)/Resource/Library/GPrinter",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JummumCo.DemoJummumOM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2326,6 +2386,7 @@
 				CODE_SIGN_ENTITLEMENTS = DemoJummumOM/DemoJummumOM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Resource/StarMicronics",
@@ -2336,6 +2397,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resource/Library/Epson",
+					"$(PROJECT_DIR)/Resource/Library/GPrinter",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JummumCo.DemoJummumOM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
